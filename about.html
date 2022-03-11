@@ -15,7 +15,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
 
     <!-- fontawsome link Start here -->
-        <link rel="stylesheet" href="./assets/fontawsome/css/all.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- fontawsome link End here -->
 
     <!-- Tailwind Css Script Tag Start Here -->
@@ -24,65 +26,61 @@
 </head>
 <body class="bg-black">
     <!-- Header Start Here -->
-        <header class="w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] md:mx-auto sticky md:top-6 z-50 top-0 h-[80px] md:h-[90px] lg:h-[90px] flex justify-between items-center md:pl-10 md:pr-12 bg-[#1A1A1A]">
+        <header class="w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] md:mx-auto sticky md:top-6 z-50 top-0 h-[80px] md:h-[90px] lg:h-[90px] md:flex justify-between items-center md:pl-10 md:pr-12 bg-[#1A1A1A]">
             <!-- Tablate and Dektopview Logo Start Here -->
-            <div class="tab-desk-logo 2xl:pl-36 xl:pl-12 md:pl-0 sm:pl-6 pl-6">
-                <a href="./index.html">
-                    <img src="./assets/images/header-img/logo.png" alt="Tighten Logo" class="w-40">
-                </a>
+            <div class="tab-desk-logo 2xl:pl-36 xl:pl-12 md:pl-0 pl-4 md:pr-0 md:pt-0 pr-4 pt-4 flex justify-between items-center">
+                <div>
+                    <a href="./index.html">
+                        <img src="./assets/images/header-img/logo.png" alt="Tighten Logo" class="w-40">
+                    </a>
+                </div>
+                <div>
+                    <ion-icon name="menu-outline" class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2" onclick="Menu(this)">
+                    </ion-icon>
+                </div>
             </div>
             <!-- Tablate and Dektopview Logo End Here -->
             <div>
                 <!-- Tablate and Desktop View NavLink Strat here -->
-                <nav class="navbar lg:flex md:flex sm:hidden hidden">
+                <nav class="navbar lg:flex md:flex opacity-100">
                     <div class="nav-link">
-                        <ul class="list-none flex items-center 2xl:space-x-[65px] xl:space-x-[63px] lg:space-x-[43px] md:space-x-[20px] group-hover:text-gray-300 lg:mr-9 2xl:mr-10 2xl:pb-1">
-                            <li>
-                                <a href="./method.html" class="uppercase text-white tracking-widest border-b border-b-4 border-b-transparent text-gray-300 hover:text-white hover:border-b-[#ffbc00] pb-8 text-[16px] font-mono font-bold tracking-[2px]">Method</a>
+                        <ul class="bg-[#1A1A1A] list-none md:flex items-center 2xl:space-x-[65px] xl:space-x-[63px] lg:space-x-[43px] md:space-x-[20px] md:static absolute w-full -top-[500px] duration-1000 text-right md:text-center group-hover:text-gray-300 opacity-100 left-0 pb-10 md:pb-0 pr-8 md:pr-0 lg:mr-9 2xl:mr-10 2xl:pb-1">
+                            <li class="md:mt-0 mt-0">
+                                <a href="./method.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] text-[1.125rem] leading-[1.75rem] tracking-[2px] pb-0 md:pb-8">Method</a>
                             </li>
-                            <li>
-                                <a href="./work.html" class="uppercase border-b-transparent hover:border-b-[#ffbc00] border-b-4 pb-8 lg:text-base text-[14px] font-mono font-bold  text-gray-300 hover:text-white -leading-10 tracking-[2px]">WORK</a>
+                            <li  class="md:mt-0 mt-7">
+                                <a href="./work.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] lg:text-base text-[1.125rem] leading-[1.75rem] -leading-10 tracking-[2px] pb-0 md:pb-8 ">WORK</a>
                             </li>
-                            <li>
-                                <a href="./blog.html" class="uppercase border-b-transparent border-b-4 hover:border-b-[#FFBC00] pb-8 lg:text-base text-[14px] font-mono font-bold text-gray-300 hover:text-white tracking-[2px]">BLOG</a>
+                            <li  class="md:mt-0 mt-7">
+                                <a href="./blog.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-base text-[1.125rem] leading-[1.75rem] tracking-[2px] pb-0 md:pb-8">BLOG</a>
                             </li>
-                            <li>
-                                <a href="./team.html" class="uppercase border-b-transparent hover:border-b-[#FFBC00] border-b-4 pb-8 lg:text-base text-sm font-mono font-bold text-gray-300 hover:text-white tracking-[2px]">TEAM</a>
+                            <li  class="md:mt-0 mt-7">
+                                <a href="./team.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-base text-[1.125rem] leading-[1.75rem] tracking-[2px] pb-0 md:pb-8 ">TEAM</a>
                             </li>
-                            <li>
-                                <a href="./about.html" class="uppercase border-b-[#FFBC00] border-b-4 hover:border-b-[#FFBC00] pb-8 lg:text-base text-sm font-mono font-bold text-[#FFBC00] hover:text-white tracking-[2px]">ABOUT</a>
+                            <li  class="md:mt-0 mt-7">
+                                <a href="./about.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-base text-[1.125rem] leading-[1.75rem] tracking-[2px] pb-0 md:pb-8 ">ABOUT</a>
                             </li>
+                            <a href="./contact.html" class="btn mt-14 md:mt-0 inline-block lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-4 border border-white rounded-full text-white font-mono font-bold lg:text-[16px] md:text-[14px] tracking-[4px] hover:bg-gradient-to-r from-orange-400 to-yellow-400 hover:text-black hover:border-transparent py-3">CONTACT</a>
                         </ul>
-                    </div>
-                    <div class="contact lg:mr-7 md:mr-0 md:ml-4 2xl:mr-28">
-                        <a href="./contact.html" class="btn lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 border border-white rounded-full text-white font-mono font-bold lg:text-[16px] md:text-[14px] tracking-[4px]  hover:bg-gradient-to-r from-orange-400 to-yellow-400 hover:text-black hover:border-transparent">CONTACT</a>
                     </div>
                 </nav>
                 <!-- Tablate and Desktop View NavLink Strat here -->
-
-                <!-- Mobile View Menu Link Toggle Wrapper Start here  -->
-                <div class="w-10 h-[10px] lg:mr-0 sm:mr-6 mr-5 sm:flex flex flex-col justify-center items-center md:hidden lg:hidden xl:hidden cursor-pointer btn ">
-                    <span class="w-5 block h-[0.7px] border border-1 mx-auto border-gray-400"></span>
-                    <span class="w-5 block h-[0.7px] border border-1 mx-auto border-gray-400 mt-[5px] "></span>
-                    <span class="w-5 block h-[0.7px] border border-1 mx-auto border-gray-400 mt-[5px] "></span>
-                </div>
-                <!-- Mobile View Menu Link Toggle Wrapper Start here  -->
             </div>
         </header>
     <!-- Header End Here -->
 
     <!-- Hero Section Start Here -->
         <div class="container-fluid bg-black px-6 md:px-16 lg:px-28 2xl:px-0">
-            <div class="container mx-auto bg-black pt-0 sm:-mt-24 -m-20  sm:pt-36 pt-14 pb-28 min-h-[490px] md:min-h-[877px] ">
+            <div class="container mx-auto bg-black sm:-mt-24 -m-20  sm:pt-36 pt-14 2xl:pb-[6.5rem] lg:pb-[5.5rem] md:pb-[3.375rem] sm:pb-[1.375rem] pb-[1.563rem] min-h-[490px] md:min-h-[877px]">
                 <!-- Hero Section Start Here -->
-                    <div class=" md:mt-[0px] box-border">
-                        <div class="main heading mt-36" >
-                            <h1 class="2xl:text-[20rem] 2xl:leading-[20rem] xl:text-[18rem] xl:font-[270] xl:leading-[17rem] mt-5 lg:text-[22rem] lg:leading-[22rem] md:text-[12rem] md:leading-[12rem] sm:text-[10rem] sm:leading-[10rem] text-[4rem] leading-[4rem] text-white font-[Signifier] font-[300] sm:mb-8 sm:pb-0 pb-4 ">About</h1>
+                    <div class="md:mt-[0px] box-border">
+                        <div class="main heading 2xl:mt-[8.5rem] lg:mt-[7.5rem] md:mt-[6.5rem] sm:mt-[3.1rem] mt-[7.5rem]" >
+                            <h1 class="font-[Signifier] xl:font-[300] 2xl:text-[20rem] 2xl:leading-[20rem] xl:text-[18rem] xl:font-[270] xl:leading-[17rem] lg:text-[14rem] lg:leading-[14rem] lg:font-[275] md:text-[12rem] md:leading-[12rem] md:font-[270] sm:text-[10rem] sm:leading-[10rem] sm:font-[270] text-[3.75rem] leading-[3.75rem] font-[230] text-white  2xl:mt-5 2xl:pb-0 xl:mt-36 lg:mt-0 xl:pb-2 lg:pb-0 lg:mb-8 md:mb-0 sm:mb-4 pb-8 ">About</h1>
                         </div>
-                        <div class="text-white lg:text-4xl lg:leading-[3.125rem] text-2xl leading-normal font-[signifier] font-[100] sm:pt-2 pt-0 pb-40">
+                        <div class="font-[signifier] text-white font-[100] lg:text-4xl lg:leading-[3.125rem] md:text-[2.25rem] md:leading-[3.125rem] sm:text-[1.875rem] sm:leading-[2.563rem] text-[1.5rem] leading-[2.063rem] pt-0 pb-40">
                             <h3 class="mb-7">Yup, we make software.</h3>
-                            <h3>But we’re also here to help everyone we interact with <br class="hidden lg:block">
-                                live a better, more fulfilling life.</h3>
+                            <p class="xl:pt-[0.106rem] lg:pt-[0.188rem] md:pt-[0.240rem] sm:pt-[0.195rem] lg:text-4xl lg:leading-[3.125rem] md:text-[2.25rem] md:leading-[3.125rem] sm:text-[1.875rem] sm:leading-[2.563rem] text-[1.5rem] leading-[2.063rem] leading-[2.063rem] pt-[3px]">But we’re also here to help everyone we interact with <br class="hidden lg:block">
+                                live a better, more fulfilling life.</p>
                         </div>
                     </div>
                 <!-- Hero Section Start Here -->
@@ -108,84 +106,90 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="relative z-10 pb-6 font-[serif] text-5xl text-white md:text-7xl font-[100] sm:pb-12 lg:pb-24">
-                        Our core values
+                    <div class="relative z-10 pb-6 font-[signifier] text-5xl text-white md:text-7xl font-[100] sm:pb-12 lg:pb-24">
+                        <h3>Our core values</h3>
                     </div>
-                    <div class="relative z-10 md:pl-8 md:pr-16 lg:pl-12 lg:pr-24 xl:pl-12 xl:pr-32 2xl:pl-28 2xl:pr-48">
-                        <div class="2xl:pr-28 pr-28">
+                    <div class=" z-10 md:pl-8 md:pr-16 lg:pl-12 lg:pr-24 xl:pl-12 xl:pr-32 2xl:pl-28 2xl:pr-48">
+                        <div class="2xl:pr-28 pr-0">
                             <div class="py-6 lg:py-8">
-                                <div>
-                                    <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-serif font-[100] pb-4 lg:pb-8">
-                                        <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">01</span>
-                                        Trust comes first
-                                    </h3>
-                                    <p class="leading-loose md:leading-loose text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 text-base md:text-lg">
-                                        Deciding to do business together means deciding to extend mutual trust. No amount of due diligence can remove the uncertainty from a new relationship; trusting someone is a leap of faith, and we want to work with people who have the courage to take that leap with us. With trust as a foundation, we extend the presumption of good faith in all interactions, and expect it in return.
-                                    </p>
-                                </div>
+                                <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-[signifier] font-[100] pb-4 lg:pb-8">
+                                    <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">01</span>
+                                    Trust comes first
+                                </h3>
+                                <p class="text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 2xl:text-[1.125rem] 2xl:leading-[2.125rem] 
+                                xl:text-[1.125rem] xl:leading-[2.125rem] lg:text-[1.125rem] lg:leading-[2.125rem] md:text-[1.125rem] md:leading-[2.125rem]">
+                                    Deciding to do business together means deciding to extend mutual trust. No amount of due diligence can remove the uncertainty from a new relationship; trusting someone is a leap of faith, and we want to work with people who have the courage to take that leap with us. With trust as a foundation, we extend the presumption of good faith in all interactions, and expect it in return.
+                                </p>
                             </div>
                         </div>
                         <div class="py-6 lg:py-8">
-                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-serif font-[100] pb-4 lg:pb-8">
+                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-[signifier] font-[100] pb-4 lg:pb-8">
                                 <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">02</span>
                                 Empathize relentlessly
                             </h3>
-                            <p class="leading-loose md:leading-loose text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 text-base md:text-lg">
-                                People-first is business-first, and there’s a direct line between practicing empathy and building an extraordinary company. We embody this value through active listening, giving space, responding with intention, and pushing through surface conversations to the heart of the matter. When your goal is to understand and care for someone, uncomfortable conversations become opportunities for mutual growth.
+                            <p class="text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 2xl:text-[1.125rem] 2xl:leading-[2.125rem] 
+                            xl:text-[1.125rem] xl:leading-[2.125rem] lg:text-[1.125rem] lg:leading-[2.125rem] md:text-[1.125rem] md:leading-[2.125rem]">
+                                People-first is business-first, and there’s a direct line between practicing empathy and building an extraordinary company. We embody this value through active listening, giving space, responding  with intention, and pushing through surface conversations to the heart of the matter. When your goal is to understand and care for  someone, uncomfortable conversations become opportunities for  mutual growth.
                             </p>
                         </div>
                         <div class="py-6 lg:py-8">
-                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-serif font-[100] pb-4 lg:pb-8">
+                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-[signifier] font-[100] pb-4 lg:pb-8">
                                 <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">03</span>
                                 Practice benevolent ambition
                             </h3>
-                            <p class="leading-loose md:leading-loose text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 text-base md:text-lg">
-                                We strive to better ourselves not to hoard a bigger piece of the pie, but to pay it forward — and inspire others to do the same. We know that the mentoring process benefits the mentor as much as the mentee. Similarly, our apprenticeships, conference talks, and open-source work help strengthen our community, while giving us a venue for keeping our skills sharp and our minds engaged.
+                            <p class="text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 2xl:text-[1.125rem] 2xl:leading-[2.125rem] 
+                            xl:text-[1.125rem] xl:leading-[2.125rem] lg:text-[1.125rem] lg:leading-[2.125rem] md:text-[1.125rem] md:leading-[2.125rem]">
+                                We strive to better ourselves not to hoard a bigger piece of the pie, but to pay it forward — and inspire others to do the same. We know that the mentoring process benefits the mentor as much as the mentee. Similarly, our apprenticeships, conference talks, and open-source  work help strengthen our community, while giving us a venue for keeping our skills sharp and our minds engaged.
                             </p>
                         </div>
                         <div class="py-6 lg:py-8">
-                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-serif font-[100] pb-4 lg:pb-8">
+                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-[signifier] font-[100] pb-4 lg:pb-8">
                                 <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">04</span>
                                 Be kind. Speak truth. Don’t wait.
                             </h3>
-                            <p class="leading-loose md:leading-loose text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 text-base md:text-lg">
-                                Our team hails from all over, including the Midwest, but Midwest Nice isn’t how we roll. We’re kind and thoughtful, but we strive to tell the truth, even if it might not be easy. There’s a time to be light and airy, and there’s a time to pull someone aside and level with them about something important. The longer you wait, the harder it’ll get, so be direct, be specific, and do it right now.
+                            <p class="text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 2xl:text-[1.125rem] 2xl:leading-[2.125rem] 
+                            xl:text-[1.125rem] xl:leading-[2.125rem] lg:text-[1.125rem] lg:leading-[2.125rem] md:text-[1.125rem] md:leading-[2.125rem]">
+                                Our team hails from all over, including the Midwest, but Midwest Nice isn’t how we roll. We’re  kind and thoughtful, but we strive to tell the truth, even if it might not be easy. There’s a time to be light and airy, and there’s a time to pull someone aside and level with them about something important. The longer you wait, the harder it’ll get, so be  direct, be specific,and do it right now.
                             </p>
                         </div>
                         <div class="py-6 lg:py-8">
-                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-serif font-[100] pb-4 lg:pb-8">
+                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-[signifier] font-[100] pb-4 lg:pb-8">
                                 <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">05</span>
                                 Cancel hustle culture
                             </h3>
-                            <p class="leading-loose md:leading-loose text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 text-base md:text-lg">
-                                Our society’s reverence for “hard work” needs to be put to bed once and for all. Work is an essential part of life, but there’s no rule that says it has to be painful. That “first to arrive, last to leave” person should get a therapist or a dog, not a trophy. We aspire higher: show up, put in a good and focused day’s work, get on to something else, then show up the next day rested and ready. If you think a 3 a.m. email is a sign of dedication, you’re probably not a good fit for Tighten, as an employee or a client.
+                            <p class="text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 2xl:text-[1.125rem] 2xl:leading-[2.125rem] 
+                            xl:text-[1.125rem] xl:leading-[2.125rem] lg:text-[1.125rem] lg:leading-[2.125rem] md:text-[1.125rem] md:leading-[2.125rem]">
+                                Our society’s reverence for “hard work” needs to be put to bed once and for all. Work is an essential part of life, but there’s no rule  that says it has to be painful. That “first to arrive, last  to leave” person should get a therapist or a dog, not a trophy. We aspire higher:  show up, put  in a good and focused day’s work, get on to something else, then show up the next day rested and ready. If you think a 3 a.m. email is a sign of dedication, you’re probably not a  good fit for Tighten, as an employee or a client.
                             </p>
                         </div>
                         <div class="py-6 lg:py-8">
-                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-serif font-[100] pb-4 lg:pb-8">
+                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-[signifier] font-[100] pb-4 lg:pb-8">
                                 <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">06</span>
                                 Weird means interesting
                             </h3>
-                            <p class="leading-loose md:leading-loose text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 text-base md:text-lg">
+                            <p class="text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 2xl:text-[1.125rem] 2xl:leading-[2.125rem] 
+                            xl:text-[1.125rem] xl:leading-[2.125rem] lg:text-[1.125rem] lg:leading-[2.125rem] md:text-[1.125rem] md:leading-[2.125rem]">
                                 Tighten Slack is bursting with flavor, because we actively recruit people who add spice to our lives. Work is way more fun when you’re surrounded by fabulous weirdos who feel comfortable bringing their whole selves to work, even (especially) the nerdy parts. We love it when they are willing to teach us about their passions, and we make space for this exchange of ideas on company time.
                             </p>
                         </div>
                         <div class="py-6 lg:py-8">
-                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-serif font-[100] pb-4 lg:pb-8">
+                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-[signifier] font-[100] pb-4 lg:pb-8">
                                 <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">07</span>
                                 You’ve already made it
                             </h3>
-                            <p class="leading-loose md:leading-loose text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 text-base md:text-lg">
+                            <p class="text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 2xl:text-[1.125rem] 2xl:leading-[2.125rem] 
+                            xl:text-[1.125rem] xl:leading-[2.125rem] lg:text-[1.125rem] lg:leading-[2.125rem] md:text-[1.125rem] md:leading-[2.125rem]">
                                 Being an expert doesn’t mean having all the answers. It means having the experience, understanding, and confidence to ask great questions and apply your knowledge creatively. When an unknown term or acronym pops up in conversation, don’t let it slide because you think asking for clarification might make you look foolish. Ensuring a shared understanding is far more crucial than proving you’re smart. We already know that about you.
                             </p>
                         </div>
                         <div class="py-6 lg:py-8">
-                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-serif font-[100] pb-4 lg:pb-8">
-                                <span class="hidden sm:inline font-[Pitch-Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">08</span>
+                            <h3 class="text-3xl lg:text-4xl text-[#EEAA09] font-[signifier] font-[100] pb-4 lg:pb-8">
+                                <span class="hidden sm:inline font-[Pitch Sans] word-spacing-tight font-semibold text-base text-gray-400 w-12">08</span>
                                 Wellness is a collective pursuit
                             </h3>
-                            <p class="leading-loose md:leading-loose text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 text-base md:text-lg">
-                                Sometimes it’s easier to help someone else than to help yourself. Rather than fighting this perverse tendency, we leverage it by normalizing the instinct to care for and look after our peers. When we notice someone is struggling, we check in with them, even as we respect their privacy and autonomy. Whether you’ve got the flu or you’re having a bad mental health day, the prescription is the same: Take a break, restore yourself, and return to work when you’re feeling more whole.
+                            <p class="text-[#D1D1D1] md:pl-8 lg:pl-12 xl:pl-20 2xl:text-[1.125rem] 2xl:leading-[2.125rem] 
+                            xl:text-[1.125rem] xl:leading-[2.125rem] lg:text-[1.125rem] lg:leading-[2.125rem] md:text-[1.125rem] md:leading-[2.125rem]">
+                                Sometimes it’s easier to help someone else than to help yourself. Rather than fighting this  perverse tendency, we leverage it by  normalizing the instinct to care for and look after our peers. When we notice someone is struggling, we check in with them, even as we respect their privacy and autonomy. Whether you’ve got the flu or you’re having a bad mental health day, the prescription is the  same: Take a break, restore yourself, and return to work when you’re feeling more whole.
                             </p>
                         </div>
                     </div>
@@ -198,25 +202,21 @@
         <div class="container-fluid bg-black text-white px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-36">
             <div class="container mx-auto">
                 <div class="max-w-screen-2xl mx-auto">
-                    <h1 class="w-full text-7xl md:text-8xl lg:text-[10rem] font-[signifier] font-[200] mt-10 mb-10 md:mb-16 lg:mb-20">
+                    <h1 class="w-full text-7xl md:text-8xl lg:text-[10rem] font-[signifier] font-[200] 2xl:mt-0 mt-10 mb-10 md:mb-16 lg:mb-20">
                         This is us.
                     </h1>
                     <div class="flex justify-end">
                         <div class="font-[signifier] text-3xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-[100]  w-full md:w-3/4 lg:w-2/3">
-                            <p>Cenitoria, Nohemi, Anthony, Sara, Alison, Andrew, Marje, Marcy, Keith, Anna, and 18 other clever folks.</p>
-                            <div class="flex space-x-6 md:space-x-10 mt-12">
+                            <p>Cenitoria, Nohemi, Anthony, Sara, Alison, Andrew, Marje, Marcy, Keith, Anna, Miky, Jara and 18 other clever folks.</p>
+                            <div class="flex space-x-6 md:space-x-10 2xl:mt-[4rem] lg:mt-[6rem]">
                                 <div class="flex">
-                                    <a class="rounded-full" href="./team.html">
-                                        <div class=" font-mono text-sm md:text-base text-black hover:bg-white duration-300 word-spacing-tight font-bold tracking-widest rounded-full py-3 px-6 uppercase leading-none bg-yellow-400  box-border">
-                                            <span class="hidden sm:inline">Meet </span>Our Team
-                                        </div>
+                                    <a href="./team.html" class="font-mono 2xl:text-[1rem] 2xl:leading-[1.5rem] text-sm md:text-base text-black hover:bg-white duration-300 tracking-[0.125rem] font-bold tracking-widest rounded-full py-3 px-8 uppercase leading-none bg-[#FFBC00]  box-border" >
+                                        <span class="hidden sm:inline">Meet </span>Our Team
                                     </a>
                                 </div>
                                 <div class="flex">
-                                    <a class="rounded-full" href="./team.html">
-                                        <div class=" font-mono text-sm md:text-base text-black hover:bg-white duration-300 word-spacing-tight font-bold tracking-widest rounded-full py-3 px-6 uppercase leading-none bg-yellow-400  box-border">
-                                            <span class="hidden sm:inline">Work with us</span>
-                                        </div>
+                                    <a href="./team.html" class="font-mono text-sm md:text-base text-black hover:bg-white duration-300 tracking-[0.125rem] font-bold tracking-widest rounded-full py-3 px-8 uppercase leading-none bg-[#FFBC00] box-border">
+                                        <span class="hidden sm:inline">Work with us</span>
                                     </a>
                                 </div>
                             </div>
@@ -234,51 +234,57 @@
                     <h1 class="text-5xl md:text-7xl font-[signifier] font-[100] text-white mt-6 sm:mt-12 mb-12 sm:mb-16 md:mb-24">Community initiatives</h1>
                 </div>
                 <div class="grid gap-12 sm:grid-cols-3 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16 ">
+                    <!-- Scholarships -->
                     <div class="group cursor-pointer flex flex-col mb-8 text-white">
                         <a href="https://laraconscholarship.com/" class="transition ease-in-out duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-blue-500/20">
                             <div class="flex flex-col justify-end relative overflow-hidden aspect-w-1 aspect-h-1">
                                 <img src="./assets/images/About-img/pattern-diamond-blue.png" alt="" />
                                 <div class="absolute top-auto bottom-0 left-0 right-0 h-2/3 opacity-40 bg-gradient-to-b from-transparent to-black"></div>
-                                <div class="font-serif font-light absolute flex flex-col justify-end text-white text-4xl leading-tight sm:text-2xl sm:leading-tight xl:text-4xl xl:leading-tight mx-1 p-5 sm:p-3 lg:p-5 xl:p-8 z-10">
-                                    Laracon <br> Scholarships
+                                <div class="absolute flex flex-col justify-end mx-1 p-5 sm:p-3 lg:p-5 xl:p-8 z-10">
+                                    <p class="font-[signifier] font-[300] text-white 2xl:text-[2.25rem] 2xl:leading-[2.813rem] text-4xl leading-tight sm:text-2xl sm:leading-tight xl:text-4xl xl:leading-tight"> Laracon <br class="2xl:hidden block"> Scholarships </p>
                                 </div>
                             </div>
                         </a>
-                        <div class="text-charcoal-20 mt-4 md:mt-6 xl:mt-10 leading-loose sm:text-sm sm:leading-loose lg:text-base lg:leading-loose 2xl:text-lg 2xl:leading-loose px-4">
-                            <a href="https://laraconscholarship.com/" aria-label="Laracon Scholarships" class="block">
-                                We gather the community to provide educational opportunities to all, regardless of cost.
+
+                        <div class="text-charcoal-20 mt-4 md:mt-6 xl:mt-9 px-4">
+                            <a href="https://laraconscholarship.com/" class="block text-[#c0c0c0] font-[400] 2xl:text-[1.225rem] 2xl:leading-[2.125rem] xl:text-[1.063rem] xl:leading-[1.875]">
+                                We gather the community to provide educational opportunities <br class="2xl:hidden xl:block hidden"> to all, regardless of cost.
                             </a>
                         </div>
                     </div>
-                    <div class="group cursor-pointer flex-1 flex flex-col mb-8 text-white">
+
+                    <!-- Program -->
+                    <div class="group cursor-pointer flex flex-col mb-8 text-white">
                         <a href="https://laraconscholarship.com/" class="transition ease-in-out duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-green-500/20">
                             <div class="flex flex-col justify-end overflow-hidden relative aspect-w-1 aspect-h-1">
                                 <img src="./assets/images/About-img/pattern-circle-green.png" alt="" />
                                 <div class="absolute top-auto bottom-0 left-0 right-0 h-2/3 opacity-40 bg-gradient-to-b from-transparent to-black"></div>
-                                <div class="font-serif font-light absolute flex flex-col justify-end text-white text-4xl leading-tight sm:text-2xl sm:leading-tight xl:text-4xl xl:leading-tight mx-1 p-5 sm:p-3 lg:p-5 xl:p-8 ">
-                                    Apprenticeship <br> Program
+                                <div class="absolute flex flex-col justify-end mx-1 p-5 sm:p-3 lg:p-5 xl:p-8 "> 
+                                    <p class="font-[signifier] font-[300] text-white 2xl:text-[2.25rem] 2xl:leading-[2.813rem] text-4xl leading-tight sm:text-2xl sm:leading-tight xl:text-4xl xl:leading-tight"> Apprenticeship <br  class="2xl:hidden block"> Program</p>
                                 </div>
                             </div>
                         </a>
-                        <div class="text-charcoal-20 mt-4 md:mt-6 xl:mt-10 leading-loose sm:text-sm sm:leading-loose lg:text-base lg:leading-loose 2xl:text-lg 2xl:leading-loose px-4">
-                            <a href="https://laraconscholarship.com/" class="block">
-                                We work to take an active part in building a pipeline of new programmers.
+                        <div class="text-charcoal-20 mt-4 md:mt-6 xl:mt-9 px-4">
+                            <a href="https://laraconscholarship.com/" class="block text-[#c0c0c0] font-[400] 2xl:text-[1.225rem] 2xl:leading-[2.125rem] xl:text-[1.063rem] xl:leading-[1.875]">
+                                We work to take an active part in <br class="2xl:hidden xl:block lg:hidden"> building a <br class="2xl:block hidden "> pipeline <br class="2xl:hidden hidden"> of new <br class="2xl:hidden xl:block lg:hidden"> programmers.
                             </a>
                         </div>
                     </div>
-                    <div class="group cursor-pointer flex-1 flex flex-col mb-8 text-white">
+
+                    <!-- Onramp -->
+                    <div class="group cursor-pointer flex flex-col mb-8 text-white">
                         <a href="https://laraconscholarship.com/" class="transition ease-in-out duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-pink-500/20">
-                            <div class="flex flex-col justify-end overflow-hidden relative aspect-w-1 aspect-h-1">
-                                <img src="./assets/images/About-img/pattern-torque-pink.png" alt="" />
+                            <div class="flex flex-col justify-end overflow-hidden relative ">
+                                <img src="./assets/images/About-img/pattern-torque-pink.png" alt="pink-img" />
                                 <div class="absolute top-auto bottom-0 left-0 right-0 h-2/3 opacity-40 bg-gradient-to-b from-transparent to-black"></div>
-                                <div class="font-serif font-light absolute flex flex-col justify-end text-white text-4xl leading-tight sm:text-2xl sm:leading-tight xl:text-4xl xl:leading-tight mx-1 p-5 sm:p-3 lg:p-5 xl:p-8 ">
-                                    ONRAMP
+                                <div class="absolute flex flex-col justify-end  mx-1 p-5 sm:p-3 lg:p-5 xl:p-8 ">
+                                    <p class="font-[signifier] font-[300] text-white 2xl:text-[2.25rem] 2xl:leading-[2.813rem] text-4xl leading-tight sm:text-2xl sm:leading-tight xl:text-4xl xl:leading-tight"> Onramp </p>
                                 </div>
                             </div>
                         </a>
-                        <div class="text-charcoal-20 mt-4 md:mt-6 xl:mt-10 leading-loose sm:text-sm sm:leading-loose lg:text-base lg:leading-loose 2xl:text-lg 2xl:leading-loose px-4">
-                            <a href="https://laraconscholarship.com/" class="block">
-                                We work to take an active part in building a pipeline of new programmers.
+                        <div class="text-charcoal-20 mt-4 md:mt-6 xl:mt-9 px-4">
+                            <a href="https://laraconscholarship.com/" class="block text-[#c0c0c0] font-[400] 2xl:text-[1.225rem] 2xl:leading-[2.125rem] xl:text-[1.063rem] xl:leading-[1.875]">
+                                Our site Onramp helps  developers <br class="2xl:hidden xl:block lg:hidden"> learn Laravel <br class="2xl:hidden xl:hidden lg:block"> as easily and <br class="2xl:hidden xl:block lg:hidden"> effectively <br class="2xl:hidden xl:hidden lg:block"> as possible — for free.
                             </a>
                         </div>
                     </div>
@@ -290,11 +296,29 @@
                 <div class="w-full sm:w-3/4 text-4xl md:text-5xl lg:text-6xl leading-tight-2 md:leading-tight-2 lg:leading-tight-2 font-[signifier] font-extralight mb-10 sm:mb-20">
                     We write, speak, and podcast on technology and company culture.
                 </div>
-                <div class="flex">
-                    <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <div class="flex">
                         <div>
-                            <div class="flex items-center justify-center transition duration-300 sm:grayscale sm:group-hover:grayscale-0 p-16 sm:p-6 xl:p-12 2xl:p-20 sm:opacity-50 sm:group-hover:opacity-100">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 93 93" class="w-full h-full"><defs><clipPath id="clip-path-tpt"><rect width="93" height="93" style="fill:none"></rect></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g style="clip-path:url(#clip-path-tpt)"><path d="M46.5,2A44.5,44.5,0,1,1,2,46.5,44.5,44.5,0,0,1,46.5,2" style="fill:#e6e6e6"></path></g><polyline points="9.5 23.5 74.5 23.5 74.5 81.5" style="fill:none;stroke:#ff6e52;stroke-miterlimit:10;stroke-width:4px"></polyline><g style="clip-path:url(#clip-path-tpt)"><line x1="75" y1="42.5" x2="2.6" y2="42.5" style="fill:none;stroke:#ff6e52;stroke-miterlimit:10;stroke-width:3.5px"></line><circle cx="46.5" cy="46.5" r="44.5" style="fill:none;stroke:#ff6e52;stroke-miterlimit:10;stroke-width:4px"></circle><path d="M64.6,28.1h0A2.1,2.1,0,0,1,62.4,26V20.1A2.1,2.1,0,0,1,64.6,18a2.1,2.1,0,0,1,2.1,2.1V26a2.1,2.1,0,0,1-2.1,2.1" style="fill:#666ef5"></path><path d="M56.6,28.1h0A2.1,2.1,0,0,1,54.4,26V20.1A2.1,2.1,0,0,1,56.6,18a2.1,2.1,0,0,1,2.1,2.1V26a2.1,2.1,0,0,1-2.1,2.1" style="fill:#666ef5"></path></g><line x1="16" y1="23" x2="16" y2="78" style="fill:none;stroke:#ff6e52;stroke-miterlimit:10;stroke-width:3.5px"></line><polygon points="35.9 32.6 35.9 33.5 37 33.5 37 34.4 35.9 34.4 35.9 36.2 34.5 36.2 34.5 31.6 37.7 31.6 37.7 32.6 35.9 32.6" style="fill:#666ef5"></polygon><g style="clip-path:url(#clip-path-tpt)"><path d="M40.3,32.9a.3.3,0,0,0-.3-.3h-.4v1H40c.2,0,.3,0,.3-.2Zm.4,3.3c-.2,0-.3-.3-.3-.7v-.7a.3.3,0,0,0-.3-.3h-.5v1.7H38.1V31.6h2.3c.9,0,1.3.5,1.3,1.1v.5a.8.8,0,0,1-.6.8.8.8,0,0,1,.7.8v.7a.8.8,0,0,0,.2.7H40.7Z" style="fill:#666ef5"></path></g><rect x="42.3" y="31.6" width="1.5" height="4.66" style="fill:#666ef5"></rect><g style="clip-path:url(#clip-path-tpt)"><path d="M46.8,33.2c0-.4-.1-.5-.5-.5h-.4v2.4h.4c.4,0,.5-.1.5-.5Zm-.4,3H44.5V31.6h1.9c1.4,0,1.9.7,1.9,1.7v1.3c0,1-.5,1.6-1.9,1.6" style="fill:#666ef5"></path></g><path d="M50.4,33.1l-.3,1.5h.6Zm.7,3.1-.2-.7h-1l-.2.7H48.4l1.3-4.6h1.6l1.3,4.6Z" style="fill:#666ef5"></path><polygon points="55.1 34.4 55.1 36.2 53.6 36.2 53.6 34.4 52.2 31.6 53.7 31.6 54.4 33.2 55 31.6 56.5 31.6 55.1 34.4" style="fill:#666ef5"></polygon><g style="clip-path:url(#clip-path-tpt)"><path d="M32.5,64.7a.3.3,0,0,0-.3-.3h-.3v1.1h.3a.3.3,0,0,0,.3-.3Zm.2,1.8h-.8v1.6H30.2V63.2h2.4a1.4,1.4,0,0,1,1.6,1.2v.7a1.4,1.4,0,0,1-1.4,1.4h-.1" style="fill:#ff6e52"></path></g><polygon points="34.6 68.1 34.6 63.2 38.2 63.2 38.2 64.5 36.3 64.5 36.3 65.1 37.5 65.1 37.5 66.1 36.3 66.1 36.3 66.8 38.2 66.8 38.2 68.2 34.6 68.1" style="fill:#ff6e52"></polygon><g style="clip-path:url(#clip-path-tpt)"><path d="M41,64.6c0-.2-.1-.2-.3-.2h-.3v1h.3a.3.3,0,0,0,.3-.3Zm.4,3.5c-.3,0-.4-.4-.4-.7v-.7a.4.4,0,0,0-.4-.4h-.2v1.8H38.6V63.2h2.5c.9,0,1.6.4,1.6,1.3v.3a1,1,0,0,1-.8,1,.8.8,0,0,1,.8.9h0v.7a1,1,0,0,0,.2.7Z" style="fill:#ff6e52"></path><path d="M45.2,68.3a1.8,1.8,0,0,1-2.1-1.9V64.9c0-1,.7-1.8,2.1-1.8a1.7,1.7,0,0,1,2,1.5h0v.5H45.7v-.4c0-.2-.1-.4-.3-.4h-.1c-.3,0-.4.1-.4.5v1.6c0,.3.1.5.4.5a.4.4,0,0,0,.4-.4h0v-.5h1.5v.5a1.8,1.8,0,0,1-1.9,1.7h-.1" style="fill:#ff6e52"></path></g><polygon points="47.7 68.1 47.7 63.2 51.3 63.2 51.3 64.5 49.5 64.5 49.5 65.1 50.7 65.1 50.7 66.1 49.5 66.1 49.5 66.8 51.3 66.8 51.3 68.2 47.7 68.1" style="fill:#ff6e52"></polygon><polygon points="54.6 68.1 53.6 66.5 53.3 66 53.3 68.2 51.8 68.2 51.8 63.2 53.3 63.2 54.3 64.9 54.5 65.3 54.5 63.2 56 63.2 56 68.1 54.6 68.1" style="fill:#ff6e52"></polygon><polygon points="59.3 64.5 59.3 68.1 57.5 68.1 57.5 64.5 56.4 64.5 56.4 63.2 60.5 63.2 60.5 64.5 59.3 64.5" style="fill:#ff6e52"></polygon><polygon points="39.9 71 39.9 74.6 38.2 74.6 38.2 71 37 71 37 69.7 41.1 69.7 41.1 71 39.9 71" style="fill:#ff6e52"></polygon><rect x="41.5" y="69.7" width="1.8" height="4.93" style="fill:#ff6e52"></rect><polygon points="47.8 74.6 47.8 72 47.6 72.7 47.1 74.6 45.8 74.6 45.4 72.7 45.2 72 45.2 74.6 43.7 74.6 43.7 69.7 46.1 69.7 46.5 71.5 46.6 72 46.8 71.5 47.2 69.7 49.5 69.7 49.5 74.6 47.8 74.6" style="fill:#ff6e52"></polygon><polygon points="50 74.6 50 69.7 53.6 69.7 53.6 70.9 51.8 70.9 51.8 71.6 53 71.6 53 72.6 51.8 72.6 51.8 73.3 53.7 73.3 53.7 74.6 50 74.6" style="fill:#ff6e52"></polygon><g style="clip-path:url(#clip-path-tpt)"><path d="M32.1,78.5H32c-.3-.1-.8-.5-.1-1.1h0l2.1-.2c3.7-.3,7.3-.5,11-.6h9.5l3.3.5c2.2.3,1.3.5-.1.6l-3.3.2H44.8l-10.7.6Z" style="fill:#ff8069"></path></g><polygon points="26.8 55.2 26.8 61 24 61 24 55.2 22.1 55.2 22.1 53 28.7 53 28.7 55.1 26.8 55.2" style="fill:#666ef5"></polygon><polygon points="37.5 61 34.7 61 33.9 57.4 33.1 61 30.5 61 28.7 53 31.6 53 32.3 57.2 33 53 35.3 53 36 57.2 36.8 53 39.3 53 37.5 61" style="fill:#666ef5"></polygon><polygon points="39.6 61 39.6 53 45.5 53 45.5 55 42.5 55 42.5 56.1 44.4 56.1 44.4 57.7 42.4 57.7 42.4 58.8 45.4 58.8 45.4 61 39.6 61" style="fill:#666ef5"></polygon><polygon points="50.7 61 49.1 58.4 48.7 57.5 48.7 61 46.2 61 46.2 53 48.5 53 50.2 55.7 50.5 56.4 50.5 53 53 53 53 61 50.7 61" style="fill:#666ef5"></polygon><polygon points="58.3 55.2 58.3 61 55.5 61 55.5 55.2 53.6 55.2 53.6 53 60.2 53 60.2 55.1 58.3 55.2" style="fill:#666ef5"></polygon><polygon points="65.5 58.1 65.5 61 62.6 61 62.6 58 60.3 53 63.3 53 64.2 55.5 65.1 53 67.9 53 65.5 58.1" style="fill:#666ef5"></polygon></g></g></svg>
+                            <div class="flex items-center justify-center transition duration-300 grayscale hover:grayscale-0 p-0 sm:p-6 xl:p-12 2xl:p-20 sm:opacity-50 sm:group-hover:opacity-100 scale-100 hover:scale-105 cursor-pointer bg-[#1A1A1A]">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 93 93" class="w-full h-full">
+                                    <defs><clipPath id="clip-path-tpt"><rect width="93" height="93" style="fill:none"></rect></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g style="clip-path:url(#clip-path-tpt)"><path d="M46.5,2A44.5,44.5,0,1,1,2,46.5,44.5,44.5,0,0,1,46.5,2" style="fill:#e6e6e6"></path></g><polyline points="9.5 23.5 74.5 23.5 74.5 81.5" style="fill:none;stroke:#ff6e52;stroke-miterlimit:10;stroke-width:4px"></polyline><g style="clip-path:url(#clip-path-tpt)"><line x1="75" y1="42.5" x2="2.6" y2="42.5" style="fill:none;stroke:#ff6e52;stroke-miterlimit:10;stroke-width:3.5px"></line><circle cx="46.5" cy="46.5" r="44.5" style="fill:none;stroke:#ff6e52;stroke-miterlimit:10;stroke-width:4px"></circle><path d="M64.6,28.1h0A2.1,2.1,0,0,1,62.4,26V20.1A2.1,2.1,0,0,1,64.6,18a2.1,2.1,0,0,1,2.1,2.1V26a2.1,2.1,0,0,1-2.1,2.1" style="fill:#666ef5"></path><path d="M56.6,28.1h0A2.1,2.1,0,0,1,54.4,26V20.1A2.1,2.1,0,0,1,56.6,18a2.1,2.1,0,0,1,2.1,2.1V26a2.1,2.1,0,0,1-2.1,2.1" style="fill:#666ef5"></path></g><line x1="16" y1="23" x2="16" y2="78" style="fill:none;stroke:#ff6e52;stroke-miterlimit:10;stroke-width:3.5px"></line><polygon points="35.9 32.6 35.9 33.5 37 33.5 37 34.4 35.9 34.4 35.9 36.2 34.5 36.2 34.5 31.6 37.7 31.6 37.7 32.6 35.9 32.6" style="fill:#666ef5"></polygon><g style="clip-path:url(#clip-path-tpt)"><path d="M40.3,32.9a.3.3,0,0,0-.3-.3h-.4v1H40c.2,0,.3,0,.3-.2Zm.4,3.3c-.2,0-.3-.3-.3-.7v-.7a.3.3,0,0,0-.3-.3h-.5v1.7H38.1V31.6h2.3c.9,0,1.3.5,1.3,1.1v.5a.8.8,0,0,1-.6.8.8.8,0,0,1,.7.8v.7a.8.8,0,0,0,.2.7H40.7Z" style="fill:#666ef5"></path></g><rect x="42.3" y="31.6" width="1.5" height="4.66" style="fill:#666ef5"></rect><g style="clip-path:url(#clip-path-tpt)"><path d="M46.8,33.2c0-.4-.1-.5-.5-.5h-.4v2.4h.4c.4,0,.5-.1.5-.5Zm-.4,3H44.5V31.6h1.9c1.4,0,1.9.7,1.9,1.7v1.3c0,1-.5,1.6-1.9,1.6" style="fill:#666ef5"></path></g><path d="M50.4,33.1l-.3,1.5h.6Zm.7,3.1-.2-.7h-1l-.2.7H48.4l1.3-4.6h1.6l1.3,4.6Z" style="fill:#666ef5"></path><polygon points="55.1 34.4 55.1 36.2 53.6 36.2 53.6 34.4 52.2 31.6 53.7 31.6 54.4 33.2 55 31.6 56.5 31.6 55.1 34.4" style="fill:#666ef5"></polygon><g style="clip-path:url(#clip-path-tpt)"><path d="M32.5,64.7a.3.3,0,0,0-.3-.3h-.3v1.1h.3a.3.3,0,0,0,.3-.3Zm.2,1.8h-.8v1.6H30.2V63.2h2.4a1.4,1.4,0,0,1,1.6,1.2v.7a1.4,1.4,0,0,1-1.4,1.4h-.1" style="fill:#ff6e52"></path></g><polygon points="34.6 68.1 34.6 63.2 38.2 63.2 38.2 64.5 36.3 64.5 36.3 65.1 37.5 65.1 37.5 66.1 36.3 66.1 36.3 66.8 38.2 66.8 38.2 68.2 34.6 68.1" style="fill:#ff6e52"></polygon><g style="clip-path:url(#clip-path-tpt)"><path d="M41,64.6c0-.2-.1-.2-.3-.2h-.3v1h.3a.3.3,0,0,0,.3-.3Zm.4,3.5c-.3,0-.4-.4-.4-.7v-.7a.4.4,0,0,0-.4-.4h-.2v1.8H38.6V63.2h2.5c.9,0,1.6.4,1.6,1.3v.3a1,1,0,0,1-.8,1,.8.8,0,0,1,.8.9h0v.7a1,1,0,0,0,.2.7Z" style="fill:#ff6e52"></path><path d="M45.2,68.3a1.8,1.8,0,0,1-2.1-1.9V64.9c0-1,.7-1.8,2.1-1.8a1.7,1.7,0,0,1,2,1.5h0v.5H45.7v-.4c0-.2-.1-.4-.3-.4h-.1c-.3,0-.4.1-.4.5v1.6c0,.3.1.5.4.5a.4.4,0,0,0,.4-.4h0v-.5h1.5v.5a1.8,1.8,0,0,1-1.9,1.7h-.1" style="fill:#ff6e52"></path></g><polygon points="47.7 68.1 47.7 63.2 51.3 63.2 51.3 64.5 49.5 64.5 49.5 65.1 50.7 65.1 50.7 66.1 49.5 66.1 49.5 66.8 51.3 66.8 51.3 68.2 47.7 68.1" style="fill:#ff6e52"></polygon><polygon points="54.6 68.1 53.6 66.5 53.3 66 53.3 68.2 51.8 68.2 51.8 63.2 53.3 63.2 54.3 64.9 54.5 65.3 54.5 63.2 56 63.2 56 68.1 54.6 68.1" style="fill:#ff6e52"></polygon><polygon points="59.3 64.5 59.3 68.1 57.5 68.1 57.5 64.5 56.4 64.5 56.4 63.2 60.5 63.2 60.5 64.5 59.3 64.5" style="fill:#ff6e52"></polygon><polygon points="39.9 71 39.9 74.6 38.2 74.6 38.2 71 37 71 37 69.7 41.1 69.7 41.1 71 39.9 71" style="fill:#ff6e52"></polygon><rect x="41.5" y="69.7" width="1.8" height="4.93" style="fill:#ff6e52"></rect><polygon points="47.8 74.6 47.8 72 47.6 72.7 47.1 74.6 45.8 74.6 45.4 72.7 45.2 72 45.2 74.6 43.7 74.6 43.7 69.7 46.1 69.7 46.5 71.5 46.6 72 46.8 71.5 47.2 69.7 49.5 69.7 49.5 74.6 47.8 74.6" style="fill:#ff6e52"></polygon><polygon points="50 74.6 50 69.7 53.6 69.7 53.6 70.9 51.8 70.9 51.8 71.6 53 71.6 53 72.6 51.8 72.6 51.8 73.3 53.7 73.3 53.7 74.6 50 74.6" style="fill:#ff6e52"></polygon><g style="clip-path:url(#clip-path-tpt)"><path d="M32.1,78.5H32c-.3-.1-.8-.5-.1-1.1h0l2.1-.2c3.7-.3,7.3-.5,11-.6h9.5l3.3.5c2.2.3,1.3.5-.1.6l-3.3.2H44.8l-10.7.6Z" style="fill:#ff8069"></path></g><polygon points="26.8 55.2 26.8 61 24 61 24 55.2 22.1 55.2 22.1 53 28.7 53 28.7 55.1 26.8 55.2" style="fill:#666ef5"></polygon><polygon points="37.5 61 34.7 61 33.9 57.4 33.1 61 30.5 61 28.7 53 31.6 53 32.3 57.2 33 53 35.3 53 36 57.2 36.8 53 39.3 53 37.5 61" style="fill:#666ef5"></polygon><polygon points="39.6 61 39.6 53 45.5 53 45.5 55 42.5 55 42.5 56.1 44.4 56.1 44.4 57.7 42.4 57.7 42.4 58.8 45.4 58.8 45.4 61 39.6 61" style="fill:#666ef5"></polygon><polygon points="50.7 61 49.1 58.4 48.7 57.5 48.7 61 46.2 61 46.2 53 48.5 53 50.2 55.7 50.5 56.4 50.5 53 53 53 53 61 50.7 61" style="fill:#666ef5"></polygon><polygon points="58.3 55.2 58.3 61 55.5 61 55.5 55.2 53.6 55.2 53.6 53 60.2 53 60.2 55.1 58.3 55.2" style="fill:#666ef5"></polygon><polygon points="65.5 58.1 65.5 61 62.6 61 62.6 58 60.3 53 63.3 53 64.2 55.5 65.1 53 67.9 53 65.5 58.1" style="fill:#666ef5"></polygon></g></g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mx-20">
+                        <div>
+                            <div class="flex items-center justify-center transition duration-300 grayscale scale-100 hover:scale-105 hover:grayscale-0 p-0 sm:p-6 xl:p-12 2xl:p-20 sm:opacity-50 sm:group-hover:opacity-100 bg-[#1A1A1A]">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <div class="flex items-center justify-center transition duration-300 grayscale hover:grayscale-0 p-0 sm:p-6 xl:p-12 2xl:p-20 sm:opacity-50 sm:group-hover:opacity-100 scale-100 hover:scale-105 cursor-pointer bg-[#1A1A1A]">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.5 306.1" class="w-full h-full">
+                                    <defs><clipPath id="clip-path-laravel-podcast" transform="translate(0 0)"><rect width="291.5" height="306.08" style="fill:none"/></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon points="87.1 125.4 63.8 112 63.5 204.1 138.3 247.2 138.3 226.3 86.9 196.7 87.1 125.4" style="fill:#ff0005"/><g style="clip-path:url(#clip-path-laravel-podcast)"><path d="M209.7,128.9l-47.2,27.3.3,92.1,23.3-13.5V202.2l23.9-13.8c20.6-11.9,31.2-29.8,31.2-46.7v-2.2c-.1-16.9-10.8-22.4-31.4-10.6M186,186.5V162.1l19.4-11.2c8.7-5,12.3-2.8,12.3,3.7v2.7c0,6.4-3.4,13-12,17.9Z" transform="translate(0 0)" style="fill:#ff0005"/><path d="M225.4,96.5l-66-38.2L111.2,82.4l13.9,11.7c9,.3,17.1,2.1,24.5,6.4,10,5.7,9.8,11.6,3.7,15.1l-1.8,1.1c-7,4.1-17,4-29-2.9A44.4,44.4,0,0,1,103.7,93L82.1,95.3C85.4,105.2,92.5,115,108,124c22.4,12.9,48.8,14.1,64.1,5.2l2.6-1.5c13.8-8,14.7-19.9-3.7-30.6-10.6-6.1-20.9-8.3-32.9-8.8l21.8-11,34.6,20c10,5.8,18.3,5.4,30.9-.8" transform="translate(0 0)" style="fill:#ff0005"/></g><polygon points="21.6 99.5 4.9 91.5 6.4 88.3 20.3 94.9 21.9 91.5 24.8 92.9 21.6 99.5" style="fill:#ff0005"/><path d="M23.3,70l5.5,4.8.8-1.2Zm11.4,6.5L32.1,75l-1.2,1.7,2.3,2-1.8,2.6L17.7,68.6,20,65.2l16.7,8.3Z" transform="translate(0 0)" style="fill:#ff0005"/><g style="clip-path:url(#clip-path-laravel-podcast)"><path d="M38.6,48.9c-.4-.4-.7-.4-1-.1l-.6.6L40.8,53l.6-.6c.2-.3.2-.6-.2-1Zm11.2,9.5c-.4.4-1.8-.5-2.6-1.3l-2.7-2.6a.9.9,0,0,0-1.2-.2l-.6.6,5.4,5.3-2.5,2.6L32.4,49.9l3.4-3.6a3.4,3.4,0,0,1,5,0l2.7,2.5a2.6,2.6,0,0,1,.6,2.7,2.6,2.6,0,0,1,2.7.5l2.6,2.5a7.9,7.9,0,0,0,2.5,1.7h0Z" transform="translate(0 0)" style="fill:#ff0005"/></g><path d="M58,34.2l3.6,6.3,1.2-.9ZM66.7,44l-2-2.2L63,43l1.5,2.6L62,47.5,53.1,31l3.3-2.4L69.6,41.9Z" transform="translate(0 0)" style="fill:#ff0005"/><polygon points="86.1 32.2 83.1 33.8 71.9 18.7 75.1 17.1 81.6 26.8 77.5 15.8 80.5 14.3 86.1 32.2" style="fill:#ff0005"/><polygon points="101.8 25.5 96.1 7.9 103.3 5.6 104.2 8.6 100.5 9.8 101.8 14 104.3 13.2 105.2 16 102.7 16.8 104.2 21.3 108 20.1 109 23.2 101.8 25.5" style="fill:#ff0005"/><polygon points="123 19.9 120.2 1.6 123.7 1.1 126 16.2 129.7 15.7 130.2 18.8 123 19.9" style="fill:#ff0005"/><g style="clip-path:url(#clip-path-laravel-podcast)"><path d="M168,4.4c.1-.6-.1-.8-.5-.9h-.9l-.7,5.8h.9c.4,0,.6-.2.7-.8Zm-1.1,7.7-1.3-.2-.9,6.9-3.6-.5L163.5,0l4.9.6a3.4,3.4,0,0,1,3,4.1l-.5,4.1c-.4,2.6-2.1,3.5-4,3.3" transform="translate(0 0)" style="fill:#ff0005"/><path d="M192.9,9.8a.9.9,0,0,0-.6-1.1,1,1,0,0,0-1.1.6L188,19.9a.8.8,0,0,0,.6,1,.7.7,0,0,0,1-.5ZM187.7,24a4.2,4.2,0,0,1-3.1-5.4l3.1-10.2a4.1,4.1,0,0,1,5.5-2.7,4.2,4.2,0,0,1,3.1,5.3l-3.1,10.2a4.1,4.1,0,0,1-5.5,2.8" transform="translate(0 0)" style="fill:#ff0005"/><path d="M216.7,20.1c.3-.7.3-1.2-.4-1.5l-.6-.4-5.5,11,.6.4c.6.3,1.1.1,1.4-.6Zm-7,12.4-4.1-2.1,8.3-16.5,4.1,2a4.1,4.1,0,0,1,1.9,5.8l-4.6,9c-1.2,2.5-3.5,2.8-5.6,1.8" transform="translate(0 0)" style="fill:#ff0005"/><path d="M229.3,44.9a4.3,4.3,0,0,1-1.1-6.3l6.1-8.3a4.4,4.4,0,0,1,6.4-.8,3.9,3.9,0,0,1,.7,5.8l-1.6,2.3-2.5-1.8,1.7-2.4a.8.8,0,0,0-.3-1.3.9.9,0,0,0-1.4.2L231,40.9a.9.9,0,0,0,.2,1.4c.6.4,1.1.3,1.4-.2l1.7-2.3,2.5,1.8-1.7,2.3c-1.5,2.1-3.8,2.6-5.8,1" transform="translate(0 0)" style="fill:#ff0005"/></g><path d="M255.6,50.1l-5.7,4.5,1,1Zm-8.5,10,1.9-2.3-1.4-1.5-2.4,1.9L243,55.9l15.1-11,2.8,2.9L249.6,62.6Z" transform="translate(0 0)" style="fill:#ff0005"/><g style="clip-path:url(#clip-path-laravel-podcast)"><path d="M260.5,76.9a4,4,0,0,1,1-6.1l1.3-.9,1.8,2.5-1.4,1a1.2,1.2,0,0,0-.4,1.7c.4.6,1,.6,1.7.2s1.6-2.3,2.2-4.2,1.3-4.7,3.2-6,4.7-1.5,6.4,1,.9,4.2-1.3,5.7l-1.3,1-1.8-2.6,1.5-1a1,1,0,0,0,.4-1.4,1.1,1.1,0,0,0-1.5-.2c-1.4,1-1.6,2.2-2.2,4.2s-1.4,4.7-3.3,6-4.9,1.2-6.3-.9" transform="translate(0 0)" style="fill:#ff0005"/></g><polygon points="286.5 90.8 272.7 97.4 271.2 94.2 284.9 87.6 283.8 85.3 286.7 83.9 290.5 91.7 287.6 93.1 286.5 90.8" style="fill:#ff0005"/><g style="clip-path:url(#clip-path-laravel-podcast)"><path d="M56.7,276.1c-2.9-2.2-3.5-5-1.6-7.5l.6-.7,3.3,2.5-.6.6a1.5,1.5,0,0,0,.3,2.1,1.2,1.2,0,0,0,1.9-.4c.7-.8.1-2.2-.5-3.9s-1.6-4.4,0-6.5,4.8-3.1,7.8-.8a5,5,0,0,1,1.2,7.1l-.5.6-3.2-2.5.4-.6a1.1,1.1,0,0,0-.1-1.7,1.2,1.2,0,0,0-1.8.3c-.6.8,0,2.2.6,3.8s1.6,4.5-.1,6.7a5.3,5.3,0,0,1-7.7.9" transform="translate(0 0)" style="fill:#ff0005"/></g><polygon points="75.6 287.9 83.5 272.2 92.5 276.8 90.8 280.2 86 277.8 84.7 280.5 87.7 282.1 86.2 285.1 83.2 283.5 81.7 286.4 86.4 288.8 84.6 292.5 75.6 287.9" style="fill:#ff0005"/><path d="M108.6,289l-2.6,5.4,1.7.5Zm-1.7,11.6.3-2.5-2.6-.8-1.1,2.3-4.1-1.2,8.3-15.9,5.3,1.6-1.6,17.8Z" transform="translate(0 0)" style="fill:#ff0005"/><g style="clip-path:url(#clip-path-laravel-podcast)"><path d="M132.6,305.9c-3.6-.4-5.5-2.5-5.2-5.6v-.9l4.1.4v.8a1.3,1.3,0,0,0,1.3,1.6c.9.1,1.3-.4,1.4-1.3s-1.1-1.9-2.4-3-3.7-3-3.5-5.6,2.5-5.1,6.3-4.8a5,5,0,0,1,4.7,5.5v.7l-4.1-.4v-.8a1.1,1.1,0,0,0-1-1.3,1.2,1.2,0,0,0-1.4,1.1c-.1,1.1,1.2,2,2.5,3s3.7,3,3.5,5.7a5.5,5.5,0,0,1-6.2,4.9" transform="translate(0 0)" style="fill:#ff0005"/><path d="M160.7,292.4a1.1,1.1,0,0,0-1.2-.9c-.5.1-1,.5-.9,1l.7,8.8a1.1,1.1,0,0,0,1.2.9,1,1,0,0,0,.9-1.1Zm.1,13.6c-3.3.3-6.1-1.5-6.3-4.5l-.7-8.3c-.3-3,2.1-5.2,5.4-5.5s6.1,1.5,6.3,4.5l.7,8.3c.3,3-2.1,5.3-5.4,5.5" transform="translate(0 0)" style="fill:#ff0005"/></g><polygon points="191.3 299.8 187.1 295 185.2 292.9 187.5 300.8 183.4 302 178.6 285.1 182.5 284 186.7 288.9 188.5 291 186.2 282.9 190.2 281.8 195 298.7 191.3 299.8" style="fill:#ff0005"/><g style="clip-path:url(#clip-path-laravel-podcast)"><path d="M226.3,267.4l-3.1,2.1,1.7,3a3.9,3.9,0,0,1,1.8-3,3.2,3.2,0,0,1,4.7,1.1l2.3,3.4c1.6,2.3.8,5.2-1.9,7a4.8,4.8,0,0,1-6.8-1l-.8-1.2,3.3-2.2.5.8a1.1,1.1,0,0,0,1.8.4,1.1,1.1,0,0,0,.3-1.6l-1.8-2.7a1.1,1.1,0,0,0-1.5-.3c-.5.3-.7,1-.4,1.3l-3.4,1.8-4.7-7.9,7.9-5.4c1.2,2.3,1.3,3.6.1,4.4" transform="translate(0 0)" style="fill:#ff0005"/><path d="M280.9,115.4S313.3,197,246,262.2M10.6,108.9s-32.4,81.6,34.8,146.8" transform="translate(0 0)" style="fill:none;stroke:#ff0005;stroke-miterlimit:10;stroke-width:5.556000232696533px"/></g></g></g>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -504,6 +528,15 @@
 
     <!-- All Script Tag Start Here -->
         <script src="./assets/fontawsome/js/all.js"></script>
+        
+        <!-- Toggle js Script Start Here -->
+            <script>
+                function Menu(e){
+                    let list = document.querySelector('ul');
+                    e.name === 'menu-outline' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) :( e.name ="menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))   
+                }
+            </script>
+        <!-- Toggle js Script End Here -->
     <!-- All Script Tag Start Here -->
 </body>
 </html>

@@ -15,8 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
 
     <!-- fontawsome link Start here -->
-        <link rel="stylesheet" href="./assets/fontawsome/css/all.css">
-    <!-- fontawsome link End here -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- fontawsome link End here -->
 
     <!-- Tailwind Css Script Tag Start Here -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -24,71 +26,68 @@
 </head>
 <body>
     <!-- Header Start Here -->
-        <header class="w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] md:mx-auto sticky md:top-6 z-50 top-0 h-[80px] md:h-[90px] lg:h-[90px] flex justify-between items-center md:pl-10 md:pr-12 bg-[#1A1A1A]">
+        <header class="w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] md:mx-auto sticky md:top-6 z-50 top-0 h-[80px] md:h-[90px] lg:h-[90px] md:flex justify-between items-center md:pl-10 md:pr-12 bg-[#1A1A1A]">
             <!-- Tablate and Dektopview Logo Start Here -->
-            <div class="tab-desk-logo 2xl:pl-36 xl:pl-12 md:pl-0 sm:pl-6 pl-6">
-                <a href="./index.html">
-                    <img src="./assets/images/header-img/logo.png" alt="Tighten Logo" class="w-40">
-                </a>
+            <div class="tab-desk-logo 2xl:pl-36 xl:pl-12 md:pl-0 pl-4 md:pr-0 md:pt-0 pr-4 pt-4 flex justify-between items-center">
+                <div>
+                    <a href="./index.html">
+                        <img src="./assets/images/header-img/logo.png" alt="Tighten Logo" class="w-40">
+                    </a>
+                </div>
+                <div>
+                    <ion-icon name="menu-outline" class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2" onclick="Menu(this)">
+                    </ion-icon>
+                </div>
             </div>
             <!-- Tablate and Dektopview Logo End Here -->
             <div>
                 <!-- Tablate and Desktop View NavLink Strat here -->
-                <nav class="navbar lg:flex md:flex sm:hidden hidden">
+                <nav class="navbar lg:flex md:flex opacity-100">
                     <div class="nav-link">
-                        <ul class="list-none flex items-center 2xl:space-x-[65px] xl:space-x-[63px] lg:space-x-[43px] md:space-x-[20px] group-hover:text-gray-300 lg:mr-9 2xl:mr-10 2xl:pb-1">
-                            <li>
-                                <a href="./method.html" class="uppercase text-white tracking-widest border-b border-b-4 border-b-transparent text-gray-300 hover:text-white hover:border-b-[#ffbc00] pb-8 text-[16px] font-mono font-bold tracking-[2px]">Method</a>
+                        <ul class="bg-[#1A1A1A] list-none md:flex items-center 2xl:space-x-[65px] xl:space-x-[63px] lg:space-x-[43px] md:space-x-[20px] md:static absolute w-full -top-[500px] duration-1000 text-right md:text-center group-hover:text-gray-300 opacity-100 left-0 pb-10 md:pb-0 pr-8 md:pr-0 lg:mr-9 2xl:mr-10 2xl:pb-1">
+                            <li class="md:mt-0 mt-0">
+                                <a href="./method.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] text-[1.125rem] leading-[1.75rem] tracking-[2px] pb-0 md:pb-8">Method</a>
                             </li>
-                            <li>
-                                <a href="./work.html" class="uppercase border-b-transparent hover:border-b-[#ffbc00] border-b-4 pb-8 lg:text-base text-[14px] font-mono font-bold  text-gray-300 hover:text-white -leading-10 tracking-[2px]">WORK</a>
+                            <li  class="md:mt-0 mt-7">
+                                <a href="./work.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] lg:text-base text-[1.125rem] leading-[1.75rem] -leading-10 tracking-[2px] pb-0 md:pb-8 ">WORK</a>
                             </li>
-                            <li>
-                                <a href="./blog.html" class="uppercase border-b-[#ffbc00] border-b-4 hover:border-b-[#FFBC00] pb-8 lg:text-base text-[14px] font-mono font-bold text-[#ffbc00] hover:text-white tracking-[2px]">BLOG</a>
+                            <li  class="md:mt-0 mt-7">
+                                <a href="./blog.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-base text-[1.125rem] leading-[1.75rem] tracking-[2px] pb-0 md:pb-8">BLOG</a>
                             </li>
-                            <li>
-                                <a href="./team.html" class="uppercase border-b-transparent hover:border-b-4 hover:border-b-[#FFBC00] pb-8 lg:text-base text-sm font-mono font-bold text-gray-300 hover:text-white tracking-[2px]">TEAM</a>
+                            <li  class="md:mt-0 mt-7">
+                                <a href="./team.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-base text-[1.125rem] leading-[1.75rem] tracking-[2px] pb-0 md:pb-8 ">TEAM</a>
                             </li>
-                            <li>
-                                <a href="./about.html" class="uppercase border-b-transparent hover:border-b-4 hover:border-b-[#FFBC00] pb-8 lg:text-base text-sm font-mono font-bold text-gray-300 hover:text-white tracking-[2px]">ABOUT</a>
+                            <li  class="md:mt-0 mt-7">
+                                <a href="./about.html" class="font-mono font-bold text-gray-300 hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-base text-[1.125rem] leading-[1.75rem] tracking-[2px] pb-0 md:pb-8 ">ABOUT</a>
                             </li>
+                            <a href="./contact.html" class="btn mt-14 md:mt-0 inline-block lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-4 border border-white rounded-full text-white font-mono font-bold lg:text-[16px] md:text-[14px] tracking-[4px] hover:bg-gradient-to-r from-orange-400 to-yellow-400 hover:text-black hover:border-transparent py-3">CONTACT</a>
                         </ul>
-                    </div>
-                    <div class="contact lg:mr-7 md:mr-0 md:ml-4 2xl:mr-28">
-                        <a href="./contact.html" class="btn lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 border border-white rounded-full text-white font-mono font-bold lg:text-[16px] md:text-[14px] tracking-[4px]  hover:bg-gradient-to-r from-orange-400 to-yellow-400 hover:text-black hover:border-transparent">CONTACT</a>
                     </div>
                 </nav>
                 <!-- Tablate and Desktop View NavLink Strat here -->
-
-                <!-- Mobile View Menu Link Toggle Wrapper Start here  -->
-                <div class="w-10 h-[10px] lg:mr-0 sm:mr-6 mr-5 sm:flex flex flex-col justify-center items-center md:hidden lg:hidden xl:hidden cursor-pointer btn ">
-                    <span class="w-5 block h-[0.7px] border border-1 mx-auto border-gray-400"></span>
-                    <span class="w-5 block h-[0.7px] border border-1 mx-auto border-gray-400 mt-[5px] "></span>
-                    <span class="w-5 block h-[0.7px] border border-1 mx-auto border-gray-400 mt-[5px] "></span>
-                </div>
-                <!-- Mobile View Menu Link Toggle Wrapper Start here  -->
             </div>
         </header>
     <!-- Header End Here -->
 
     <!-- Hero Section Start Here -->
-        <div class="container-fluid bg-black px-6 md:px-16 lg:px-20 2xl:px-0">
+        <div class="container-fluid bg-black px-6 md:px-16 lg:px-28 2xl:px-0">
             <div class="bg-black container mx-auto pt-0 sm:-mt-24 -m-16  pt-4 pb-28 min-h-[490px] md:min-h-[877px]">
                 <!-- Hero Section Start Here -->
-                    <div class="mt-28 md:mt-60 2xl:mt-[17rem] flex xl:flex-row flex-col justify-start box-border">
-                        <div class="main heading">
-                            <h1 class="2xl:text-[20rem] xl:text-[17rem] xl:font-[270] xl:leading-[17rem] mt-5 lg:text-[14rem] lg:leading-[14rem] md:text-[12rem] md:leading-[12rem] sm:text-[10rem] sm:leading-[10rem] text-[3.75rem] leading-[4rem] text-white font-[Signifier] font-[300] mb-4 sm:pb-0 pb-3">Blog</h1>
+                    <div class="mt-[7.813rem] md:mt-[14.5rem] 2xl:mt-[1rem] xl:mt-[16.125rem] sm:mt-[9.775rem] 2xl:mt-[17rem] flex xl:flex-row flex-col justify-start box-border">
+                        <div class="main heading basis-w-[40%]">
+                            <h1 class="2xl:text-[20rem] xl:text-[18rem] xl:font-[270] xl:leading-[17rem] lg:text-[14rem] lg:leading-[14rem] md:text-[12rem] md:leading-[12rem] sm:text-[10rem] sm:leading-[10rem] text-[3.75rem] leading-[4rem] text-white font-[Signifier] font-[270] 2xl:mt-4 2xl:pl-0 xl:mt-3.5 xl:pl-0 lg:pl-8 lg:mt-1 md:mt-0 mb-4 sm:pb-0 pb-3 mt-5">Blog</h1>
                         </div>
-                        <div class="w-full flex flex-col items-start justify-end sm:pt-20 md:pt-20 lg:pt-0 pt-12 lg:mt-10">
-                            <div class="ml-0 2xl:ml-auto 2xl:mr-[24rem] xl:ml-20 lg:mr-40 pb-3">
-                                <p class="font-Pitch-Sans text-[#808080] 2xl:text-[0.875rem] 2xl:leading-[0.875rem] lg:text-[0.875rem] lg:leading-[0.875rem] text-[.75rem] word-specing-tight fond-bold uppercase tracking-[2px]">SIGN UP FOR BLOG UPDATES</p>
+                        <div class="w-full flex flex-col items-start justify-end 2xl:pt-[14rem] xl:pt-52 lg:pt-4 lg:mt-10 md:pt-10 sm:pt-10 pt-7">
+                            <div class="ml-0 2xl:ml-auto 2xl:mr-[23.5rem] 2xl:pb-0 xl:ml-12 lg:mr-0 lg:ml-8 lg:pb-0 md:pb-0 sm:pb-0 pb-3 ">
+                                <p class="font-Pitch-Sans text-[#808080] 2xl:text-[0.875rem] 2xl:leading-[0.875rem] xl:text-[0.875rem] xl:leading-[0.575rem] xl:tracking-[3px] lg:text-[0.875rem] lg:leading-[0.875rem] text-[.75rem] word-specing-tight fond-bold uppercase tracking-[2px]">SIGN UP FOR BLOG UPDATES</p>
                             </div>
-                            <div class="form sm:flex justify-between sm:ml-0 md:ml-0 lg:ml-0 w-full block items-center sm:h-20 h-10 mt-1">
-                                <div class="2xl:w-[50%] 2xl:ml-auto xl:w-[60%] lg:w-[80%] md:w-[70%] sm:w-[75%] w-full ml-0 xl:ml-24 sm:ml-10">
-                                    <input type="email" name="email" placeholder="Your email address" class="bg-[#1A1A1A] sm:py-4 pl-6 py-4 tracking-widest text-sm rounded-full w-full">
+                            <div class="form sm:flex xl:justify-between lg:justify-start w-full block items-center sm:ml-0 md:ml-0 lg:ml-0  sm:h-20 h-10 pr-0 mt-1 "> 
+                                <div></div>
+                                <div class="2xl:w-[48.5%] 2xl:ml-[19rem] xl:w-[78%] lg:w-[52%] md:w-[70%] sm:w-[75%] w-full xl:ml-[1rem] lg:ml-7 lg:-mt-1 md:ml-0 sm:ml-0">
+                                    <input type="email" name="email" placeholder="Your email address" class="bg-[#1A1A1A] 2xl:py-[0.938rem] xl:py-3.5 sm:py-3 pl-6 py-3 tracking-widest text-sm rounded-full w-full">
                                 </div>
-                                <div class="sm:mt-0 mt-7 2xl:mr-14 xl:mr-0 lg:mr-40 md:mr-10 sm:mr-0">
-                                    <a href="https://tighten.us12.list-manage.com/subscribe/post?u=3abde72ee6ba4dd39cc01bb63&id=24d7253932" class="uppercase font-mono tracking-widest sm:px-8 sm:py-4 px-7 py-3 text-white border border-yellow-500 sm:ml-4 xl:ml-0 leading-normal rounded-full text-[0.85rem] hover:bg-[#FFBC00] hover:text-black font-semibold">Sign up</a>
+                                <div class="sm:mt-0 mt-7 xl:ml-0 xl:-mr-20 lg:ml-3 lg:-mt-2 sm:ml-2">
+                                    <a href="https://tighten.us12.list-manage.com/subscribe/post?u=3abde72ee6ba4dd39cc01bb63&id=24d7253932" class="uppercase font-mono tracking-widest 2xl:py-3.5 xl:ml-0 xl:py-3.5 sm:px-7 sm:py-2.5 sm:ml-4 px-7 py-3 text-white border border-yellow-500 leading-normal rounded-full text-[0.85rem] 2xl:text-[1rem] 2xl:leading-[1.5rem] xl:text-[1rem] lg:text-[0.875rem] hover:bg-[#FFBC00] hover:text-black font-semibold">Sign up</a>
                                 </div>
                             </div>
                         </div>
@@ -96,53 +95,97 @@
                 <!-- Hero Section Start Here -->
 
                 <!-- Hero Blog start -->
-                <div class="container mx-auto mt-40 pb-20">
-                    <a href="https://tighten.com/blog/react-hooks-for-beginners-managing-state/">
-                        <div class="flex md:flex-row sm:flex-col flex-col sm:items-end cursor-pointer group">
+                <div class="mt-40 2xl:pb-0 pb-20">
+                    <!-- <a href="https://tighten.com/blog/react-hooks-for-beginners-managing-state/" class="block">
+                        <div class="grid grid-cols-12 place-items-end cursor-pointer group">
                         
-                            <!-- Blog Image Start -->
-                                <div class="relative sm:mb-10 2xl:mb-0">
-                                    <img src="./assets/images/Blog-Page-img/one.png" class="2xl:w-[70%] md:w-[50%] sm:w-[50%] w-full">
-                                    <div class="absolute top-6 2xl:left-24">
-                                        <span class="px-4 py-2 bg-[#FFBC00] font-semibold text-xs">NEW</span>
-                                    </div>
+                            <div class="relative sm:mb-10 2xl:mb-0 mt-6 ">
+                                <img src="./assets/images/Blog-Page-img/one.png" class="w-auto">
+                                <div class="absolute top-6 left-4">
+                                    <span class="px-4 py-2 bg-[#FFBC00] font-semibold text-xs">NEW</span>
                                 </div>
-                            <!-- Blog Image End -->
+                            </div>
 
-                            <!-- Blog Info Start -->
-                                <div class="sm:ml-3 ml-0 xl:ml-0 group text-white md:mt-10 sm:mt-0 mt-6">
-                                    <div class="text-white mb-6">
-                                        <h4 class="2xl:text-[3.75rem] lg:text-[3rem] lg:leading-[3.438rem] sm:text-[2.25rem] sm:leading-[2.5rem] text-4xl font-[SourceSerifPro] font-[100] group-hover:text-yellow-600">React Hooks for Beginners: <br class="2xl:hidden sm:hidden block"> Managing State</h4>
-                                    </div>
+                            <div class="sm:ml-3 ml-0 xl:ml-0 group text-white md:mt-10 sm:mt-0 mt-6 col-span-8">
+                                <div class="text-white mb-6">
+                                    <h4 class="2xl:text-[3.75rem] 2xl:leading-[4.313rem] lg:text-[3rem] lg:leading-[3.438rem] sm:text-[2.25rem] sm:leading-[2.5rem] text-4xl font-[signifier] font-[100] group-hover:text-yellow-600">React Hooks for Beginners: <br class="2xl:hidden sm:hidden block"> Managing State</h4>
+                                </div>
+                                <div class="flex">
                                     <div class="flex">
-                                        <div class="flex">
-                                            <img src="./assets/images/Blog-Page-img/blog-1-img-1.jpg" class="w-6 rounded-full">
-                                            <img src="./assets/images/Blog-Page-img/blog-1-img-2.jpg" class="w-6 rounded-full">
-                                        </div>
-                                        <div class="pl-4">
-                                            <a href="https://tighten.com/authors/daniel-coulbourne/" class="text-gray-300 hover:text-yellow-400 tracking-widest">Daniel Coulbourne ,</a>
-                                            <a href="https://tighten.com/authors/cenitoria-melton/" class="text-gray-300 hover:text-yellow-400 tracking-widest">Cenitoria Melton</a>
-                                        </div>
+                                        <img src="./assets/images/Blog-Page-img/blog-1-img-1.jpg" class="w-6 rounded-full">
+                                        <img src="./assets/images/Blog-Page-img/blog-1-img-2.jpg" class="w-6 rounded-full">
                                     </div>
-                                    <div class="text-gray-400 font-Pitch-Sans mt-3 flex">
-                                        <div>
-                                            <span >3 WEEKS AGO</span>
-                                        </div>
-                                        <div class="ml-8">
-                                            <div>
-                                                <span>6 MINUTE READ</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="text-[#b3b3b3] text-xl leading-normal mt-6">
-                                            We’ve been using React at Tighten for almost as long as we’ve been using Vue. In fact, one of our most-read blog post series is an extensive React tutorial by former...
-                                        </p>
+                                    <div class="pl-4">
+                                        <a href="https://tighten.com/authors/daniel-coulbourne/" class="text-gray-300 hover:text-yellow-400 tracking-widest">Daniel Coulbourne ,</a>
+                                        <a href="https://tighten.com/authors/cenitoria-melton/" class="text-gray-300 hover:text-yellow-400 tracking-widest">Cenitoria Melton</a>
                                     </div>
                                 </div>
-                            <!-- Blog Info End -->
+                                <div class="text-gray-400 font-Pitch-Sans mt-3 flex">
+                                    <div>
+                                        <span >3 WEEKS AGO</span>
+                                    </div>
+                                    <div class="ml-8">
+                                        <div>
+                                            <span>6 MINUTE READ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-[#b3b3b3] text-xl leading-normal mt-6">
+                                        We’ve been using React at Tighten for almost as long as we’ve been using Vue. In fact, one of our most-read blog post series is an extensive React tutorial by former...
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </a>        
+                    </a>         -->
+                
+                    <div class="grid grid-cols-12 gap-0 place-items-end">
+                        <div class="col-span-4">
+                            <div class="relative">
+                                <a href="https://tighten.com/blog/react-hooks-for-beginners-managing-state/">
+                                    <img src="./assets/images/Blog-Page-img/one.png" alt="Blog Image" class="w-[350px] mr-40">
+                                    <div class="absolute 2xl:top-6 2xl:left-6 top-10 left-10">
+                                        <a href="#" class="bg-[#FFBC00] text-black font-semibold px-3 py-2 text-[0.75rem] leading-[1rem]  ">NEW</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-7 cursor-pointer">
+                            <a href="https://tighten.com/blog/react-hooks-for-beginners-managing-state/">
+                                <div class="text-white mb-6">
+                                    <h4 class="2xl:text-[3.75rem] 2xl:leading-[4.313rem] lg:text-[3rem] lg:leading-[3.438rem] sm:text-[2.25rem] sm:leading-[2.5rem] text-4xl font-[signifier] font-[100] group-hover:text-yellow-600">React Hooks for Beginners:  Managing State</h4>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="flex">
+                                        <img src="./assets/images/Blog-Page-img/blog-1-img-1.jpg" class="w-6 rounded-full">
+                                        <img src="./assets/images/Blog-Page-img/blog-1-img-2.jpg" class="w-6 rounded-full">
+                                    </div>
+                                    <div class="pl-4">
+                                        <a href="https://tighten.com/authors/daniel-coulbourne/" class=" font-Pitch-Sans text-gray-300 hover:text-yellow-400 tracking-widest 2xl:text-[1.125rem] 2xl:leading-[1.438rem]">Daniel Coulbourne ,</a>
+                                        <a href="https://tighten.com/authors/cenitoria-melton/" class="font-Pitch-Sans text-gray-300 hover:text-yellow-400 tracking-widest 2xl:text-[1.125rem] 2xl:leading-[1.438rem]">Cenitoria Melton</a>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 flex">
+                                    <div>
+                                        <span class="font-Pitch-Sans text-[#808080] 2xl:text-[1rem] 2xl:leading-[1.5rem]">FEB 4</span>
+                                    </div>
+                                    <div class="ml-8">
+                                        <div>
+                                            <span class="font-Pitch-Sans text-[#808080] 2xl:text-[1rem] 2xl:leading-[1.5rem]">6 MINUTE READ</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="text-[#d1d1d1] 2xl:text-[1.25rem] 2xl:leading-[2.063rem] text-xl leading-normal mt-6">
+                                        We’ve been using React at Tighten for almost as long as we’ve been using <br class="2xl:hidden xl:block lg:hidden md:hidden sm:hidden hidden"> Vue. In fact, one of our most-read blog post series is an extensive React <br class="2xl:hidden xl:block lg:hidden md:hidden sm:hidden hidden"> tutorial by former...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <!-- Hero Blog End -->
             </div>
@@ -155,7 +198,7 @@
                 <!-- Blog 1 Start Here -->
                     <div>
                         <a href="https://tighten.com/blog/how-to-train-your-keyboard/">
-                            <div class="flex sm:flex-row flex-col justify-center lg:items-start md:items-start group">
+                            <div class="flex sm:flex-row flex-col 2xl:justify-evenly justify-center lg:items-start md:items-start group">
                                     <div class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12">
                                         <img src="./assets/images/Blog-Page-img/blog-2 - Copy.png" class="md:mt-0 mt-1.5">
                                     </div>
@@ -506,6 +549,15 @@
 
     <!-- All Js Script tag and Link Start Here -->
         <script src="./assets/fontawsome/js/all.js"></script>
+        
+        <!-- Toggle js Script Start Here -->
+            <script>
+                function Menu(e){
+                    let list = document.querySelector('ul');
+                    e.name === 'menu-outline' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) :( e.name ="menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))   
+                }
+            </script>
+        <!-- Toggle js Script End Here -->
     <!-- All Js Script tag and Link Start Here -->
 </body>
 </html>

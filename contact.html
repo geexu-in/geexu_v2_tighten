@@ -1,286 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Contact Us | Tighten</title>
-    <link rel="shortcut icon" href="./assets/images/header-img/favicon.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Contact Us | Geexu</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/header-img/favicon.png"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
     <!-- Mono font link -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Source+Serif+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- mono font link end here -->
 
     <!-- Serif font link -->
-        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- fontawsome link Start here -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <!-- fontawsome link End here -->
 
     <!-- Tailwind Css Script Tag Start Here -->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Taiwind Css Script Tag End Here -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Start Here -->
-        <header class="w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] md:mx-auto sticky md:top-6 z-50 top-0 h-[80px] md:h-[90px] lg:h-[90px] md:flex justify-between items-center lg:pl-10 lg:pr-12 md:pl-4 md:pr-4 sm:pl-2 sm:pr-0 sm:pt-0 pl-2 pt-[0.125rem] bg-[#1A1A1A]">
-            <!-- Tablate and Dektopview Logo Start Here -->
-            <div class="tab-desk-logo flex justify-between md:items-center sm:items-end items-center 2xl:pl-[8.3rem] xl:pl-11 lg:pl-10 md:pl-0 pl-4 md:pr-0 md:pt-0 pr-4 pt-4">
-                <div>
-                    <a href="./index.html">
-                        <img src="./assets/images/header-img/logo.png" alt="Tighten Logo" class="2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem] md:pt-0 sm:pt-[0.125rem]">
-                    </a>
-                </div>
-                <div>
-                    <ion-icon name="menu-outline" class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2" onclick="Menu(this)">
-                    </ion-icon>
-                </div>
-            </div>
-            <!-- Tablate and Dektopview Logo End Here -->
-            <div class="2xl:pr-20">
-                <!-- Tablate and Desktop View NavLink Strat here -->
-                <nav class="navbar lg:flex md:flex opacity-100">
-                    <div class="nav-link">
-                        <ul class="bg-[#1A1A1A] list-none md:flex items-center 2xl:space-x-[3.563rem] xl:space-x-[3.580rem] lg:space-x-[2.570rem] md:space-x-[20px] md:static absolute w-full -top-[500px] left-0 duration-1000 text-white hover:text-gray-400 text-right md:text-center opacity-100 pb-[2.5rem] sm:pb-[2.625rem] md:pb-0 pr-8 md:pr-0 lg:mr-7 2xl:mr-10 2xl:pb-1 2xl:-mt-0 xl:-mt-1 mt-0">
-                            <li class="md:mt-0 mt-1">
-                                <a href="./method.html" class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">Method</a>
-                            </li>
-                            <li  class="md:mt-0 mt-7">
-                                <a href="./work.html" class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8 ">WORK</a>
-                            </li>
-                            <li  class="md:mt-0 mt-7">
-                                <a href="./blog.html" class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">BLOG</a>
-                            </li>
-                            <li  class="md:mt-0 mt-7">
-                                <a href="./team.html" class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8 ">TEAM</a>
-                            </li>
-                            <li  class="md:mt-0 mt-7">
-                                <a href="./about.html" class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8 ">ABOUT</a>
-                            </li>
+    <header
+      class="sticky header top-0 z-50 bg-[#1A1A1A] md:flex justify-between items-center w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] h-[80px] md:h-[90px] h-[76px] lg:h-[90px] md:mx-auto md:top-6 lg:pl-10 lg:pr-12 md:pl-4 md:pr-4 sm:pl-2 sm:pr-0 sm:pt-0 pl-2 pt-[0.125rem]"
+    >
+      <!-- Tablate and Dektopview Logo Start Here -->
+      <div
+        class="tab-desk-logo flex justify-between md:items-center sm:items-end items-center 2xl:pl-[8.3rem] xl:pl-11 lg:pl-10 md:pl-0 pl-4 md:pr-0 md:pt-0 pr-4 pt-4"
+      >
+        <div>
+          <a href="./index.html">
+            <img
+              src="./assets/images/header-img/logo.png"
+              alt="Tighten Logo"
+              class="logo 2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem] md:pt-0 sm:pt-[0.125rem]"
+            />
+            <img
+              src="./assets/images/header-img/favicon.png"
+              alt="Tighten Logo"
+              class="sticky-logo w-12"
+            />
+          </a>
+        </div>
+        <div>
+          <ion-icon
+            name="menu-outline"
+            class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2"
+            onclick="Menu(this)"
+          >
+          </ion-icon>
+        </div>
+      </div>
+      <!-- Tablate and Dektopview Logo End Here -->
+      <div class="2xl:pr-20">
+        <!-- Tablate and Desktop View NavLink Strat here -->
+        <nav class="navbar lg:flex md:flex opacity-100">
+          <div class="nav-link">
+            <ul
+              class="bg-[#1A1A1A] list-none md:flex items-center 2xl:space-x-[3.563rem] xl:space-x-[3.580rem] lg:space-x-[2.570rem] md:space-x-[20px] md:static absolute w-full -top-[500px] left-0 duration-1000 text-white hover:text-gray-400 text-right md:text-center opacity-100 pb-[2.5rem] sm:pb-[2.625rem] md:pb-0 pr-8 md:pr-0 lg:mr-7 2xl:mr-10 2xl:pb-1 2xl:-mt-0 xl:-mt-1 mt-0"
+            >
+              <li class="md:mt-0 mt-1">
+                <a
+                  href="./method.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >Method</a
+                >
+              </li>
+              <li class="md:mt-0 mt-7">
+                <a
+                  href="./work.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >WORK</a
+                >
+              </li>
+              <li class="md:mt-0 mt-7">
+                <a
+                  href="./blog.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >BLOG</a
+                >
+              </li>
+              <li class="md:mt-0 mt-7">
+                <a
+                  href="./team.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >TEAM</a
+                >
+              </li>
+              <li class="md:mt-0 mt-7">
+                <a
+                  href="./about.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >ABOUT</a
+                >
+              </li>
 
-                            <a href="./contact.html" class="btn mt-9 sm:mt-10 md:mt-0 inline-block 2xl:px-5 2xl:pt-2 2xl:pb-3 2xl:mt-1 xl:pt-2.5 xl:pb-2.5 xl:px-5 xl:mt-1 lg:px-5 lg:py-2.5 md:px-4 md:py-3 sm:px-5 sm:py-2.5 md:-mr-0 sm:-mr-2 -mr-2 px-6 py-4 border border-white rounded-full text-white font-mono font-bold lg:text-[1rem] lg:leading-[1.5rem] lg:font-[700] md:text-[14px] text-[0.875rem] leading-[0.875rem] tracking-[4px] hover:bg-gradient-to-r from-orange-400 to-yellow-400 hover:text-black hover:border-transparent">CONTACT</a>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- Tablate and Desktop View NavLink Strat here -->
-            </div>
-        </header>
+              <a
+                href="./contact.html"
+                class="btn mt-9 sm:mt-10 md:mt-0 inline-block 2xl:px-5 2xl:pt-2 2xl:pb-3 2xl:mt-1 xl:pt-2.5 xl:pb-2.5 xl:px-5 xl:mt-1 lg:px-5 lg:py-2.5 md:px-4 md:py-3 sm:px-5 sm:py-2.5 md:-mr-0 sm:-mr-2 -mr-2 px-6 py-4 border border-white rounded-full text-white font-mono font-bold lg:text-[1rem] lg:leading-[1.5rem] lg:font-[700] md:text-[14px] text-[0.875rem] leading-[0.875rem] tracking-[4px] hover:bg-gradient-to-r from-orange-400 to-yellow-400 hover:text-black hover:border-transparent"
+                >CONTACT</a
+              >
+            </ul>
+          </div>
+        </nav>
+        <!-- Tablate and Desktop View NavLink Strat here -->
+      </div>
+    </header>
     <!-- Header End Here -->
 
     <!-- Hero Section Start Here -->
-        <div class="container-fluid bg-black px-6 md:px-16 lg:px-28 2xl:px-0">
-            <div class="container mx-auto bg-black pt-0 sm:-mt-24 -m-20  sm:pt-48 pt-24 2xl:pt-56 pb-28  ">
-                <!-- Hero Section Start Here -->
-                    <div class="flex sm:flex-row flex-col-reverse justify-between items-center">
-                        <div class="flex flex-col sm:mt-0 mt-10">
-                            <h3 class="font-[signifier] font-[100] text-gray-400 text-4xl lg:text-5xl 2xl:text-6xl pb-2">
-                                Got an idea?
-                            </h3>
-                            <h2 class="text-[6.5rem] leading-[6.5rem] lg:text-[8rem] 2xl:text-[10rem] text-white font-[signifier] font-[100] mb-6 md:mb-10 lg:mb-12">
-                                Let’s talk.
-                            </h2>
-                            <div class="font-[signifier] font-extralight text-xl leading-snug sm:text-2xl sm:leading-snug xl:text-3xl xl:leading-snug w-full mb-2 lg:mb-6 text-white">
-                                Leave us a note here, or give us
-                                <br class="xl:hidden">
-                                a call at
-                                <a href="tel:+13124487405" class="underline decoration-1 decoration-white underline-offset-8 hover:text-yellow-400 hover:decoration-yellow-400">(312) 448-7405</a>
-                                .
-                            </div>
-                        </div>
-                        <div>
-                            <img src="./assets/images/contact-us/right.png" class="2xl:w-[35rem] 2xl:pl-0 lg:pl-0 md:pl-10 lg:w-96 md:w-60">
-                        </div>
-                    </div>
-                <!-- Hero Section Start Here -->
+    <div class="container-fluid bg-black px-6 md:px-16 lg:px-28 2xl:px-0">
+      <div
+        class="container mx-auto bg-black pt-0 sm:-mt-24 -m-20 sm:pt-48 pt-24 2xl:pt-56 pb-28"
+      >
+        <!-- Hero Section Start Here -->
+        <div
+          class="flex sm:flex-row flex-col-reverse justify-between items-center"
+        >
+          <div class="flex flex-col sm:mt-0 mt-10">
+            <h3
+              class="font-[signifier] font-[100] text-gray-400 text-4xl lg:text-5xl 2xl:text-6xl pb-2"
+            >
+              Got an idea?
+            </h3>
+            <h2
+              class="text-[6.5rem] leading-[6.5rem] lg:text-[8rem] 2xl:text-[10rem] text-white font-[signifier] font-[100] mb-6 md:mb-10 lg:mb-12"
+            >
+              Let’s talk.
+            </h2>
+            <div
+              class="font-[signifier] font-extralight text-xl leading-snug sm:text-2xl sm:leading-snug xl:text-3xl xl:leading-snug w-full mb-2 lg:mb-6 text-white"
+            >
+              Leave us a note here, or give us
+              <br class="xl:hidden" />
+              a call at
+              <a
+                href="tel:+91 20 46 7506 40"
+                class="underline decoration-1 decoration-white underline-offset-8 hover:text-yellow-400 hover:decoration-yellow-400"
+              >
+                +91 20 46 7506 40
+              </a>
             </div>
-        <!-- Form Section Start Here -->
-            <div class="container mx-auto bg-[#272727] mt-10 ">
-                <div class="flex-col space-y-10 py-8 px-6 sm:py-8 sm:px-12 lg:py-12 lg:px-16">
-                    <div class="flex basis-[100%]">
-                        <div class="basis-[50%]">
-                            <input type="text" name="" placeholder="FIRST NAME" class="bg-transparent border-b border-b-white w-[90%] pb-2 font-[signifier] placeholder:tracking-widest text-sm placeholder:text-white outline-0">
-                        </div>
-                        <div class="basis-[50%]">
-                            <input type="text" name="" placeholder="LAST NAME" class="bg-transparent border-b border-b-white w-[100%] pb-2 font-[signifier] placeholder:tracking-widest text-sm placeholder:text-white outline-0">
-                        </div>
-                    </div>
-                    <div>
-                        <input type="email" placeholder="EMAIL" class="bg-transparent border-b border-b-white pb-2 placeholder:text-white w-full outline-0">
-                    </div>     
-                    <div class="flex flex-col">
-                        <span class="text-white">TELL US ABOUT YOUR IDEA</span>
-                        <textarea name="" id="" cols="30" rows="10" class="bg-transparent border border-1 mt-2"></textarea>
-                    </div>
-                    <div class="flex justify-end">
-                        <a href="#" class="bg-yellow-600 text-black px-6 py-3 rounded-full"> Send</a>
-                    </div>
-                    <div class="flex justify-start">
-                        <a href="#" class="text-gray-300 flex items-center justify-center hover:text-yellow"> <i class="fa-solid fa-bars-sort"></i> Form by FieldGoal</a>
-                    </div>
-                </div>
-            </div>
-        <!-- Form Section Start Here -->
+          </div>
+          <div>
+            <img
+              src="./assets/images/contact-us/right.png"
+              class="2xl:w-[35rem] 2xl:pl-0 lg:pl-0 md:pl-10 lg:w-96 md:w-60"
+            />
+          </div>
         </div>
+        <!-- Hero Section Start Here -->
+      </div>
+      <!-- Form Section Start Here -->
+      <div class="container mx-auto bg-[#272727] mt-10">
+        <div
+          class="flex-col space-y-10 py-8 px-6 sm:py-8 sm:px-12 lg:py-12 lg:px-16"
+        >
+          <div class="flex basis-[100%]">
+            <div class="basis-[50%]">
+              <input
+                type="text"
+                name=""
+                placeholder="FIRST NAME"
+                class="bg-transparent border-b border-b-white w-[90%] pb-2 font-[signifier] placeholder:tracking-widest text-sm placeholder:text-white outline-0"
+              />
+            </div>
+            <div class="basis-[50%]">
+              <input
+                type="text"
+                name=""
+                placeholder="LAST NAME"
+                class="bg-transparent border-b border-b-white w-[100%] pb-2 font-[signifier] placeholder:tracking-widest text-sm placeholder:text-white outline-0"
+              />
+            </div>
+          </div>
+          <div>
+            <input
+              type="email"
+              placeholder="EMAIL"
+              class="bg-transparent border-b border-b-white pb-2 placeholder:text-white w-full outline-0"
+            />
+          </div>
+          <div class="flex flex-col">
+            <span class="text-white">TELL US ABOUT YOUR IDEA</span>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="bg-transparent border border-1 mt-2"
+            ></textarea>
+          </div>
+          <div class="flex justify-end">
+            <a href="#" class="bg-yellow-600 text-black px-6 py-3 rounded-full">
+              Send</a
+            >
+          </div>
+          <div class="flex justify-start">
+            <a
+              href="#"
+              class="text-gray-300 flex items-center justify-center hover:text-yellow"
+            >
+              <i class="fa-solid fa-bars-sort"></i> Form by FieldGoal</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Form Section Start Here -->
+    </div>
     <!-- Hero Section End Here -->
-    
-    <!-- footer start here -->
-        <div class="px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-[96px] p-6 sm:p-12 md:p-0 bg-black text-white">
-            <div class="container mx-auto">
-                <div class="w-full lg:flex md:flex sm:block">
-                    <div class="lg:w-3/5 md:w-2/5">
-                        <div class="mx-auto flex flex-wrap justify-between md:space-y-0 w-full">
-                            <div>
-                                <svg id="icon-tighten-mark-outline" viewBox="0 0 104.9 106.4" aria-hidden="true" class="h-28 w-28">
-                                    <path style="fill:#FFBC00" d="M72,44.5L60.9,33.8V0H43.8v33.7L32.6,44.5H0V62h32.7l11.1,10.7v33.7h17.1V72.7L72,62h32.9V44.5H72z M103.9,61
-                                        H71.6L59.9,72.3v33.1H44.8V72.3L33.1,61H1V45.5h32l11.8-11.4V1h15.1v33.2l11.7,11.3h32.3V61z"></path>
-                                </svg>
-                            </div>
-                            <div class="flex space-x-8 sm:flex md:hidden lg:hidden ">
-                                <div>
-                                    <a href="https://twitter.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://github.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                        <i class="fab fa-github" ></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.linkedin.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-[30px] md:pt-[79px] mb-[10px]">
-                            <a href="https://duckduckgo.com/?q=Directions+to+1807+W.+Sunnyside%2C+Chicago%2C+IL&t=h_&ia=directions&iaxm=directions&end=what%3A1807%2520W%2520Sunnyside%2520Ave%2Cwhere%3AChicago%252C%2520IL%2520%252060640%252C%2520United%2520States&transport=drive" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[14px] leading-6 text-[#9b9b97] font-mono font-bold tracking-widest word-spacing-tight" >1807 W. SUNNYSIDE, SUITE 1G</a>
-                        </div>
-                        <div class="mb-[10px]">
-                            <a href="https://duckduckgo.com/?q=Directions+to+1807+W.+Sunnyside%2C+Chicago%2C+IL&t=h_&ia=directions&iaxm=directions&end=what%3A1807%2520W%2520Sunnyside%2520Ave%2Cwhere%3AChicago%252C%2520IL%2520%252060640%252C%2520United%2520States&transport=drive" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"> CHICAGO, IL 60640</a>
-                        </div>
-                        <div class="mb-[10px]">
-                            <a href="tel:(312) 448-7405" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest  word-spacing-tight font-bold"> (312) 448-7405</a>
-                        </div>
-                        <div class="mb-[20px]">
-                            <a href="#" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest font-bold"> HELLO@TIGHTEN.CO</a>
-                        </div>
-                        <div class="flex space-x-6 hidden sm:hidden md:flex lg:flex ">
-                            <div>
-                                <a href="https://twitter.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://github.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                    <i class="fab fa-github" ></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                    <i class="fab fa-linkedin-in "></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="w-full xl:flex lg:flex md:flex md:flex-row sm:flex-col justify-between">
-                        <div class="space-y-2 px-0 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-9 xl:pl-7">
-                            <h4 class="font-serif mb-4 sm:mb-6 text-2xl md:text-[1.875rem] lg:text-3xl font-extralight">Work</h4>
-                            <div>
-                                <a href="./method.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono word-spacing-tight">METHOD</a>
-                            </div>
-                            <div>
-                                <a href="https://tighten.com/manifesto/" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono word-spacing-tight">MANIFESTO</a>
-                            </div>
-                            <div>
-                                <a href="#" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono word-spacing-tight">CASE STUDIES</a>
-                            </div>
-                        </div>
-                        <div class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-6 pl-0">
-                            <h4 class="font-serif mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight">Company</h4>
-                            <div>
-                                <a href="./about.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono text-[16px] tracking-widest">ABOUT </a>
-                            </div>
-                            <div>
-                                <a href="./team.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono text-[16px] tracking-widest">TEAM</a>
-                            </div>
-                            <div>
-                                <a href="./blog.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono text-[14px] tracking-widest">BLOG</a>
-                            </div>
-                            <div>
-                                <a href="https://tighten.com/work-with-us/" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono text-[14px] tracking-widest">WORK WITH US</a>
-                            </div>
-                            <div>
-                                <a href="./contact.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[14px] tracking-widest">CONTACT</a>
-                            </div>
-                        </div>
-                        <div class="space-y-2  mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-2 xl:pl-0">
-                            <h4 class="font-[serif] mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight">Community</h4>
-                            <div>
-                                <a href="#" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest">THE LARAVEL PODCAST</a>
-                            </div>
-                            <div>
-                                <a href="https://twentypercent.fm/" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono  tracking-widest">TWENTY PERCENT TIME PODECAST</a>
-                            </div>
-                            <div>
-                                <a href="https://onramp.dev/en" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono  tracking-widest">LARAVEL ONRAMP</a>
-                            </div>
-                            <div>
-                                <a href="https://novapackages.com/" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono  tracking-widest">NOVA PACKAGES</a>
-                            </div>
-                            <div>
-                                <a href="https://laravel-tricks.com/tricks" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono  tracking-widest">LARAVEL TRICKS</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- footer start here -->
+    <div
+      class="px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-[96px] p-6 sm:p-12 md:p-0 bg-black text-white"
+    >
+      <div class="container mx-auto">
+        <div class="w-full lg:flex md:flex sm:block">
+          <div class="lg:w-3/5 md:w-2/5">
+            <div
+              class="mx-auto flex flex-wrap justify-between md:space-y-0 w-full"
+            >
+              <div>
+                <svg
+                  id="icon-tighten-mark-outline"
+                  viewBox="0 0 104.9 106.4"
+                  aria-hidden="true"
+                  class="h-28 w-28"
+                >
+                  <path
+                    style="fill: #ffbc00"
+                    d="M72,44.5L60.9,33.8V0H43.8v33.7L32.6,44.5H0V62h32.7l11.1,10.7v33.7h17.1V72.7L72,62h32.9V44.5H72z M103.9,61
+                                  H71.6L59.9,72.3v33.1H44.8V72.3L33.1,61H1V45.5h32l11.8-11.4V1h15.1v33.2l11.7,11.3h32.3V61z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex space-x-4 sm:flex md:hidden lg:hidden">
+                <div>
+                  <a
+                    href="https://twitter.com/"
+                    class="text-[22px] text-[#9b9b97] hover:text-white"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
                 </div>
-            </div>
-        </div>
-        <div class="bg-[#1A1A1A] xl:py-8 lg:px-28 lg:py-6 md:px-16 px-4 py-10 -mt-1">
-            <div class="container mx-auto"> 
-                <div class="flex md:flex-row flex-col-reverse lg:justify-between lg:items-center md:justify-between items-center text-xs sm:text-sm">
-                    <div class="text-[#9b9b97] mt-0">
-                        <span class="">&copy;2022 Tighten Co.</span>
-                        <span class="mx-4">.</span>
-                        <a href="#" class="text-[#9b9b97] hover:text-white underline">Privacy Policy</a>
-                    </div>
-                    <div class="flex">
-                        <div class="">
-                                <a href="#" class="flex text-white">
-                                    <img src="./assets/images/footer/jigsaw.png" class="w-6 mr-2">
-                                <span class="hover:text-yellow-400 text-sm text-[#9b9b97]"> Built with Jigsaw  </span>  
-                                </a>
-                        </div>
-                        <div>
-                            <span class="mx-4 text-white">.</span>
-                        </div>
-                    <div>
-                        <a href="#" class="text-white text-sm hover:text-yellow-400">
-                            <i class="fa-solid fa-bars-sort"></i>
-                            <span>Forms by FieldGoal</span>
-                        </a>
-                    </div>
-                    </div>
+                <div>
+                  <a
+                    href="https://github.com/"
+                    class="text-[22px] text-[#9b9b97] hover:text-white"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
                 </div>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="text-[22px] text-[#9b9b97] hover:text-white"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
             </div>
+            <div class="pt-[30px] md:pt-[79px] mb-[10px]">
+              <p
+                class="text-[14px] leading-6 text-[#9b9b97] font-mono font-bold tracking-widest word-spacing-tight"
+              >
+                Swar Vishwa, Ekdant Dutta Mandir Rd, Wireless Colony, Next to
+                Siddhart Residency, Aundh Pune 411007
+              </p>
+            </div>
+
+            <div class="mb-[10px]">
+              <a
+                href="tel:+91 20 46 7506 40"
+                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
+              >
+                IND: +91 20 46 7506 40 /</a
+              >
+              <a
+                href="tel:+91 20 46 7506 40"
+                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
+              >
+                +91 9130 036 036</a
+              >
+            </div>
+            <div class="mb-[10px]">
+              <a
+                href="tel:1 860 967 0120"
+                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
+              >
+                USA: 1 860 967 0120
+              </a>
+            </div>
+            <div class="mb-[20px]">
+              <a
+                href="mailto:hello@geexu.in"
+                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest font-bold"
+              >
+                hello@geexu.in</a
+              >
+            </div>
+            <div class="flex space-x-6 hidden sm:hidden md:flex lg:flex">
+              <div>
+                <a
+                  href="https://www.linkedin.com/company/geexu/"
+                  class="text-[22px] text-[#9b9b97] hover:text-white"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.facebook.com/geexu.org/"
+                  class="text-[22px] text-[#9b9b97] hover:text-white"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.instagram.com/geexu.co.in/"
+                  class="text-[22px] text-[#9b9b97] hover:text-white"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full xl:flex lg:flex md:flex md:flex-row sm:flex-col justify-between"
+          >
+            <div
+              class="space-y-2 px-0 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-9 xl:pl-7"
+            >
+              <h4
+                class="font-serif mb-4 sm:mb-6 text-2xl md:text-[1.875rem] lg:text-3xl font-extralight"
+              >
+                Work
+              </h4>
+              <div>
+                <a
+                  href="./method.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono word-spacing-tight"
+                  >METHOD</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://tighten.com/manifesto/"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono word-spacing-tight"
+                  >MANIFESTO</a
+                >
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono word-spacing-tight"
+                  >CASE STUDIES</a
+                >
+              </div>
+            </div>
+            <div class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-6 pl-0">
+              <h4
+                class="font-serif mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight"
+              >
+                Company
+              </h4>
+              <div>
+                <a
+                  href="./about.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[16px] tracking-widest"
+                  >ABOUT
+                </a>
+              </div>
+              <div>
+                <a
+                  href="./team.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[16px] tracking-widest"
+                  >TEAM</a
+                >
+              </div>
+              <div>
+                <a
+                  href="./blog.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[14px] tracking-widest"
+                  >BLOG</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://tighten.com/work-with-us/"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[14px] tracking-widest"
+                  >WORK WITH US</a
+                >
+              </div>
+              <div>
+                <a
+                  href="./contact.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[14px] tracking-widest"
+                  >CONTACT</a
+                >
+              </div>
+            </div>
+            <div
+              class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-2 xl:pl-0"
+            >
+              <h4
+                class="font-[serif] mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight"
+              >
+                Community
+              </h4>
+              <div>
+                <a
+                  href="#"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >THE LARAVEL PODCAST</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://twentypercent.fm/"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >TWENTY PERCENT TIME PODECAST</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://onramp.dev/en"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >LARAVEL ONRAMP</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://novapackages.com/"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >NOVA PACKAGES</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://laravel-tricks.com/tricks"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >LARAVEL TRICKS</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="bg-[#1A1A1A] xl:py-8 lg:px-28 lg:py-6 md:px-16 px-4 py-10 -mt-1"
+    >
+      <div class="container mx-auto">
+        <div
+          class="flex md:flex-row flex-col-reverse lg:justify-between lg:items-center md:justify-between items-center text-xs sm:text-sm"
+        >
+          <div class="text-[#9b9b97] mt-0">
+            <span class="">&copy;2022 All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- footer end here -->
 
     <!-- All Script Tag and link Start Here -->
-        <script src="./assets/fontawsome/js/all.js"></script>
-        <!-- Toggle js Script Start Here -->
-            <script>
-                function Menu(e){
-                    let list = document.querySelector('ul');
-                    e.name === 'menu-outline' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) :( e.name ="menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))   
-                }
-            </script>
-        <!-- Toggle js Script End Here -->
+    <script src="./assets/fontawsome/js/all.js"></script>
+    <!-- Toggle js Script Start Here -->
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu-outline"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu-outline"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+    <script src="js/custom.js"></script>
+    <!-- Toggle js Script End Here -->
     <!-- All Script Tag and link Start Here -->
-</body>
+  </body>
 </html>

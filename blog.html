@@ -1,530 +1,951 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Blog | Tighten</title>
-    <link rel="shortcut icon" href="./assets/images/header-img/favicon.png" type="image/x-icon">
+  <head>
+    <title>Blog | Geexu</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/header-img/favicon.png"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Mono font link -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Source+Serif+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- mono font link end here -->
 
     <!-- noto sans font link start here -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <!-- noto sans font link end here -->
     <!-- Serif font link -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- fontawsome link Start here -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <!-- fontawsome link End here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- fontawsome link End here -->
 
     <!-- Tailwind Css Script Tag Start Here -->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Taiwind Css Script Tag End Here -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Start Here -->
-    <header class="container-fluid bg-black sticky md:top-0 md:pt-6 2xl:pt-6 z-50 top-0">
-        <div class="w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] md:mx-auto  h-[80px] md:h-[90px] lg:h-[90px] md:flex justify-between items-center lg:pl-10 lg:pr-12 md:pl-4 md:pr-4 sm:pl-2 sm:pr-0 sm:pt-0 pl-2 pt-[0.125rem] bg-[#1A1A1A]">
-            <!-- Tablate and Dektopview Logo Start Here -->
-            <div class="tab-desk-logo flex justify-between md:items-center sm:items-end items-center 2xl:pl-[8.3rem] xl:pl-11 lg:pl-10 md:pl-0 pl-4 md:pr-0 md:pt-0 pr-4 pt-4">
-                <div>
-                    <a href="./index.html">
-                        <img src="./assets/images/header-img/logo.png" alt="Tighten Logo" class="2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem] md:pt-0 sm:pt-[0.125rem]">
-                    </a>
-                </div>
-                <div>
-                    <ion-icon name="menu-outline" class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2" onclick="Menu(this)">
-                    </ion-icon>
-                </div>
-            </div>
-            <!-- Tablate and Dektopview Logo End Here -->
-
-            <div class="2xl:pr-20">
-                <!-- Tablate and Desktop View NavLink Strat here -->
-                <nav class="navbar lg:flex md:flex opacity-100">
-                    <div class="nav-link">
-                        <ul class="bg-[#1A1A1A] list-none md:flex items-center 2xl:space-x-[3.563rem] xl:space-x-[3.580rem] lg:space-x-[2.570rem] md:space-x-[20px] md:static absolute w-full -top-[500px] left-0 duration-1000 text-white hover:text-gray-400 text-right md:text-center opacity-100 pb-[2.5rem] sm:pb-[2.625rem] md:pb-0 pr-8 md:pr-0 lg:mr-7 2xl:mr-10 2xl:pb-1 2xl:mt-0 xl:-mt-1 mt-0">
-                            <li class="md:mt-0 mt-1">
-                                <a href="./method.html" class="font-mono font-bold hover:text-white  uppercase border-b-4  lg:text-[1rem] border-b-transparent hover:border-b-[#ffbc00] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">Method</a>
-                            </li>
-                            <li  class="md:mt-0 mt-7">
-                                <a href="./work.html" class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8 ">WORK</a>
-                            </li>
-                            <li  class="md:mt-0 mt-7">
-                                <a href="./blog.html" class="font-mono font-bold hover:text-white text-[#FFBC00] uppercase border-b-4 border-b-[#ffbc00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">BLOG</a>
-                            </li>
-                            <li  class="md:mt-0 mt-7">
-                                <a href="./team.html" class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8 ">TEAM</a>
-                            </li>
-                            <li  class="md:mt-0 mt-7">
-                                <a href="./about.html" class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8 ">ABOUT</a>
-                            </li>
-
-                            <a href="./contact.html" class="btn mt-9 sm:mt-10 md:mt-0 inline-block 2xl:px-5 2xl:pt-2 2xl:pb-3 2xl:mt-1 xl:pt-2.5 xl:pb-2.5 xl:px-5 xl:mt-1 lg:px-5 lg:py-2.5 md:px-4 md:py-4 sm:px-5 sm:py-2.5 md:-mr-0 sm:-mr-2 -mr-2 px-6 py-4 border border-white rounded-full text-white font-mono font-bold lg:text-[1rem] lg:leading-[1.5rem] lg:font-[700] md:text-[14px] text-[0.875rem] leading-[0.875rem] tracking-[4px] hover:bg-gradient-to-r from-orange-400 to-yellow-400 hover:text-black hover:border-transparent">CONTACT</a>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- Tablate and Desktop View NavLink Strat here -->
-            </div>
+    <header
+      class="sticky header top-0 z-50 bg-[#1A1A1A] md:flex justify-between items-center w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] h-[80px] md:h-[90px] h-[76px] lg:h-[90px] md:mx-auto md:top-6 lg:pl-10 lg:pr-12 md:pl-4 md:pr-4 sm:pl-2 sm:pr-0 sm:pt-0 pl-2 pt-[0.125rem]"
+    >
+      <!-- Tablate and Dektopview Logo Start Here -->
+      <div
+        class="tab-desk-logo flex justify-between md:items-center sm:items-end items-center 2xl:pl-[8.3rem] xl:pl-11 lg:pl-10 md:pl-0 pl-4 md:pr-0 md:pt-0 pr-4 pt-4"
+      >
+        <div>
+          <a href="./index.html">
+            <img
+              src="./assets/images/header-img/logo.png"
+              alt="Tighten Logo"
+              class="logo 2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem] md:pt-0 sm:pt-[0.125rem]"
+            />
+            <img
+              src="./assets/images/header-img/favicon.png"
+              alt="Tighten Logo"
+              class="sticky-logo w-12"
+            />
+          </a>
         </div>
+        <div>
+          <ion-icon
+            name="menu-outline"
+            class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2"
+            onclick="Menu(this)"
+          >
+          </ion-icon>
+        </div>
+      </div>
+      <!-- Tablate and Dektopview Logo End Here -->
+      <div class="2xl:pr-20">
+        <!-- Tablate and Desktop View NavLink Strat here -->
+        <nav class="navbar lg:flex md:flex opacity-100">
+          <div class="nav-link">
+            <ul
+              class="bg-[#1A1A1A] list-none md:flex items-center 2xl:space-x-[3.563rem] xl:space-x-[3.580rem] lg:space-x-[2.570rem] md:space-x-[20px] md:static absolute w-full -top-[500px] left-0 duration-1000 text-white hover:text-gray-400 text-right md:text-center opacity-100 pb-[2.5rem] sm:pb-[2.625rem] md:pb-0 pr-8 md:pr-0 lg:mr-7 2xl:mr-10 2xl:pb-1 2xl:-mt-0 xl:-mt-1 mt-0"
+            >
+              <li class="md:mt-0 mt-1">
+                <a
+                  href="./method.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >Method</a
+                >
+              </li>
+              <li class="md:mt-0 mt-7">
+                <a
+                  href="./work.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#ffbc00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >WORK</a
+                >
+              </li>
+              <li class="md:mt-0 mt-7">
+                <a
+                  href="./blog.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >BLOG</a
+                >
+              </li>
+              <li class="md:mt-0 mt-7">
+                <a
+                  href="./team.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >TEAM</a
+                >
+              </li>
+              <li class="md:mt-0 mt-7">
+                <a
+                  href="./about.html"
+                  class="font-mono font-bold hover:text-white uppercase border-b-4 border-b-transparent hover:border-b-[#FFBC00] lg:text-[1rem] lg:leading-[1.5rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8"
+                  >ABOUT</a
+                >
+              </li>
+
+              <a
+                href="./contact.html"
+                class="btn mt-9 sm:mt-10 md:mt-0 inline-block 2xl:px-5 2xl:pt-2 2xl:pb-3 2xl:mt-1 xl:pt-2.5 xl:pb-2.5 xl:px-5 xl:mt-1 lg:px-5 lg:py-2.5 md:px-4 md:py-3 sm:px-5 sm:py-2.5 md:-mr-0 sm:-mr-2 -mr-2 px-6 py-4 border border-white rounded-full text-white font-mono font-bold lg:text-[1rem] lg:leading-[1.5rem] lg:font-[700] md:text-[14px] text-[0.875rem] leading-[0.875rem] tracking-[4px] hover:bg-gradient-to-r from-orange-400 to-yellow-400 hover:text-black hover:border-transparent"
+                >CONTACT</a
+              >
+            </ul>
+          </div>
+        </nav>
+        <!-- Tablate and Desktop View NavLink Strat here -->
+      </div>
     </header>
     <!-- Header End Here -->
 
     <!-- Hero Section Start Here -->
-        <div class="container-fluid bg-black  px-6 md:px-16 lg:px-28 py-24 md:py-32 lg:py-36 xl:py-40">
-            <div class="container mx-auto text-white">
-                <!-- hero first section -->
-                <div class="flex xl:flex-row lg:flex-col">
-                    <div>
-                        <h1 class="2xl:text-[20rem] xl:text-[18rem] xl:font-[270] xl:leading-[17rem] lg:text-[14rem] lg:leading-[14rem] md:text-[12rem] md:leading-[12rem] sm:text-[10rem] sm:leading-[10rem] text-[3.75rem] leading-[4rem] text-white font-[Signifier] font-[270] 2xl:mt-6 2xl:pl-0 xl:mt-2 xl:pl-0 lg:pl-8 lg:mt-1 md:mt-0 mb-4 sm:pb-0 pb-3 mt-5">Blog</h1>
-                    </div>
-                    <div class="w-full flex flex-col items-start justify-end 2xl:pt-[14.5rem] xl:pt-[12.5rem] lg:pt-4 lg:mt-10 md:pt-10 sm:pt-10 pt-7">
-                        <div class="2xl:ml-[20.25rem] 2xl:mr-[21.5rem] 2xl:pb-0 xl:ml-12 lg:mr-0 lg:ml-8 lg:pb-0 md:pb-0 sm:pb-0 pb-3 ml-0">
-                            <p class="font-[monospace] text-[#808080] 2xl:text-[0.75rem] 2xl:leading-[0.875rem] xl:text-[0.875rem] xl:leading-[0.875rem] xl:tracking-[3px] lg:text-[0.875rem] lg:leading-[0.875rem] text-[.75rem]  fond-bold uppercase tracking-[2px]">SIGN UP FOR BLOG UPDATES</p>
-                        </div>
-                        <div class="form sm:flex xl:justify-between lg:justify-start w-full block items-center sm:ml-0 md:ml-0 lg:ml-0  sm:h-20 h-10 pr-0 "> 
-                            <div class="w-2 h-auto"></div>
-                            <div class="2xl:w-[48.5%] 2xl:ml-[18rem] 2xl:mt-0 xl:w-[77.700%] xl:-mr-[0.375rem] lg:w-[52%] md:w-[70%] sm:w-[75%] w-full xl:ml-[0.375rem] xl:mt-0.5 lg:ml-7 lg:-mt-1 md:ml-0 sm:ml-0">
-                                <input type="email" name="email" placeholder="Your email address" class="bg-[#1A1A1A] 2xl:py-[0.938rem] xl:py-[0.938rem] sm:py-3 pl-6 py-3 xl:-mt-[0.25rem] 2xl:mt-1 tracking-widest text-sm rounded-full w-full">
-                            </div>
-                            <div class="mt-7 sm:mt-0 lg:ml-3 lg:-mt-2 sm:ml-2 2xl:-mr-0 xl:-mr-[4.7rem] xl:mt-[0.063rem]">
-                                <a href="https://tighten.us12.list-manage.com/subscribe/post?u=3abde72ee6ba4dd39cc01bb63&id=24d7253932" class="uppercase font-mono tracking-widest 2xl:py-3.5 2xl:ml-0 xl:ml-0 xl:py-3.5 sm:px-7 sm:py-2.5 sm:ml-4 px-7 py-3 text-white border border-yellow-500 leading-normal rounded-full text-[0.85rem] 2xl:text-[1rem] 2xl:leading-[1.5rem] xl:text-[1rem] xl:leading-[1.5rem] lg:text-[0.875rem] hover:bg-[#FFBC00] hover:text-black font-semibold">Sign up</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- hero first section end here -->
-
-                <!-- hero section blog start here -->
-                    <div class="flex justify-between items-end">
-                        <!-- Hero Blog start -->
-                            <div class="mt-[7.625rem] 2xl:pb-0 pb-20">
-                                <div class="flex items-end">
-                                    <div class="2xl:basis-3/12 xl:basis-4/12">
-                                        <div class="relative">
-                                            <a href="https://tighten.com/blog/react-hooks-for-beginners-managing-state/">
-                                                <img src="./assets/images/Blog-Page-img/two.png" alt="Blog Image" class="2xl:w-[480px] xl:w-[620px] mr-40">
-                                                <div class="absolute xl:top-6 xl:left-6 top-10 left-10">
-                                                    <a href="#" class="bg-[#FFBC00] text-black font-semibold px-3.5 py-1.5 text-[0.75rem] leading-[1rem]  ">NEW</a>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="2xl:w-6/12 xl:basis-8/12 cursor-pointer xl:pl-12">
-                                        <a href="https://tighten.com/blog/react-hooks-for-beginners-managing-state/">
-                                            <div class="text-white mb-6">
-                                                <h4 class="2xl:text-[3.75rem] 2xl:leading-[4.313rem] lg:text-[3rem] lg:leading-[3.438rem] sm:text-[2.25rem] sm:leading-[2.5rem] text-4xl font-[signifier] font-[100] group-hover:text-yellow-600">Learning Laravel</h4>
-                                            </div>
-
-                                            <div class="flex">
-                                                <div>
-                                                    <img src="./assets/images/Blog-Page-img/hero-blog-img.jpg" class="w-7 rounded-full">
-                                                </div>
-                                                <div class="pl-4">
-                                                    <a href="https://tighten.com/authors/daniel-coulbourne/" class="font-[Pitch-Sans] text-gray-300 hover:text-yellow-400 tracking-widest 2xl:text-[1.125rem] 2xl:leading-[1.438rem]">Kristin Collins</a>
-                                                </div>
-                                            </div>
-
-                                            <div class="mt-3 flex">
-                                                <div>
-                                                    <span class="font-Pitch-Sans text-[#808080] 2xl:text-[1rem] 2xl:leading-[1.5rem] uppercase">3 week s ago</span>
-                                                </div>
-                                                <div class="ml-8">
-                                                    <div>
-                                                        <span class="font-Pitch-Sans text-[#808080] 2xl:text-[1rem] 2xl:leading-[1.5rem]">5 MINUTE READ</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <p class="text-[#d1d1d1] 2xl:text-[1.25rem] 2xl:leading-[2.063rem] text-xl leading-normal mt-6 2xl:w-[60rem] xl:w-[38rem]">
-                                                    This is a series designed to show off various features of Laravel in fun, easily consumable projects. We’ll be keeping track of the entire series in a public GitHub repo and including the instructions for keeping your own project up to date with ours.
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- Hero Blog End -->
-                    </div>
-                <!-- hero section blog start here -->
-
+    <div
+      class="container-fluid bg-black px-6 md:px-16 lg:px-28 py-24 md:py-32 lg:py-36 xl:py-40"
+    >
+      <div class="container mx-auto text-white">
+        <!-- hero first section -->
+        <div class="flex xl:flex-row lg:flex-col">
+          <div>
+            <h1
+              class="2xl:text-[20rem] xl:text-[18rem] xl:font-[270] xl:leading-[17rem] lg:text-[14rem] lg:leading-[14rem] md:text-[12rem] md:leading-[12rem] sm:text-[10rem] sm:leading-[10rem] text-[3.75rem] leading-[4rem] text-white font-[Signifier] font-[270] 2xl:mt-6 2xl:pl-0 xl:mt-2 xl:pl-0 lg:pl-8 lg:mt-1 md:mt-0 mb-4 sm:pb-0 pb-3 mt-5"
+            >
+              Blog
+            </h1>
+          </div>
+          <div
+            class="w-full flex flex-col items-start justify-end 2xl:pt-[14.5rem] xl:pt-[12.5rem] lg:pt-4 lg:mt-10 md:pt-10 sm:pt-10 pt-7"
+          >
+            <div
+              class="2xl:ml-[20.25rem] 2xl:mr-[21.5rem] 2xl:pb-0 xl:ml-12 lg:mr-0 lg:ml-8 lg:pb-0 md:pb-0 sm:pb-0 pb-3 ml-0"
+            >
+              <p
+                class="font-[monospace] text-[#808080] 2xl:text-[0.75rem] 2xl:leading-[0.875rem] xl:text-[0.875rem] xl:leading-[0.875rem] xl:tracking-[3px] lg:text-[0.875rem] lg:leading-[0.875rem] text-[.75rem] fond-bold uppercase tracking-[2px]"
+              >
+                SIGN UP FOR BLOG UPDATES
+              </p>
             </div>
+            <div
+              class="form sm:flex xl:justify-between lg:justify-start w-full block items-center sm:ml-0 md:ml-0 lg:ml-0 sm:h-20 h-10 pr-0"
+            >
+              <div class="w-2 h-auto"></div>
+              <div
+                class="2xl:w-[48.5%] 2xl:ml-[18rem] 2xl:mt-0 xl:w-[77.700%] xl:-mr-[0.375rem] lg:w-[52%] md:w-[70%] sm:w-[75%] w-full xl:ml-[0.375rem] xl:mt-0.5 lg:ml-7 lg:-mt-1 md:ml-0 sm:ml-0"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  class="bg-[#1A1A1A] 2xl:py-[0.938rem] xl:py-[0.938rem] sm:py-3 pl-6 py-3 xl:-mt-[0.25rem] 2xl:mt-1 tracking-widest text-sm rounded-full w-full"
+                />
+              </div>
+              <div
+                class="mt-7 sm:mt-0 lg:ml-3 lg:-mt-2 sm:ml-2 2xl:-mr-0 xl:-mr-[4.7rem] xl:mt-[0.063rem]"
+              >
+                <a
+                  href="https://tighten.us12.list-manage.com/subscribe/post?u=3abde72ee6ba4dd39cc01bb63&id=24d7253932"
+                  class="uppercase font-mono tracking-widest 2xl:py-3.5 2xl:ml-0 xl:ml-0 xl:py-3.5 sm:px-7 sm:py-2.5 sm:ml-4 px-7 py-3 text-white border border-yellow-500 leading-normal rounded-full text-[0.85rem] 2xl:text-[1rem] 2xl:leading-[1.5rem] xl:text-[1rem] xl:leading-[1.5rem] lg:text-[0.875rem] hover:bg-[#FFBC00] hover:text-black font-semibold"
+                  >Sign up</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- hero first section end here -->
+
+        <!-- hero section blog start here -->
+        <div class="flex justify-between items-end">
+          <!-- Hero Blog start -->
+          <div class="mt-[7.625rem] 2xl:pb-0 pb-20">
+            <div class="flex items-end">
+              <div class="2xl:basis-3/12 xl:basis-4/12">
+                <div class="relative">
+                  <a
+                    href="https://tighten.com/blog/react-hooks-for-beginners-managing-state/"
+                  >
+                    <img
+                      src="./assets/images/Blog-Page-img/two.png"
+                      alt="Blog Image"
+                      class="2xl:w-[480px] xl:w-[620px] mr-40"
+                    />
+                    <div class="absolute xl:top-6 xl:left-6 top-10 left-10">
+                      <a
+                        href="#"
+                        class="bg-[#FFBC00] text-black font-semibold px-3.5 py-1.5 text-[0.75rem] leading-[1rem]"
+                        >NEW</a
+                      >
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="2xl:w-6/12 xl:basis-8/12 cursor-pointer xl:pl-12">
+                <a
+                  href="https://tighten.com/blog/react-hooks-for-beginners-managing-state/"
+                >
+                  <div class="text-white mb-6">
+                    <h4
+                      class="2xl:text-[3.75rem] 2xl:leading-[4.313rem] lg:text-[3rem] lg:leading-[3.438rem] sm:text-[2.25rem] sm:leading-[2.5rem] text-4xl font-[signifier] font-[100] group-hover:text-yellow-600"
+                    >
+                      Learning Laravel
+                    </h4>
+                  </div>
+
+                  <div class="flex">
+                    <div>
+                      <img
+                        src="./assets/images/Blog-Page-img/hero-blog-img.jpg"
+                        class="w-7 rounded-full"
+                      />
+                    </div>
+                    <div class="pl-4">
+                      <a
+                        href="https://tighten.com/authors/daniel-coulbourne/"
+                        class="font-[Pitch-Sans] text-gray-300 hover:text-yellow-400 tracking-widest 2xl:text-[1.125rem] 2xl:leading-[1.438rem]"
+                        >Kristin Collins</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="mt-3 flex">
+                    <div>
+                      <span
+                        class="font-Pitch-Sans text-[#808080] 2xl:text-[1rem] 2xl:leading-[1.5rem] uppercase"
+                        >3 week s ago</span
+                      >
+                    </div>
+                    <div class="ml-8">
+                      <div>
+                        <span
+                          class="font-Pitch-Sans text-[#808080] 2xl:text-[1rem] 2xl:leading-[1.5rem]"
+                          >5 MINUTE READ</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p
+                      class="text-[#d1d1d1] 2xl:text-[1.25rem] 2xl:leading-[2.063rem] text-xl leading-normal mt-6 2xl:w-[60rem] xl:w-[38rem]"
+                    >
+                      This is a series designed to show off various features of
+                      Laravel in fun, easily consumable projects. We’ll be
+                      keeping track of the entire series in a public GitHub repo
+                      and including the instructions for keeping your own
+                      project up to date with ours.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Blog End -->
+        </div>
+        <!-- hero section blog start here -->
+      </div>
+    </div>
     <!-- Hero Section End Here -->
 
     <!-- Third [Blog] Section Start Here -->
-        <div class="container-fulid bg-[#1A1A1A] -mt-1 px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-24">
-            <div class="container mx-auto space-y-20">
-                <!-- Blog 1 Start Here -->
+    <div
+      class="container-fulid bg-[#1A1A1A] -mt-1 px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-24"
+    >
+      <div class="container mx-auto space-y-20">
+        <!-- Blog 1 Start Here -->
+        <div>
+          <a href="https://tighten.com/blog/how-to-train-your-keyboard/">
+            <div
+              class="flex sm:flex-row flex-col 2xl:justify-evenly justify-center lg:items-start md:items-start group"
+            >
+              <div
+                class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12"
+              >
+                <img
+                  src="./assets/images/Blog-Page-img/blog-2 - Copy.png"
+                  class="md:mt-0 mt-1.5"
+                />
+              </div>
+              <div
+                class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10"
+              >
+                <div class="text-white">
+                  <h3
+                    class="xl:text-[2rem] xl:leading-[2.563rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose md:text-[1.875rem] md:leading-[2.188rem] font-[signifier]"
+                  >
+                    How to Train Your Keyboard
+                  </h3>
+                </div>
+                <div class="flex my-4">
+                  <div>
+                    <img
+                      src="./assets/images/Blog-Page-img/blog-3.jpg"
+                      class="w-6 rounded-full"
+                    />
+                  </div>
+                  <div class="flex space-x-8 ml-3">
                     <div>
-                        <a href="https://tighten.com/blog/how-to-train-your-keyboard/">
-                            <div class="flex sm:flex-row flex-col 2xl:justify-evenly justify-center lg:items-start md:items-start group">
-                                    <div class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12">
-                                        <img src="./assets/images/Blog-Page-img/blog-2 - Copy.png" class="md:mt-0 mt-1.5">
-                                    </div>
-                                    <div class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10">
-                                        <div class="text-white">
-                                            <h3 class="xl:text-[2rem] xl:leading-[2.563rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose md:text-[1.875rem] md:leading-[2.188rem] font-[signifier]">How to Train Your Keyboard</h3>
-                                        </div>
-                                        <div class="flex my-4">
-                                            <div>
-                                                <img src="./assets/images/Blog-Page-img/blog-3.jpg" class="w-6 rounded-full">
-                                            </div>
-                                            <div class="flex space-x-8 ml-3">
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">Andrew Morgan</span>
-                                                </div>
-                                                <div class="">
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg">DEC 17, 2021</span>
-                                                </div>
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">34 MINUTE READ</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div c>
-                                            <p class="lg:text-[1rem]  leading-[1.625rem] text-[#b3b3b3]">If you’re reading this, odds are you work on a computer. You likely use a combination of your mouse and keyboard to interact with your computer throughout the day. But you're probably also aware that most of the apps you use on a daily basis provide...</p>
-                                        </div>
-                                    </div>
-                                <!-- Blog Info -->
-                            </div>
-                        </a>
-                    </div>   
-                <!-- Blog 1 End Here -->
-
-                <!-- Blog 2 Start Here -->
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >Andrew Morgan</span
+                      >
+                    </div>
+                    <div class="">
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >DEC 17, 2021</span
+                      >
+                    </div>
                     <div>
-                        <a href="https://tighten.com/blog/flying-solo-my-experience-as-the-only-designer-at-a-programming-agency/">
-                            <div class="flex sm:flex-row flex-col justify-center items-start md:items-start group">
-                                    <div class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12">
-                                        <img src="./assets/images/Blog-Page-img/blog-3.png" class="md:mt-0 mt-1.5">
-                                    </div>
-                                    <div class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10">
-                                        <div class="text-white">
-                                            <h3 class="xl:text-[2rem] xl:leading-[2.563rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose md:text-[1.875rem] md:leading-[2.188rem] font-[signifier]">Flying Solo</h3>
-                                        </div>
-                                        <div class="flex my-4">
-                                            <div>
-                                                <img src="./assets/images/Blog-Page-img/nohemi.jpg" class="w-6 rounded-full">
-                                            </div>
-                                            <div class="flex space-x-8 ml-3">
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">Nohemi Olvera</span>
-                                                </div>
-                                                <div class="">
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg">DEC 17, 2021</span>
-                                                </div>
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">34 MINUTE READ</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div c>
-                                            <p class="lg:text-[1rem] leading-[1.813rem] text-[#b3b3b3]">Over the last eight years I’ve worked as a designer in many different contexts: non-profits, startups, corporations, and more. I joined Tighten in 2018 as the company’s first full-time designer. Having the opportunity and freedom to develop a...</p>
-                                        </div>
-                                    </div>
-                                <!-- Blog Info -->
-                            </div>
-                        </a>
-                    </div>   
-                <!-- Blog 2 End Here -->
-
-                <!-- Blog 3 Start Here -->
-                    <div>
-                        <a href="https://tighten.com/blog/flying-solo-my-experience-as-the-only-designer-at-a-programming-agency/">
-                            <div class="flex sm:flex-row flex-col justify-center items-start md:items-start group">
-                                    <div class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12 basis-4/12">
-                                        <img src="./assets/images/Blog-Page-img/blog-4.png" class="w-[230px] h-[230px] md:mt-0 mt-1.5">
-                                    </div>
-                                    <div class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10">
-                                        <div class="text-white">
-                                            <h3 class="xl:text-[2rem] xl:leading-[2.563rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose md:text-[1.875rem] md:leading-[2.188rem] font-[signifier]">A Project Manager’s Top Tips</h3>
-                                        </div>
-                                        <div class="flex my-4">
-                                            <div>
-                                                <img src="./assets/images/Blog-Page-img/nohemi.jpg" class="w-6 rounded-full">
-                                            </div>
-                                            <div class="flex space-x-8 ml-3">
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">Jeanne Henry</span>
-                                                </div>
-                                                <div class="">
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg">SEP 20, 2021</span>
-                                                </div>
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">8 MINUTE READ</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="lg:text-[1rem] leading-[1.813rem] text-[#b3b3b3]">Just as each workday is a little different, the same can be said about digital projects. Some digital projects are big and require large teams, months of collaboration, and brand new everything to bring them from beginning to end. Some come and go in...</p>
-                                        </div>
-                                    </div>
-                                <!-- Blog Info -->
-                            </div>
-                        </a>
-                    </div>   
-                <!-- Blog 3 End Here -->
-
-                <!-- Blog 4 Start Here -->
-                    <div>
-                        <a href="https://tighten.com/blog/working-through-a-pandemic/">
-                            <div class="flex sm:flex-row flex-col justify-center items-start md:items-start group">
-                                    <div class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12 basis-4/12">
-                                        <img src="./assets/images/Blog-Page-img/blog-5.png" class="md:mt-0 mt-1.5">
-                                    </div> 
-                                    <div class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10">
-                                        <div class="text-white">
-                                            <h3 class="xl:text-[2rem] xl:leading-[2.563rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose md:text-[1.875rem] md:leading-[2.188rem] font-[signifier]">Working Through A Pandemic</h3>
-                                        </div>
-                                        <div class="flex my-4">
-                                            <div>
-                                                <img src="./assets/images/Blog-Page-img/nohemi.jpg" class="w-6 rounded-full">
-                                            </div>
-                                            <div class="flex space-x-8 ml-3">
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">Marje Holmstrom-Sabo</span>
-                                                </div>
-                                                <div class="">
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg">MAY 6, 2021</span>
-                                                </div>
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">5 MINUTE READ</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="lg:text-[1rem] leading-[1.813rem] text-[#b3b3b3]">At this point, I think the world is in agreement that global pandemics are terrible. Even with the advantages of already working as a fully remote company, folks at Tighten still struggle with the realities of working through isolation, finding...</p>
-                                        </div>
-                                    </div>
-                                <!-- Blog Info -->
-                            </div>
-                        </a>
-                    </div>   
-                <!-- Blog 4 End Here -->
-
-                <!-- Blog 5 Start Here -->
-                    <div>
-                        <a href="https://tighten.com/authors/tammy-robinson/">
-                            <div class="flex sm:flex-row flex-col justify-center items-start md:items-start group">
-                                    <div class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12 basis-4/12">
-                                        <img src="./assets/images/Blog-Page-img/blog-6.png" class=" md:mt-0 mt-1.5">
-                                    </div>
-                                    <div class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10">
-                                        <div class="text-white">
-                                            <h3 class="xl:text-[2rem] xl:leading-[2.563rem] md:text-[1.875rem] md:leading-[2.188rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose font-[signifier]">Working Through A Pandemic</h3>
-                                        </div>
-                                        <div class="flex my-4">
-                                            <div>
-                                                <img src="./assets/images/Blog-Page-img/nohemi.jpg" class="w-6 rounded-full">
-                                            </div>
-                                            <div class="flex space-x-8 ml-3">
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">Tammy Robinson</span>
-                                                </div>
-                                                <div class="">
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg">MAR 15, 2021</span>
-                                                </div>
-                                                <div>
-                                                    <span class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg ">9 MINUTE READ</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="lg:text-[1rem] leading-[1.813rem] text-[#b3b3b3]">If you've ever built an app that plots data on a map, you've probably noticed that performance tends to slow down as your dataset grows larger. Zooming out too far causes thousands of map markers to display, slowing your map to a crawl, or perhaps...</p>
-                                        </div>
-                                    </div>
-                                <!-- Blog Info -->
-                            </div>
-                        </a>
-                    </div>   
-                <!-- Blog 5 End Here -->
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >34 MINUTE READ</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div c>
+                  <p class="lg:text-[1rem] leading-[1.625rem] text-[#b3b3b3]">
+                    If you’re reading this, odds are you work on a computer. You
+                    likely use a combination of your mouse and keyboard to
+                    interact with your computer throughout the day. But you're
+                    probably also aware that most of the apps you use on a daily
+                    basis provide...
+                  </p>
+                </div>
+              </div>
+              <!-- Blog Info -->
             </div>
+          </a>
         </div>
+        <!-- Blog 1 End Here -->
+
+        <!-- Blog 2 Start Here -->
+        <div>
+          <a
+            href="https://tighten.com/blog/flying-solo-my-experience-as-the-only-designer-at-a-programming-agency/"
+          >
+            <div
+              class="flex sm:flex-row flex-col justify-center items-start md:items-start group"
+            >
+              <div
+                class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12"
+              >
+                <img
+                  src="./assets/images/Blog-Page-img/blog-3.png"
+                  class="md:mt-0 mt-1.5"
+                />
+              </div>
+              <div
+                class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10"
+              >
+                <div class="text-white">
+                  <h3
+                    class="xl:text-[2rem] xl:leading-[2.563rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose md:text-[1.875rem] md:leading-[2.188rem] font-[signifier]"
+                  >
+                    Flying Solo
+                  </h3>
+                </div>
+                <div class="flex my-4">
+                  <div>
+                    <img
+                      src="./assets/images/Blog-Page-img/nohemi.jpg"
+                      class="w-6 rounded-full"
+                    />
+                  </div>
+                  <div class="flex space-x-8 ml-3">
+                    <div>
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >Nohemi Olvera</span
+                      >
+                    </div>
+                    <div class="">
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >DEC 17, 2021</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >34 MINUTE READ</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div c>
+                  <p class="lg:text-[1rem] leading-[1.813rem] text-[#b3b3b3]">
+                    Over the last eight years I’ve worked as a designer in many
+                    different contexts: non-profits, startups, corporations, and
+                    more. I joined Tighten in 2018 as the company’s first
+                    full-time designer. Having the opportunity and freedom to
+                    develop a...
+                  </p>
+                </div>
+              </div>
+              <!-- Blog Info -->
+            </div>
+          </a>
+        </div>
+        <!-- Blog 2 End Here -->
+
+        <!-- Blog 3 Start Here -->
+        <div>
+          <a
+            href="https://tighten.com/blog/flying-solo-my-experience-as-the-only-designer-at-a-programming-agency/"
+          >
+            <div
+              class="flex sm:flex-row flex-col justify-center items-start md:items-start group"
+            >
+              <div
+                class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12 basis-4/12"
+              >
+                <img
+                  src="./assets/images/Blog-Page-img/blog-4.png"
+                  class="w-[230px] h-[230px] md:mt-0 mt-1.5"
+                />
+              </div>
+              <div
+                class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10"
+              >
+                <div class="text-white">
+                  <h3
+                    class="xl:text-[2rem] xl:leading-[2.563rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose md:text-[1.875rem] md:leading-[2.188rem] font-[signifier]"
+                  >
+                    A Project Manager’s Top Tips
+                  </h3>
+                </div>
+                <div class="flex my-4">
+                  <div>
+                    <img
+                      src="./assets/images/Blog-Page-img/nohemi.jpg"
+                      class="w-6 rounded-full"
+                    />
+                  </div>
+                  <div class="flex space-x-8 ml-3">
+                    <div>
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >Jeanne Henry</span
+                      >
+                    </div>
+                    <div class="">
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >SEP 20, 2021</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >8 MINUTE READ</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="lg:text-[1rem] leading-[1.813rem] text-[#b3b3b3]">
+                    Just as each workday is a little different, the same can be
+                    said about digital projects. Some digital projects are big
+                    and require large teams, months of collaboration, and brand
+                    new everything to bring them from beginning to end. Some
+                    come and go in...
+                  </p>
+                </div>
+              </div>
+              <!-- Blog Info -->
+            </div>
+          </a>
+        </div>
+        <!-- Blog 3 End Here -->
+
+        <!-- Blog 4 Start Here -->
+        <div>
+          <a href="https://tighten.com/blog/working-through-a-pandemic/">
+            <div
+              class="flex sm:flex-row flex-col justify-center items-start md:items-start group"
+            >
+              <div
+                class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12 basis-4/12"
+              >
+                <img
+                  src="./assets/images/Blog-Page-img/blog-5.png"
+                  class="md:mt-0 mt-1.5"
+                />
+              </div>
+              <div
+                class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10"
+              >
+                <div class="text-white">
+                  <h3
+                    class="xl:text-[2rem] xl:leading-[2.563rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose md:text-[1.875rem] md:leading-[2.188rem] font-[signifier]"
+                  >
+                    Working Through A Pandemic
+                  </h3>
+                </div>
+                <div class="flex my-4">
+                  <div>
+                    <img
+                      src="./assets/images/Blog-Page-img/nohemi.jpg"
+                      class="w-6 rounded-full"
+                    />
+                  </div>
+                  <div class="flex space-x-8 ml-3">
+                    <div>
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >Marje Holmstrom-Sabo</span
+                      >
+                    </div>
+                    <div class="">
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >MAY 6, 2021</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >5 MINUTE READ</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="lg:text-[1rem] leading-[1.813rem] text-[#b3b3b3]">
+                    At this point, I think the world is in agreement that global
+                    pandemics are terrible. Even with the advantages of already
+                    working as a fully remote company, folks at Tighten still
+                    struggle with the realities of working through isolation,
+                    finding...
+                  </p>
+                </div>
+              </div>
+              <!-- Blog Info -->
+            </div>
+          </a>
+        </div>
+        <!-- Blog 4 End Here -->
+
+        <!-- Blog 5 Start Here -->
+        <div>
+          <a href="https://tighten.com/authors/tammy-robinson/">
+            <div
+              class="flex sm:flex-row flex-col justify-center items-start md:items-start group"
+            >
+              <div
+                class="2xl:basis-2/12 xl:basis-3/12 lg:basis-3/12 sm:basis-3/12 basis-4/12"
+              >
+                <img
+                  src="./assets/images/Blog-Page-img/blog-6.png"
+                  class="md:mt-0 mt-1.5"
+                />
+              </div>
+              <div
+                class="basis-3/4 pt-4 sm:pt-0 mt-4 lg:mt-0 lg:pl-8 xl:pl-0 md:pl-10 sm:pl-10"
+              >
+                <div class="text-white">
+                  <h3
+                    class="xl:text-[2rem] xl:leading-[2.563rem] md:text-[1.875rem] md:leading-[2.188rem] group-hover:text-yellow-600 lg:text-[1.875rem] font-[200] lg:leading-loose font-[signifier]"
+                  >
+                    Working Through A Pandemic
+                  </h3>
+                </div>
+                <div class="flex my-4">
+                  <div>
+                    <img
+                      src="./assets/images/Blog-Page-img/nohemi.jpg"
+                      class="w-6 rounded-full"
+                    />
+                  </div>
+                  <div class="flex space-x-8 ml-3">
+                    <div>
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >Tammy Robinson</span
+                      >
+                    </div>
+                    <div class="">
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >MAR 15, 2021</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="hover:text-yellow-600 text-[#B3B3B3] font-mono text-lg"
+                        >9 MINUTE READ</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="lg:text-[1rem] leading-[1.813rem] text-[#b3b3b3]">
+                    If you've ever built an app that plots data on a map, you've
+                    probably noticed that performance tends to slow down as your
+                    dataset grows larger. Zooming out too far causes thousands
+                    of map markers to display, slowing your map to a crawl, or
+                    perhaps...
+                  </p>
+                </div>
+              </div>
+              <!-- Blog Info -->
+            </div>
+          </a>
+        </div>
+        <!-- Blog 5 End Here -->
+      </div>
+    </div>
     <!-- Third [Blog] Section End Here -->
 
     <!-- forth container start here -->
-        <div class="container-fluid bg-[#ffe7c7]">
-            <div class="flex flex-col sm:flex-row">
-                <div class="lg:w-6/12 md:w-6/12 sm:w-3/5 w-full 2xl:py-72 xl:py-[12.25rem] lg:py-[9.5rem] py-[5.9rem] h-auto relative" style="background-image: url('./assets/images/lets-tallk/footer.jpg'); background-size: cover;">
-                    <div class="absolute top-0 right-0 w-full h-full flex justify-end">
-                        <div class="w-16 h-full bg-[#fbe6cb] opacity-10 z-10"></div>
-                        <div class="w-16 h-full bg-[#fce6ca] opacity-30 z-10"></div>
-                        <div class="w-16 h-full bg-[#fde6c9] opacity-70 z-10"></div>
-                        <div class="w-16 h-full bg-[#fee7c8] opacity-80 z-10"></div>
-                        <div class="w-16 h-full bg-[#ffe7c7] opacity-90 z-10"></div>
-                    </div>
-                </div>
-                <div class="flex flex-col justify-center items-start 2xl:pl-[6.5rem] xl:pl-[6rem] lg:pl-20 md:py-[2.1rem] md:pl-14 sm:py-[2rem] sm:pl-10 pl-7 py-20 sm:w-2/5 w-full mx-auto">
-                    <h4 class="font-[signifier] font-[280] xl:text-[6rem] xl:leading-[6rem] lg:text-[4.5rem] lg:leading-[4.5rem] md:text-[3rem] sm:text-5xl text-[4.5rem] leading-[4.5rem] sm:mt-0 -mt-7">Hey, <br>let's talk.</h4>
-                    <a href="#" class="bg-yellow-400 md:text-[1rem] sm:text-[14px] text-[0.875rem] 2xl:px-9 2xl:py-3 xl:px-8 lg:px-9 lg:py-3 md:px-10 sm:px-7 px-7 py-2 mt-4 sm:py-2 md:px-7 md:py-3 font-[600] rounded-full tracking-widest sm:mt-5 mt-7">HOLLER AT US</a>
-                </div>
-            </div>
+    <div class="container-fluid bg-[#ffe7c7]">
+      <div class="flex flex-col sm:flex-row">
+        <div
+          class="lg:w-6/12 md:w-6/12 sm:w-3/5 w-full 2xl:py-72 xl:py-[12.25rem] lg:py-[9.5rem] py-[5.9rem] h-auto relative"
+          style="
+            background-image: url('./assets/images/lets-tallk/footer.jpg');
+            background-size: cover;
+          "
+        >
+          <div class="absolute top-0 right-0 w-full h-full flex justify-end">
+            <div class="w-16 h-full bg-[#fbe6cb] opacity-10 z-10"></div>
+            <div class="w-16 h-full bg-[#fce6ca] opacity-30 z-10"></div>
+            <div class="w-16 h-full bg-[#fde6c9] opacity-70 z-10"></div>
+            <div class="w-16 h-full bg-[#fee7c8] opacity-80 z-10"></div>
+            <div class="w-16 h-full bg-[#ffe7c7] opacity-90 z-10"></div>
+          </div>
         </div>
+        <div
+          class="flex flex-col justify-center items-start 2xl:pl-[6.5rem] xl:pl-[6rem] lg:pl-20 md:py-[2.1rem] md:pl-14 sm:py-[2rem] sm:pl-10 pl-7 py-20 sm:w-2/5 w-full mx-auto"
+        >
+          <h4
+            class="font-[signifier] font-[280] xl:text-[6rem] xl:leading-[6rem] lg:text-[4.5rem] lg:leading-[4.5rem] md:text-[3rem] sm:text-5xl text-[4.5rem] leading-[4.5rem] sm:mt-0 -mt-7"
+          >
+            Hey, <br />let's talk.
+          </h4>
+          <a
+            href="#"
+            class="bg-yellow-400 md:text-[1rem] sm:text-[14px] text-[0.875rem] 2xl:px-9 2xl:py-3 xl:px-8 lg:px-9 lg:py-3 md:px-10 sm:px-7 px-7 py-2 mt-4 sm:py-2 md:px-7 md:py-3 font-[600] rounded-full tracking-widest sm:mt-5 mt-7"
+            >HOLLER AT US</a
+          >
+        </div>
+      </div>
+    </div>
     <!-- forth container start here -->
 
     <!-- footer start here -->
-        <div class="px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-[96px] p-6 sm:p-12 md:p-0 bg-black text-white">
-            <div class="container mx-auto">
-                <div class="w-full lg:flex md:flex sm:block">
-                    <div class="lg:w-3/5 md:w-2/5">
-                        <div class="mx-auto flex flex-wrap justify-between md:space-y-0 w-full">
-                            <div>
-                                <svg id="icon-tighten-mark-outline" viewBox="0 0 104.9 106.4" aria-hidden="true" class="h-28 w-28">
-                                    <path style="fill:#FFBC00" d="M72,44.5L60.9,33.8V0H43.8v33.7L32.6,44.5H0V62h32.7l11.1,10.7v33.7h17.1V72.7L72,62h32.9V44.5H72z M103.9,61
-                                        H71.6L59.9,72.3v33.1H44.8V72.3L33.1,61H1V45.5h32l11.8-11.4V1h15.1v33.2l11.7,11.3h32.3V61z"></path>
-                                </svg>
-                            </div>
-                            <div class="flex space-x-8 sm:flex md:hidden lg:hidden ">
-                                <div>
-                                    <a href="https://twitter.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://github.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                        <i class="fab fa-github" ></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.linkedin.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-[30px] md:pt-[79px] mb-[10px]">
-                            <a href="https://duckduckgo.com/?q=Directions+to+1807+W.+Sunnyside%2C+Chicago%2C+IL&t=h_&ia=directions&iaxm=directions&end=what%3A1807%2520W%2520Sunnyside%2520Ave%2Cwhere%3AChicago%252C%2520IL%2520%252060640%252C%2520United%2520States&transport=drive" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[14px] leading-6 text-[#9b9b97] font-mono font-bold tracking-widest word-spacing-tight" >1807 W. SUNNYSIDE, SUITE 1G</a>
-                        </div>
-                        <div class="mb-[10px]">
-                            <a href="https://duckduckgo.com/?q=Directions+to+1807+W.+Sunnyside%2C+Chicago%2C+IL&t=h_&ia=directions&iaxm=directions&end=what%3A1807%2520W%2520Sunnyside%2520Ave%2Cwhere%3AChicago%252C%2520IL%2520%252060640%252C%2520United%2520States&transport=drive" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"> CHICAGO, IL 60640</a>
-                        </div>
-                        <div class="mb-[10px]">
-                            <a href="tel:(312) 448-7405" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest  word-spacing-tight font-bold"> (312) 448-7405</a>
-                        </div>
-                        <div class="mb-[20px]">
-                            <a href="#" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest font-bold"> HELLO@TIGHTEN.CO</a>
-                        </div>
-                        <div class="flex space-x-6 hidden sm:hidden md:flex lg:flex ">
-                            <div>
-                                <a href="https://twitter.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://github.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                    <i class="fab fa-github" ></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
-                                    <i class="fab fa-linkedin-in "></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <div
+      class="px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-[96px] p-6 sm:p-12 md:p-0 bg-black text-white"
+    >
+      <div class="container mx-auto">
+        <div class="w-full lg:flex md:flex sm:block">
+          <div class="lg:w-3/5 md:w-2/5">
+            <div
+              class="mx-auto flex flex-wrap justify-between md:space-y-0 w-full"
+            >
+              <div>
+                <svg
+                  id="icon-tighten-mark-outline"
+                  viewBox="0 0 104.9 106.4"
+                  aria-hidden="true"
+                  class="h-28 w-28"
+                >
+                  <path
+                    style="fill: #ffbc00"
+                    d="M72,44.5L60.9,33.8V0H43.8v33.7L32.6,44.5H0V62h32.7l11.1,10.7v33.7h17.1V72.7L72,62h32.9V44.5H72z M103.9,61
+                                        H71.6L59.9,72.3v33.1H44.8V72.3L33.1,61H1V45.5h32l11.8-11.4V1h15.1v33.2l11.7,11.3h32.3V61z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex space-x-4 sm:flex md:hidden lg:hidden">
+                <div>
+                  <a
+                    href="https://twitter.com/"
+                    class="text-[22px] text-[#9b9b97] hover:text-white"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://github.com/"
+                    class="text-[22px] text-[#9b9b97] hover:text-white"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="text-[22px] text-[#9b9b97] hover:text-white"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="pt-[30px] md:pt-[79px] mb-[10px]">
+              <p
+                class="text-[14px] leading-6 text-[#9b9b97] font-mono font-bold tracking-widest word-spacing-tight"
+              >
+                Swar Vishwa, Ekdant Dutta Mandir Rd, Wireless Colony, Next to
+                Siddhart Residency, Aundh Pune 411007
+              </p>
+            </div>
 
-                    <div class="w-full xl:flex lg:flex md:flex md:flex-row sm:flex-col justify-between">
-                        <div class="space-y-2 px-0 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-9 xl:pl-7">
-                            <h4 class="font-serif mb-4 sm:mb-6 text-2xl md:text-[1.875rem] lg:text-3xl font-extralight">Work</h4>
-                            <div>
-                                <a href="./method.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono word-spacing-tight">METHOD</a>
-                            </div>
-                            <div>
-                                <a href="https://tighten.com/manifesto/" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono word-spacing-tight">MANIFESTO</a>
-                            </div>
-                            <div>
-                                <a href="#" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono word-spacing-tight">CASE STUDIES</a>
-                            </div>
-                        </div>
-                        <div class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-6 pl-0">
-                            <h4 class="font-serif mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight">Company</h4>
-                            <div>
-                                <a href="./about.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono text-[16px] tracking-widest">ABOUT </a>
-                            </div>
-                            <div>
-                                <a href="./team.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono text-[16px] tracking-widest">TEAM</a>
-                            </div>
-                            <div>
-                                <a href="./blog.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono text-[14px] tracking-widest">BLOG</a>
-                            </div>
-                            <div>
-                                <a href="https://tighten.com/work-with-us/" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono text-[14px] tracking-widest">WORK WITH US</a>
-                            </div>
-                            <div>
-                                <a href="./contact.html" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[14px] tracking-widest">CONTACT</a>
-                            </div>
-                        </div>
-                        <div class="space-y-2  mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-2 xl:pl-0">
-                            <h4 class="font-[serif] mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight">Community</h4>
-                            <div>
-                                <a href="#" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest">THE LARAVEL PODCAST</a>
-                            </div>
-                            <div>
-                                <a href="https://twentypercent.fm/" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono  tracking-widest">TWENTY PERCENT TIME PODECAST</a>
-                            </div>
-                            <div>
-                                <a href="https://onramp.dev/en" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono  tracking-widest">LARAVEL ONRAMP</a>
-                            </div>
-                            <div>
-                                <a href="https://novapackages.com/" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono  tracking-widest">NOVA PACKAGES</a>
-                            </div>
-                            <div>
-                                <a href="https://laravel-tricks.com/tricks" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97]  font-mono  tracking-widest">LARAVEL TRICKS</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="mb-[10px]">
+              <a
+                href="tel:+91 20 46 7506 40"
+                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
+              >
+                IND: +91 20 46 7506 40 /</a
+              >
+              <a
+                href="tel:+91 20 46 7506 40"
+                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
+              >
+                +91 9130 036 036</a
+              >
             </div>
-        </div>
-        <div class="bg-[#1A1A1A] xl:py-8 lg:px-28 lg:py-6 md:px-16 px-4 py-10 -mt-1">
-            <div class="container mx-auto"> 
-                <div class="flex md:flex-row flex-col-reverse lg:justify-between lg:items-center md:justify-between items-center text-xs sm:text-sm">
-                    <div class="text-[#9b9b97] mt-0">
-                        <span class="">&copy;2022 Tighten Co.</span>
-                        <span class="mx-4">.</span>
-                        <a href="#" class="text-[#9b9b97] hover:text-white underline">Privacy Policy</a>
-                    </div>
-                    <div class="flex">
-                        <div class="">
-                                <a href="#" class="flex text-white">
-                                    <img src="./assets/images/footer/jigsaw.png" class="w-6 mr-2">
-                                <span class="hover:text-yellow-400 text-sm text-[#9b9b97]"> Built with Jigsaw  </span>  
-                                </a>
-                        </div>
-                        <div>
-                            <span class="mx-4 text-white">.</span>
-                        </div>
-                    <div>
-                        <a href="#" class="text-white text-sm hover:text-yellow-400">
-                            <i class="fa-solid fa-bars-sort"></i>
-                            <span>Forms by FieldGoal</span>
-                        </a>
-                    </div>
-                    </div>
-                </div>
+            <div class="mb-[10px]">
+              <a
+                href="tel:1 860 967 0120"
+                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
+              >
+                USA: 1 860 967 0120
+              </a>
             </div>
+            <div class="mb-[20px]">
+              <a
+                href="mailto:hello@geexu.in"
+                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest font-bold"
+              >
+                hello@geexu.in</a
+              >
+            </div>
+            <div class="flex space-x-6 hidden sm:hidden md:flex lg:flex">
+              <div>
+                <a
+                  href="https://www.linkedin.com/company/geexu/"
+                  class="text-[22px] text-[#9b9b97] hover:text-white"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.facebook.com/geexu.org/"
+                  class="text-[22px] text-[#9b9b97] hover:text-white"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.instagram.com/geexu.co.in/"
+                  class="text-[22px] text-[#9b9b97] hover:text-white"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full xl:flex lg:flex md:flex md:flex-row sm:flex-col justify-between"
+          >
+            <div
+              class="space-y-2 px-0 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-9 xl:pl-7"
+            >
+              <h4
+                class="font-serif mb-4 sm:mb-6 text-2xl md:text-[1.875rem] lg:text-3xl font-extralight"
+              >
+                Work
+              </h4>
+              <div>
+                <a
+                  href="./method.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono word-spacing-tight"
+                  >METHOD</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://tighten.com/manifesto/"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono word-spacing-tight"
+                  >MANIFESTO</a
+                >
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono word-spacing-tight"
+                  >CASE STUDIES</a
+                >
+              </div>
+            </div>
+            <div class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-6 pl-0">
+              <h4
+                class="font-serif mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight"
+              >
+                Company
+              </h4>
+              <div>
+                <a
+                  href="./about.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[16px] tracking-widest"
+                  >ABOUT
+                </a>
+              </div>
+              <div>
+                <a
+                  href="./team.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[16px] tracking-widest"
+                  >TEAM</a
+                >
+              </div>
+              <div>
+                <a
+                  href="./blog.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[14px] tracking-widest"
+                  >BLOG</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://tighten.com/work-with-us/"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[14px] tracking-widest"
+                  >WORK WITH US</a
+                >
+              </div>
+              <div>
+                <a
+                  href="./contact.html"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono text-[14px] tracking-widest"
+                  >CONTACT</a
+                >
+              </div>
+            </div>
+            <div
+              class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-2 xl:pl-0"
+            >
+              <h4
+                class="font-[serif] mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight"
+              >
+                Community
+              </h4>
+              <div>
+                <a
+                  href="#"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >THE LARAVEL PODCAST</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://twentypercent.fm/"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >TWENTY PERCENT TIME PODECAST</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://onramp.dev/en"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >LARAVEL ONRAMP</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://novapackages.com/"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >NOVA PACKAGES</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://laravel-tricks.com/tricks"
+                  class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] font-mono tracking-widest"
+                  >LARAVEL TRICKS</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="bg-[#1A1A1A] xl:py-8 lg:px-28 lg:py-6 md:px-16 px-4 py-10 -mt-1"
+    >
+      <div class="container mx-auto">
+        <div
+          class="flex md:flex-row flex-col-reverse lg:justify-between lg:items-center md:justify-between items-center text-xs sm:text-sm"
+        >
+          <div class="text-[#9b9b97] mt-0">
+            <span class="">&copy;2022 All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- footer end here -->
 
     <!-- All Js Script tag and Link Start Here -->
-        <script src="./assets/fontawsome/js/all.js"></script>
+    <script src="./assets/fontawsome/js/all.js"></script>
 
-        <!-- Toggle js Script Start Here -->
-            <script>
-                function Menu(e){
-                    let list = document.querySelector('ul');
-                    e.name === 'menu-outline' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) :( e.name ="menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))   
-                }
-            </script>
-        <!-- Toggle js Script End Here -->
+    <!-- Toggle js Script Start Here -->
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu-outline"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu-outline"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+    <script src="js/custom.js"></script>
+    <!-- Toggle js Script End Here -->
     <!-- All Js Script tag and Link Start Here -->
-</body>
+  </body>
 </html>

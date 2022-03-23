@@ -177,62 +177,80 @@
       </div>
       <!-- Form Section Start Here -->
       <div class="container mx-auto bg-[#272727] mt-10">
-        <div
-          class="flex-col space-y-10 py-8 px-6 sm:py-8 sm:px-12 lg:py-12 lg:px-16"
-        >
-          <div class="flex basis-[100%]">
-            <div class="basis-[50%]">
+        <form onsubmit="submitform();return false" id="myForm">
+          <div
+            class="flex-col space-y-10 py-8 px-6 sm:py-8 sm:px-12 lg:py-12 lg:px-16"
+          >
+            <div class="flex basis-[100%]">
+              <div class="basis-[50%]">
+                <input
+                  class="signup-input bg-transparent border-b border-b-white pb-2 placeholder:text-white w-full outline-0 text-white"
+                  type="text"
+                  maxlength="30"
+                  id="name"
+                  name="name"
+                  placeholder="FIRST NAME"
+                  title="Please enter a valid Name."
+                  required
+                />
+              </div>
+              <div class="basis-[50%]">
+                <input
+                  class="signup-input bg-transparent border-b border-b-white w-[100%] pb-2 font-[signifier] placeholder:tracking-widest placeholder:text-white outline-0 ml-3 text-white"
+                  type="text"
+                  maxlength="10"
+                  pattern="[789][0-9]{9}"
+                  id="mobile"
+                  name="mobile"
+                  placeholder="MOBILE NUMBER"
+                  title="Please enter a valid Number."
+                  required
+                />
+              </div>
+            </div>
+            <div>
               <input
-                type="text"
-                name=""
-                placeholder="FIRST NAME"
-                class="bg-transparent border-b border-b-white w-[90%] pb-2 font-[signifier] placeholder:tracking-widest text-sm placeholder:text-white outline-0"
+                class="signup-input bg-transparent border-b border-b-white pb-2 placeholder:text-white w-full outline-0 text-white"
+                type="email"
+                id="email"
+                pattern="[^ @]*@[^ @]*"
+                name="email"
+                placeholder="EMAIL"
+                title="Please enter a valid email address."
+                required
               />
             </div>
-            <div class="basis-[50%]">
-              <input
-                type="text"
-                name=""
-                placeholder="LAST NAME"
-                class="bg-transparent border-b border-b-white w-[100%] pb-2 font-[signifier] placeholder:tracking-widest text-sm placeholder:text-white outline-0"
-              />
+            <div class="flex flex-col">
+              <span class="text-white">TELL US ABOUT YOUR IDEA</span>
+              <textarea
+                class="signup-input bg-transparent border border-1 mt-2 text-white pl-3"
+                id="message"
+                name="message"
+                title="Please enter a where you based."
+                required
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="flex justify-end">
+              <button
+                type="submit"
+                class="bg-yellow-600 text-black px-6 py-3 rounded-full"
+                value="submit"
+              >
+                Submit
+              </button>
             </div>
           </div>
-          <div>
-            <input
-              type="email"
-              placeholder="EMAIL"
-              class="bg-transparent border-b border-b-white pb-2 placeholder:text-white w-full outline-0"
-            />
-          </div>
-          <div class="flex flex-col">
-            <span class="text-white">TELL US ABOUT YOUR IDEA</span>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              class="bg-transparent border border-1 mt-2"
-            ></textarea>
-          </div>
-          <div class="flex justify-end">
-            <a href="#" class="bg-yellow-600 text-black px-6 py-3 rounded-full">
-              Send</a
-            >
-          </div>
-          <div class="flex justify-start">
-            <a
-              href="#"
-              class="text-gray-300 flex items-center justify-center hover:text-yellow"
-            >
-              <i class="fa-solid fa-bars-sort"></i> Form by FieldGoal</a
-            >
-          </div>
-        </div>
+        </form>
       </div>
       <!-- Form Section Start Here -->
     </div>
     <!-- Hero Section End Here -->
+    <div id="success">
+      Thanks you for contacting, We will get back to you shortly.
+    </div>
+    <div id="error">Please try again, something wrong !</div>
 
     <!-- footer start here -->
     <div
@@ -506,6 +524,61 @@
       }
     </script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      function submitform() {
+        var set = document.getElementsByName("GeexuTechnology-set");
+        var setValue;
+        for (i = 0; i < set.length; i++) {
+          if (set[i].checked) setValue = set[i].value;
+        }
+        let email = document.getElementById("email").value;
+        let name = document.getElementById("name").value;
+        let mobile = document.getElementById("mobile").value;
+        let address = document.getElementById("message").value;
+
+        content =
+          "<b>Email : </b>" +
+          email +
+          "<br> <b>Name : </b>" +
+          name +
+          "<br> <b>Mobile : </b>" +
+          mobile +
+          "<br> <b>Message : </b>" +
+          address;
+
+        const rawResponse = fetch(
+          "https://geexu-milkers.herokuapp.com/sendEmail",
+          {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              to: "harish@geexu.in",
+              subject: "Geexu Technology",
+              html: content,
+            }),
+          }
+        )
+          .then((response) => response.json())
+          .then((json) => {
+            var x = document.getElementById("success");
+            x.className = "show";
+            setTimeout(function () {
+              x.className = x.className.replace("show", "");
+            }, 3000);
+            document.getElementById("myForm").reset();
+          })
+          .catch((error) => {
+            var x = document.getElementById("error");
+            x.className = "show";
+            setTimeout(function () {
+              x.className = x.className.replace("show", "");
+            }, 3000);
+          });
+      }
+    </script>
     <!-- Toggle js Script End Here -->
     <!-- All Script Tag and link Start Here -->
   </body>

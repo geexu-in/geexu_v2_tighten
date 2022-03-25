@@ -60,3 +60,39 @@
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 188 0);
+}
+.bg-blue-to-yellow-8, .bg-yellow-to-blue-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 188 0);
+}
+.bg-yellow-to-blue-2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 190 33);
+}
+.bg-yellow-to-blue-3 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 192 66);
+}
+.bg-yellow-to-blue-4 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 194 99);
+}
+.bg-yellow-to-blue-5 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(176 196 133);
+}
+.bg-yellow-to-blue-6 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 198 166);
+}
+.bg-yellow-to-blue-7 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(136 200 199);
+}
+.bg-yellow-to-blue-8 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(116 202 232);
+}

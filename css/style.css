@@ -96,3 +96,8 @@
   --tw-bg-opacity: 1;
   background-color: rgb(116 202 232);
 }
+
+
+header.careers-company-header {
+    display: none !important;
+}

@@ -62,31 +62,31 @@
 }
 .bg-yellow {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 188 0);
+  background-color: rgb(127 207 102);
 }
 .bg-blue-to-yellow-8, .bg-yellow-to-blue-1 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 188 0);
+  background-color: #94cb70;
 }
 .bg-yellow-to-blue-2 {
   --tw-bg-opacity: 1;
-  background-color: rgb(235 190 33);
+  background-color: #b0c485;
 }
 .bg-yellow-to-blue-3 {
   --tw-bg-opacity: 1;
-  background-color: rgb(215 192 66);
+  background-color: #9cc6a6;
 }
 .bg-yellow-to-blue-4 {
   --tw-bg-opacity: 1;
-  background-color: rgb(195 194 99);
+  background-color: #88c8c7;
 }
 .bg-yellow-to-blue-5 {
   --tw-bg-opacity: 1;
-  background-color: rgb(176 196 133);
+  background-color: #74cae8;
 }
 .bg-yellow-to-blue-6 {
   --tw-bg-opacity: 1;
-  background-color: rgb(156 198 166);
+  background-color: #8cd2eb;
 }
 .bg-yellow-to-blue-7 {
   --tw-bg-opacity: 1;
@@ -96,8 +96,37 @@
   --tw-bg-opacity: 1;
   background-color: rgb(116 202 232);
 }
-
+.text-charcoal-30 {
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179/var(--tw-text-opacity));
+}
 
 header.careers-company-header {
     display: none !important;
+}
+.to-blue-500 {
+  --tw-gradient-to: #62bc64;
+}
+.from-cyan-500 {
+  --tw-gradient-from: #68ccd9;
+  --tw-gradient-stops: rgb(104 204 217), var(--tw-gradient-to, rgb(6 182 212 / 0));
+}
+
+@media (min-width: 768px) {
+  .slick-list.draggable {
+    padding: 0px 0px !important;
+    width: 1460px;
+    margin-left: -50px;
+  }
+}
+@media (max-width: 768px) {
+  .slick-list.draggable {
+    padding: 0px 0px !important;
+    width: 504px;
+    margin-left: -16px;
+  }
+
+  img.w-full.object-cover {
+  height:9rem;
+  }
 }

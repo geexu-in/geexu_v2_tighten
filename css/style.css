@@ -130,3 +130,7 @@ header.careers-company-header {
   height:9rem;
   }
 }
+.active{
+  border-bottom: 5px solid #65b722 !important;
+  color: #65b722;
+}

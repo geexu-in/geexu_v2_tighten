@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script
+    defer=""
+    src="https://tighten.com/assets/build/js/main.js?id=b0b646e36cc5d7106b59"
+  ></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -570,7 +575,7 @@
                 src="./assets/images/slider-img/first.jpg"
                 class="w-full object-cover h-64"
               />
-              <div class="absolute bottom-4 lg:left-3 lg-2 flex sm:flex hidden">
+              <div class="absolute bottom-4 lg:left-3 lg-2 flex sm:hidden md:hidden lg:flex hidden">
                 <a
                   href="#"
                   class="bg-[#61af21] text-[12px] text-white uppercase px-4"
@@ -614,7 +619,7 @@
                 class="w-full object-cover h-64"
               />
               <div
-                class="absolute bottom-4 left-4 flex flex-wrap sm:flex hidden"
+                class="absolute bottom-4 left-4 flex flex-wrap sm:hidden md:hidden lg:flex hidden"
               >
                 <a
                   href="#"
@@ -659,7 +664,7 @@
                 class="w-full object-cover h-64"
               />
               <div
-                class="absolute md:bottom-4 bottom-10 left-4 flex flex-wrap sm:flex hidden"
+                class="absolute md:bottom-4 bottom-10 left-4 flex flex-wrap sm:hidden md:hidden lg:flex hidden"
               >
                 <a
                   href="#"
@@ -709,7 +714,7 @@
                 src="./assets/images/slider-img/first.jpg"
                 class="w-full object-cover h-64"
               />
-              <div class="absolute bottom-4 lg:left-3 lg-2 flex sm:flex hidden">
+              <div class="absolute bottom-4 lg:left-3 lg-2 flex sm:hidden md:hidden lg:flex hidden">
                 <a
                   href="#"
                   class="bg-[#65b722] text-[12px] text-white uppercase px-4"
@@ -745,220 +750,196 @@
             </div>
           </div>
         </div>
-        <div class="px-6 md:px-16 lg:px-1 py-3 sm:py-10">
+        <div class=" md:px-16 lg:px-1 py-3 sm:py-10">
           <div class="max-w-screen-2xl mx-auto">
-          <div class="flex justify-between">
-                           <div class="flex">
-          <a class="rounded-full" aria-label="See more projects" href="/work">
-              <div class="text-sm md:text-base box-border transition-colors duration-300 font-mono word-spacing-tight font-bold tracking-widest rounded-full py-3 px-6 uppercase leading-none
-                       hover:bg-white text-white hover:text-black bg-[#65b722]" style="
-      ">Portfolio information 
-              </div>
-          </a>
+            <div class="flex justify-between items-center flex-wrap gap-4">
+              <div class="flex">
+<a class="rounded-full" aria-label="See more projects" href="/work">
+ <div class="text-[10px] md:text-base box-border transition-colors duration-300 font-mono word-spacing-tight font-bold tracking-widest rounded-full py-3 px-2 uppercase leading-none
+          hover:bg-white text-white hover:text-black bg-[#65B722] lg:py-3 lg:px-4" style="
+">Portfolio information 
+ </div>
+</a>
+</div>
+
+
+<div class="flex items-center swiper-navigation justify-center ml-auto" style="
+">
+                        <div class="swiper-scrollbar hidden sm:block sm:mr-10  bg-[#4d4d4d] rounded" x-ref="clientsScroll" xref="clientsScroll" style="width: 117px;background-color: #4d4d4d;"><div class="swiper-scrollbar-drag" style="transform: translate3d(0px, 0px, 0px);width: 60.5783px;transition-duration: 0ms;border: 2px solid #65b722;height: 8px;border-radius: 20px;background-color: #65b722;"></div>
+</div>
+
+
+                        <div class="space-x-3 sm:space-x-5">
+   <button class="bg-black  text-charcoal-20 border-charcoal-20
+               hover:bg-[#65b722] hover:text-white border hover:border-[#65b722] transition-colors rounded-full p-2 lg:p-3.5" @click="swiper.slidePrev()" aria-label="Previous">
+       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+</svg>
+   </button>
+
+   <button class="bg-black  text-charcoal-20 border-charcoal-20
+               hover:bg-[#65b722] hover:text-white border hover:border-[#65b722] transition-colors rounded-full p-2 lg:p-3.5" @click="swiper.slideNext()" aria-label="Next">
+       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+</svg>
+   </button>
+</div>
+
+
+                   </div>
+         </div>
       </div>
-       
-      
-                          <div class="flex items-center swiper-navigation">
-                               <div class="swiper-scrollbar hidden sm:block sm:mr-10  bg-[#4d4d4d] rounded" x-ref="clientsScroll" xref="clientsScroll" style="width: 117px;"><div class="swiper-scrollbar-drag" style="transform: translate3d(0px, 0px, 0px);width: 60.5783px;transition-duration: 0ms;border: 2px solid #65b722;height: 8px;border-radius: 20px;background-color: #65b722;"></div>
       </div>
-       
-      
-                               <div class="space-x-3 sm:space-x-5">
-          <button class="bg-black  text-charcoal-20 border-charcoal-20
-                      hover:bg-[#65b722] hover:text-white border hover:border-[#65b722] transition-colors rounded-full p-2.5" @click="swiper.slidePrev()" aria-label="Previous">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-      </svg>
-          </button>
-      
-          <button class="bg-black  text-charcoal-20 border-charcoal-20
-                      hover:bg-[#65b722] hover:text-white border hover:border-[#65b722] transition-colors rounded-full p-2.5" @click="swiper.slideNext()" aria-label="Next">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-      </svg>
-          </button>
-      </div>
-      
-       
-                          </div>
-                      </div>
-      </div>
-      </div>
-        <div class="mt-40">
-          <div class="w-full object-cover">
-            <h3
-              class="hidden mb-12 font-serif text-4xl xl:block font-extralight leading-tight-1 md:text-5xl md:leading-tight-1"
-            >
-              At your service in three <br class="sm:block hidden" />
-              essential partnership roles.
-            </h3>
+      <div class="px-6  py-10 md:py-16 lg:py-24 text-white bg-black" x-data="partners">
+        <div class="max-w-screen-2xl mx-auto">
+          <div class="pt-16 pb-16 font-serif text-4xl xl:hidden font-extralight leading-tight-1 sm:text-5xl sm:leading-tight-1 lg:pb-24">
+            At your service in three
+            <br class="hidden sm:block">
+            essential partnership roles.
           </div>
-          <div class="container-fluid mx-auto bg-transparent flex relative">
-            <div class="w-full object-cover h-64">
-              <div
-                class="relative sm:w-[550px] overflow-hidden border-t border-t-white"
-              >
-                <input
-                  type="checkbox"
-                  class="peer show absolute top-0 opacity-0 inset-x-0 w-full h-[5.5rem] z-10 cursor-pointer active"
-                />
-                <div
-                  class="w-[10px] h-full absolute opacity-0 peer-checked:opacity-100 top-0 right-0 bg-gradient-to-b from-[#D6C044] to-[#7CC9DA]"
-                ></div>
-                <div
-                  class="bg-transparent peer-checked:bg-[#1A1A1A] h-12 w-full pl-5 flex items-center"
-                >
-                  <h1
-                    class="font-[Pitch Sans] sm:text-[1.5rem] sm:leading-[1.5rem] font-semibold text-white"
-                  >
-                    Technial Advising
-                  </h1>
-                </div>
-                <!-- arrow icon here -->
-                <div
-                  class="absolute top-3 right-8 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90"
-                >
-                  <svg
-                    class="w-6 h-6 border border-white rounded-full -rotate-90 p-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </div>
-                <!-- Content -->
-                <div
-                  class="bg-[#1A1A1A] text-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40"
-                >
-                  <div class="p-4">
-                    <p class="md:text-[1rem] md:leading-[1.875rem]">
-                      We will take stock of your issues and goals, 
-                      carefully assess your needs, 
-                      and custom-tailor a route forward in order for our
-                      embedded staff to accomplish the best for your organization.
-
-                    </p>
-                  </div>
+    
+          <div class="flex flex-wrap-reverse items-center">
+            <div class="py-8 md:py-0 md:w-1/2 xl:pr-4 2xl:pr-16">
+              <div class="hidden mb-12 font-serif text-4xl xl:block font-extralight leading-tight-1 md:text-5xl md:leading-tight-1">
+                At your service in three
+                <br class="hidden 2xl:block">
+                essential partnership roles.
+              </div>
+    
+              <div class="mb-4">
+                <div class="flex flex-col w-full divide-y divide-charcoal-80 border-y border-y-charcoal-80 h-fit">
+                  <button x-data="{ id: 'A' }" @click.prevent="clickRow($data)" @keydown.enter="clickRow($data)" :aria-expanded="isActive($data) ? true : false" aria-expanded="false">
+                    <div class="flex text-left group">
+                      <div class="flex-grow pl-5 pr-3 transition-colors bg-black" :class="isActive($data) ? 'bg-charcoal' : 'bg-black'">
+                        <div class="flex items-center justify-between w-full">
+                          <div class="px-4 py-8 font-mono text-xl font-semibold leading-none word-spacing-tight sm:text-2xl sm:leading-none transition-colors text-charcoal-60 group-hover:text-charcoal-30" :class="isActive($data) ? 'text-white' : 'text-charcoal-60 group-hover:text-charcoal-30'">
+                            Technical Advising
+                          </div>
+    
+                          <div class="mr-4 border rounded-full transition-colors text-charcoal-60 group-hover:text-charcoal-30 border-charcoal-60 group-hover:border-charcoal-30" :class="isActive($data) ? 'text-charcoal-20 border-charcoal-20' : 'text-charcoal-60 group-hover:text-charcoal-30 border-charcoal-60 group-hover:border-charcoal-30'">
+                            <svg class="h-7 w-7 p-1.5" aria-hidden="true" x-show="! isActive($data)">
+                              <use xlink:href="#icon-chevron-right"></use>
+                            </svg>
+    
+                            <svg class="h-7 w-7 p-1.5" aria-hidden="true" x-show="isActive($data)" style="display: none">
+                              <use xlink:href="#icon-chevron-down"></use>
+                            </svg>
+                          </div>
+                        </div>
+    
+                        <div class="w-full">
+                          <div x-show="isActive($data)" x-collapse="" class="text-sm leading-loose lg:text-base lg:leading-loose text-charcoal-20" style="
+                              height: 0px;
+                              overflow: hidden;
+                              display: none;
+                            " hidden="">
+                            <div class="px-4 pb-8">
+                              In preparation for our embedded team to do the
+                              best for your business, we’ll take stock of
+                              your challenges and goals, carefully assess
+                              your needs, and custom-tailor a path forward.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="w-3 flex-none transition-opacity duration-200 bg-gradient-to-b from-gray to-blue opacity-0" :class="isActive($data) ? 'opacity-100' : 'opacity-0'"></div>
+                    </div>
+                  </button>
+    
+                  <button x-data="{ id: 'B' }" @click.prevent="clickRow($data)" @keydown.enter="clickRow($data)" :aria-expanded="isActive($data) ? true : false" aria-expanded="true">
+                    <div class="flex text-left group">
+                      <div class="flex-grow pl-5 pr-3 transition-colors bg-charcoal" :class="isActive($data) ? 'bg-charcoal' : 'bg-black'">
+                        <div class="flex items-center justify-between w-full">
+                          <div class="px-4 py-8 font-mono text-xl font-semibold leading-none word-spacing-tight sm:text-2xl sm:leading-none transition-colors text-white" :class="isActive($data) ? 'text-white' : 'text-charcoal-60 group-hover:text-charcoal-30'">
+                            Embedded Teams
+                          </div>
+    
+                          <div class="mr-4 border rounded-full transition-colors text-charcoal-20 border-charcoal-20" :class="isActive($data) ? 'text-charcoal-20 border-charcoal-20' : 'text-charcoal-60 group-hover:text-charcoal-30 border-charcoal-60 group-hover:border-charcoal-30'">
+                            <svg class="h-7 w-7 p-1.5" aria-hidden="true" x-show="! isActive($data)" style="display: none">
+                              <use xlink:href="#icon-chevron-right"></use>
+                            </svg>
+    
+                            <svg class="h-7 w-7 p-1.5" aria-hidden="true" x-show="isActive($data)">
+                              <use xlink:href="#icon-chevron-down"></use>
+                            </svg>
+                          </div>
+                        </div>
+    
+                        <div class="w-full">
+                          <div x-show="isActive($data)" x-collapse="" class="text-sm leading-loose lg:text-base lg:leading-loose text-charcoal-20" style="height: auto; overflow: hidden">
+                            <div class="px-4 pb-8">
+                              We're your expert dev team, for however long
+                              you need us. If you decide to build an
+                              internal team, we'll lay the groundwork for
+                              their success and orchestrate a smooth
+                              transition.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="w-3 flex-none transition-opacity duration-200 bg-gradient-to-b from-yellow to-blue opacity-100" :class="isActive($data) ? 'opacity-100' : 'opacity-0'"></div>
+                    </div>
+                  </button>
+    
+                  <button x-data="{ id: 'C' }" @click.prevent="clickRow($data)" @keydown.enter="clickRow($data)" :aria-expanded="isActive($data) ? true : false" aria-expanded="false">
+                    <div class="flex text-left group">
+                      <div class="flex-grow pl-5 pr-3 transition-colors bg-black" :class="isActive($data) ? 'bg-charcoal' : 'bg-black'">
+                        <div class="flex items-center justify-between w-full">
+                          <div class="px-4 py-8 font-mono text-xl font-semibold leading-none word-spacing-tight sm:text-2xl sm:leading-none transition-colors text-charcoal-60 group-hover:text-charcoal-30" :class="isActive($data) ? 'text-white' : 'text-charcoal-60 group-hover:text-charcoal-30'">
+                            Sustained Service
+                          </div>
+    
+                          <div class="mr-4 border rounded-full transition-colors text-charcoal-60 group-hover:text-charcoal-30 border-charcoal-60 group-hover:border-charcoal-30" :class="isActive($data) ? 'text-charcoal-20 border-charcoal-20' : 'text-charcoal-60 group-hover:text-charcoal-30 border-charcoal-60 group-hover:border-charcoal-30'">
+                            <svg class="h-7 w-7 p-1.5" aria-hidden="true" x-show="! isActive($data)">
+                              <use xlink:href="#icon-chevron-right"></use>
+                            </svg>
+    
+                            <svg class="h-7 w-7 p-1.5" aria-hidden="true" x-show="isActive($data)" style="display: none">
+                              <use xlink:href="#icon-chevron-down"></use>
+                            </svg>
+                          </div>
+                        </div>
+    
+                        <div class="w-full">
+                          <div x-show="isActive($data)" x-collapse="" class="text-sm leading-loose lg:text-base lg:leading-loose text-charcoal-20" style="
+                              display: none;
+                              height: 0px;
+                              overflow: hidden;
+                            " hidden="">
+                            <div class="px-4 pb-8">
+                              When our embedded team's work is complete, our
+                              sustained service team is there to offer
+                              advice, work through a new feature, keep your
+                              app up to date, or squash a difficult bug.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="w-3 flex-none transition-opacity duration-200 bg-gradient-to-b from-yellow to-gray opacity-0" :class="isActive($data) ? 'opacity-100' : 'opacity-0'"></div>
+                    </div>
+                  </button>
                 </div>
               </div>
-
-              <div
-                class="relative sm:w-[550px] overflow-hidden border-t border-t-white"
-              >
-                <input
-                  type="checkbox"
-                  class="peer absolute top-0 inset-x-0 w-full h-[5.5rem] opacity-0 z-10 cursor-pointer"
-                />
-
-                <div
-                  class="w-[10px] h-full absolute opacity-0 peer-checked:opacity-100 top-0 right-0 bg-gradient-to-b from-[#D6C044] to-[#7CC9DA]"
-                ></div>
-                <div
-                  class="bg-transparent peer-checked:bg-[#1A1A1A] h-12 w-full pl-5 flex items-center"
-                >
-                  <h1
-                    class="font-[Pitch Sans] sm:text-[1.5rem] sm:leading-[1.5rem] text-lg font-semibold text-white"
-                  >
-                    Embedded Teams
-                  </h1>
-                </div>
-                <!-- arrow icon here -->
-                <div
-                  class="absolute top-3 right-8 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90"
-                >
-                  <svg
-                    class="w-6 h-6 border border-white rounded-full -rotate-90 p-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </div>
-                <!-- Content -->
-                <div
-                  class="bg-[#1A1A1A] text-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40"
-                >
-                  <div class="p-4">
-                    <p class="md:text-[1rem] md:leading-[1.875rem]">
-                      We'll be your expert development team for as long as you need us.
-                      If you opt to form an internal team,
-                      we'll lay the framework for their success and 
-                      help you make the move as pleasant as possible.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="relative sm:w-[550px] overflow-hidden border-b border-b-white border-t border-t-white"
-              >
-                <input
-                  type="checkbox"
-                  class="peer absolute top-0 inset-x-0 w-full h-[5.5rem] opacity-0 z-10 cursor-pointer"
-                />
-                <div
-                  class="w-[10px] h-full absolute opacity-0 peer-checked:opacity-100 top-0 right-0 bg-gradient-to-b from-[#D6C044] to-[#7CC9DA]"
-                ></div>
-                <div
-                  class="bg-transparent peer-checked:bg-[#1A1A1A] h-12 w-full pl-5 flex items-center"
-                >
-                  <h1
-                    class="font-[Pitch Sans] sm:text-[1.5rem] sm:leading-[1.5rem] text-lg font-semibold text-white"
-                  >
-                    Sustained Service
-                  </h1>
-                </div>
-                <!-- arrow icon here -->
-                <div
-                  class="absolute top-3 right-8 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90"
-                >
-                  <svg
-                    class="w-6 h-6 border border-white rounded-full -rotate-90 p-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </div>
-                <!-- Content -->
-                <div
-                  class="bg-[#1A1A1A] text-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40"
-                >
-                  <div class="p-4">
-                    <p class="md:text-[1rem] md:leading-[1.875rem]">
-                      After our embedded team has completed their job, 
-                      our sustained support team is available to provide guidance, 
-                      work through a new feature, maintain your app up to date, or resolve a 
-                      problematic blog.
-
-                    </p>
-                  </div>
-                </div>
+            </div>
+    
+            <div class="flex justify-center w-full md:w-1/2">
+              <div class="relative w-full h-full max-w-xl pr-8 xl:max-w-2xl sm:pr-10 md:pl-6 md:pr-0 xl:pl-4 2xl:px-12">
+                <lottie-player :class="{ 'hidden': !showPlayer('BC') }" id="partnerPlayerBC" mode="normal" src="https://tighten.com/assets/images/partnership-animation-b-c.json" background="transparent" class="">
+                </lottie-player>
+    
+                <lottie-player class="hidden" :class="{ 'hidden': !showPlayer('AC') }" id="partnerPlayerAC" mode="normal" src="https://tighten.com/assets/images/partnership-animation-a-c.json" background="transparent">
+                </lottie-player>
+    
+                <lottie-player class="hidden" :class="{ 'hidden': !showPlayer('AB') }" id="partnerPlayerAB" mode="normal" src="https://tighten.com/assets/images/partnership-animation-a-b.json" background="transparent">
+                </lottie-player>
               </div>
             </div>
           </div>
         </div>
+      </div>
         <br />
         <div
           class="flex flex-col items-center justify-center mb-12 xl:flex-row md:space-x-10 md:space-y-8 xl:space-y-0 sm:mb-0 md:mt-12 lg:mt-16"
@@ -1493,6 +1474,7 @@
     </div>
     <!-- footer end here -->
 
+
     <!-- All Script Tag and Link start here -->
     <script src="./assets/fontawsome/js/all.js"></script>
     <!-- Toggle js Script Start Here -->
@@ -1524,7 +1506,7 @@
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 1.5,
+              slidesToShow: 2,
             },
           },
           {

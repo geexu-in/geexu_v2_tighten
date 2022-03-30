@@ -37,61 +37,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Taiwind Css Script Tag End Here -->
   </head>
-  <body class="m-0 p-0 box-border transition-all duration-300">
+  <body class="m-0 p-0 box-border transition-all duration-300 bg-black" cz-shortcut-listen="true">
     <!-- Header Start Here -->
-    <header
-    class="sticky header top-0 z-50 bg-[#1A1A1A] md:flex justify-between items-center w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] h-[80px] md:h-[90px] lg:h-[90px] md:mx-auto md:top-6 lg:pl-10 lg:pr-12 md:pl-4 md:pr-4 sm:pl-2 sm:pr-0 sm:pt-0 pl-2 pt-[0.125rem]"
-  >
+    <header class="sticky header top-0 z-50 bg-[#1A1A1A] md:flex justify-between items-center w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] h-[80px] md:h-[90px] lg:h-[90px] md:mx-auto md:top-6 lg:pl-10 lg:pr-12 md:pl-4 md:pr-4 sm:pl-2 sm:pr-0 sm:pt-0 pl-2 pt-[0.125rem] fixed">
     <!-- Tablate and Dektopview Logo Start Here -->
-    <div
-      class="tab-desk-logo flex justify-between md:items-center sm:items-end items-center 2xl:pl-[8.3rem] xl:pl-11 lg:pl-10 md:pl-0 pl-4 md:pr-0 md:pt-0 pr-4 pt-[0.8rem]"
-    >
+    <div class="tab-desk-logo flex justify-between md:items-center sm:items-end items-center 2xl:pl-[8.3rem] xl:pl-11 lg:pl-10 md:pl-0 pl-4 md:pr-0 md:pt-0 pr-4 pt-[0.8rem]">
       <div>
         <a href="./index.html">
-          <img
-            src="./assets/images/header-img/logo.png"
-            alt="Tighten Logo"
-            class="logo 2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem] md:pt-0 sm:pt-[0.125rem]"
-          />
-          <img
-            src="./assets/images/header-img/logo.png"
-            alt="Tighten Logo"
-            class="sticky-logo 2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem]  ml-2"
-          />
+          <img src="./assets/images/header-img/logo.png" alt="Tighten Logo" class="logo 2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem] md:pt-0 sm:pt-[0.125rem]">
+          <img src="./assets/images/header-img/logo.png" alt="Tighten Logo" class="sticky-logo 2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem]  ml-2">
         </a>
       </div>
       <div>
-        <ion-icon
-          name="menu-outline"
-          class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2"
-          onclick="Menu(this)"
-        >
+        <ion-icon name="menu-outline" class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2 md hydrated" onclick="Menu(this)" role="img" aria-label="menu outline">
         </ion-icon>
       </div>
     </div>
     <!-- Tablate and Dektopview Logo End Here -->
-    <div class="2xl:pr-20">
+    <div class="2xl:pr-20 h-full">
       <!-- Tablate and Desktop View NavLink Strat here -->
-      <nav class="navbar lg:flex md:flex opacity-100">
-        <div class="nav-link">
-          <ul class="bg-[#1A1A1A] list-none md:flex items-center 2xl:space-x-[3.563rem] xl:space-x-[3.580rem] lg:space-x-[2.570rem] md:space-x-[20px] md:static absolute w-full -top-[500px] left-0 duration-1000 text-white hover:text-gray-400 text-right md:text-center opacity-100 pb-[2.5rem] sm:pb-[2.625rem] md:pb-0 pr-8 md:pr-0 lg:mr-7 2xl:mr-10 2xl:pb-1 2xl:-mt-0 xl:-mt-1 mt-0">
-            <li class="md:mt-0 mt-1">
-              <a href="./method.html" class="font-mono font-bold hover:text-white uppercase border-b-[5px] border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">Method</a>
+      <nav class="navbar lg:flex md:flex opacity-100 h-full opacity-100">
+        <div class="nav-link h-full flex">
+          <ul class=" opacity-100 bg-[#1A1A1A] list-none md:flex items-center 2xl:space-x-[3.563rem] xl:space-x-[3.580rem] lg:space-x-[2.570rem] md:space-x-[20px] md:static absolute w-full -top-[500px] left-0 duration-1000 text-white hover:text-gray-400 text-right md:text-center opacity-100 pb-[2.5rem] sm:pb-[2.625rem] md:pb-0 pr-8 md:pr-0 lg:mr-7 2xl:mr-10  2xl:-mt-0  mt-0 top-[80px] lg:h-full">
+            <li class="h-full md:mt-0 mt-7">
+              <a href="./method.html" class="h-full font-mono font-bold hover:text-white uppercase border-b-[5px] border-t-[5px] border-t-transparent border-t-transparent border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 lg:flex lg:items-center md:flex md:items-center">Method</a>
             </li>
-            <li class="md:mt-0 mt-7">
-              <a href="./work.html" class="active font-mono font-bold hover:text-white uppercase border-b-[5px] border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">WORK</a>
+            <li class="h-full md:mt-0 mt-7">
+              <a href="./work.html" class="active h-full font-mono font-bold hover:text-white uppercase border-b-[5px] border-t-[5px] border-t-transparent border-t-transparent border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 lg:flex lg:items-center md:flex md:items-center">WORK</a>
             </li>
-            <li class="md:mt-0 mt-7">
-              <a href="./blog.html" class="font-mono font-bold hover:text-white uppercase border-b-[5px] border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">BLOG</a>
+            <li class="h-full md:mt-0 mt-7">
+              <a href="./blog.html" class="h-full font-mono font-bold hover:text-white uppercase border-b-[5px] border-t-[5px] border-t-transparent border-t-transparent border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 lg:flex lg:items-center md:flex md:items-center">BLOG</a>
             </li>
-            <li class="md:mt-0 mt-7">
-              <a href="./team.html" class="font-mono font-bold hover:text-white uppercase border-b-[5px] border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">TEAM</a>
+            <li class="h-full md:mt-0 mt-7">
+              <a href="./team.html" class="h-full font-mono font-bold hover:text-white uppercase border-b-[5px] border-t-[5px] border-t-transparent border-t-transparent border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 lg:flex lg:items-center md:flex md:items-center">TEAM</a>
             </li>
-            <li class="md:mt-0 mt-7">
-              <a href="./about.html" class="font-mono font-bold hover:text-white uppercase border-b-[5px] border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 md:pb-8">ABOUT</a>
+            <li class="h-full md:mt-0 mt-7">
+              <a href="./about.html" class="h-full font-mono font-bold hover:text-white uppercase border-b-[5px] border-t-[5px] border-t-transparent border-t-transparent border-b-transparent hover:border-b-[#65b722] lg:text-[1rem] lg:leading-[0.710rem] md:text-sm text-[1.125rem] leading-[1.75rem] tracking-[3px] pb-0 lg:flex lg:items-center md:flex md:items-center">ABOUT</a>
             </li>
 
-            <a href="./contact.html" class="btn mt-9 sm:mt-10 md:mt-0 inline-block 2xl:px-5 2xl:pt-2 2xl:pb-3 2xl:mt-1 xl:pt-2.5 xl:pb-2.5 xl:px-5 xl:mt-1 lg:px-5 lg:py-2.5 md:px-4 md:py-3 sm:px-5 sm:py-2.5 md:-mr-0 sm:-mr-2 -mr-2 px-6 py-4 border border-white rounded-full text-white font-mono font-bold lg:text-[1rem] lg:leading-[1.5rem] lg:font-[700] md:text-[14px] text-[0.875rem] leading-[0.875rem] tracking-[4px] hover:bg-gradient-to-r from-[#68ccd9] to-[#62bd64] hover:text-white hover:border-transparent">CONTACT</a>
+            <a href="./contact.html" class="mt-7 md:mt-0 btn  inline-block  border border-white rounded-full text-white font-mono font-bold lg:text-[1rem] lg:leading-[1.5rem] lg:font-[700] md:text-[14px] text-[0.875rem] leading-[0.875rem] tracking-[4px] hover:bg-gradient-to-r from-[#68ccd9] to-[#62bd64] hover:text-white hover:border-transparent shadow-button-inner-gray border-white bg-origin-border hover:border-transparent
+            py-3 lg:py-2.5 px-5 uppercase text-white border ">CONTACT</a>
           </ul>
         </div>
       </nav>
@@ -102,30 +87,22 @@
 
     <!-- Hero Section Start Here -->
     <div class="container-fluid bg-black px-6 md:px-16 lg:px-28 -m-1">
-      <div
-        class="bg-black container mx-auto 2xl:px-0 -mt-24 pt-20 2xl:pb-52 min-h-[615px] sm:min-h-[645px] md:min-h-[850px] lg:min-h-[825px] xl:min-h-[940px]"
-      >
+      <div class="bg-black container mx-auto 2xl:px-0 -mt-24 pt-20 2xl:pb-64 min-h-[615px] sm:min-h-[645px] md:min-h-[850px] lg:min-h-[825px] xl:min-h-[940px]">
         <!-- Hero Section Start Here -->
         <div class="mt-[8.538rem] sm:mt-28 md:mt-52">
           <div class="main heading">
-            <h1
-              class="2xl:text-[20rem] 2xl:leading-[20rem] xl:text-[18rem] xl:leading-[18rem] lg:text-[14rem] lg:leading-[14rem] md:text-[12rem] md:leading-[12rem] sm:text-[10rem] sm:leading-[10rem] text-[3.75rem] leading-[4rem] text-white font-[signifier] font-[100]"
-            >
+            <h1 class="2xl:text-[20rem] 2xl:leading-[20rem] xl:text-[18rem] xl:leading-[18rem] lg:text-[14rem] lg:leading-[14rem] md:text-[12rem] md:leading-[12rem] sm:text-[10rem] sm:leading-[10rem] text-[3.75rem] leading-[4rem] text-white font-[signifier] font-[100]">
               Work
             </h1>
           </div>
           <div>
-            <p
-              class="font-[signifier] text-white font-[100] md:text-4xl sm:text-3xl text-[1.5rem] leading-[2.063rem] md:leading-snug sm:leading-snug lg:mt-12 mt-9 sm:pl-2"
-            >
+            <p class="font-[signifier] text-white font-[100] md:text-4xl sm:text-3xl text-[1.5rem] leading-[2.063rem] md:leading-snug sm:leading-snug lg:mt-12 mt-9 sm:pl-2">
 
               we look at every corner of
-              <br
-                class="block sm:hidden md:hidden lg:hidden lx:hidden 2xl:hidden"
-              />
-              the details <br class="hidden sm:block lg:hidden" />
-              to help businesses <br class="hidden lg:block" />
-              like yours overcome <br class="hidden sm:block lg:hidden" />
+              <br class="block sm:hidden md:hidden lg:hidden lx:hidden 2xl:hidden">
+              the details <br class="hidden sm:block lg:hidden">
+              to help businesses <br class="hidden lg:block">
+              like yours overcome <br class="hidden sm:block lg:hidden">
               obstacles to advancement.
             </p>
           </div>
@@ -136,10 +113,10 @@
     <!-- Hero Section End Here -->
 
     <!-- Secound Section Start Here -->
-    <div class="w-full mx-auto pt-5  py-5 md:py-14 lg:py-14 xl:py-14 xl:px-28 px-6 md:px-16 bg-zinc-900">
-      <div class="flex flex-wrap justify-evenly md-mx-1 lg:-mx-4 gap-14 md:flex-wrap lg:flex-nowrap ">
+    <div class="w-full mx-auto pt-5  py-5 md:py-14 lg:py-14 xl:pb-14 xl:pt-[6.5rem] xl:px-28 px-6 md:px-16 bg-zinc-900">
+      <div class="flex flex-wrap justify-evenly  gap-14 md:flex-wrap lg:flex-nowrap  max-w-screen-2xl mx-auto bg-zinc-900 -mt-24 lg:-mt-40">
       <div class="w-full">
-          <div style="background-image:url(./assets/images/work/four.jpg)" class="relative h-64 w-full flex items-end justify-start text-left bg-cover bg-center">
+          <div style="background-image:url(./assets/images/work/four.jpg)" class=" hover:shadow-[10px_20px_40px_0px_rgba(46,204,113,0.1)] scale-100 hover:scale-105 duration-300 relative h-64 lg:h-80 xl:h-80 w-full flex items-end justify-start text-left bg-cover bg-center">
       <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900"></div>
           
       <div class="absolute flex flex-col justify-end inset-0 p-4 sm:p-6">
@@ -166,7 +143,7 @@
       </div>
       
       <div class="w-full">
-          <div style="background-image:url(./assets/images/work/three.jpg)" class="relative h-64 w-full flex items-end justify-start text-left bg-cover bg-center">
+          <div style="background-image:url(./assets/images/work/three.jpg)" class="hover:shadow-[10px_20px_40px_0px_rgba(46,204,113,0.1)] scale-100 hover:scale-105 duration-300 relative h-64 lg:h-80 xl:h-80  w-full flex items-end justify-start text-left bg-cover bg-center">
       <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900"></div>
           
       <div class="absolute flex flex-col justify-end inset-0 p-4 sm:p-6">
@@ -198,8 +175,8 @@
    </div>
    </div>
 
-   <div class="bg-zinc-900">
-    <div class="flex flex-col py-5 px-5 pt-10  py-5 md:py-20 lg:py-20 lg:px-40 xl:py-20 px-6 md:px-16  bg-zinc-900">
+   <div class=" bg-zinc-900">
+    <div class="max-w-screen-2xl mx-auto flex flex-col py-5 px-5 pt-10  py-5 md:py-20 lg:py-20 lg:px-40 xl:py-20 py-20 px-6 md:px-16  ">
         <div class="font-serif font-extralight text-2xl xs:text-3xl leading-tight xl:text-4xl xl:leading-tight text-white mb-4">
             Treat people well, solve the right problems, and <br class="hidden xl:block">
             build spectacular software. That's how we roll.
@@ -209,17 +186,17 @@
          <div class="flex">
             <a class="rounded-full" inverted="inverted" aria-label="Our Method">
                 <div class="text-sm md:text-base box-border transition-colors duration-300 font-mono word-spacing-tight font-bold tracking-widest rounded-full py-3 px-6 uppercase leading-none
-                        bg-transparent text-white border border-[#65b722] hover:bg-[#65b722] hover:text-black">
+                        bg-transparent text-white border border-[#65b722] hover:bg-[#65b722] hover:text-white">
                     Our Unique Method
                 </div>
             </a>
 </div>
 
     </div>
-    <div class="w-full mx-auto pt-5  py-5 md:py-14 lg:py-14 xl:py-14 xl:px-28 px-6 md:px-16 bg-zinc-900">
-        <div class="flex flex-wrap justify-evenly md-mx-1 lg:-mx-4 gap-14 md:flex-wrap lg:flex-nowrap ">
+    <div class="w-full mx-auto pt-5  py-5 md:py-14 lg:py-14  xl:px-28 px-6">
+        <div class="flex flex-wrap justify-evenly md-mx-1  gap-14 md:flex-wrap lg:flex-nowrap max-w-screen-2xl mx-auto ">
           <div class="w-full">
-            <div style="background-image:url(./assets/images/work/three.jpg)" class="relative h-64 w-full flex items-end justify-start text-left bg-cover bg-center">
+            <div style="background-image:url(./assets/images/work/three.jpg)" class="hover:shadow-[10px_20px_40px_0px_rgba(46,204,113,0.1)] scale-100 hover:scale-105 duration-300 relative h-64 lg:h-80 xl:h-80 w-full flex items-end justify-start text-left bg-cover bg-center">
         <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900"></div>
             
         <div class="absolute flex flex-col justify-end inset-0 p-4 sm:p-6">
@@ -246,7 +223,7 @@
         </div>
           
         <div class="w-full">
-            <div style="background-image:url(./assets/images/work/four.jpg" class="relative h-64 w-full flex items-end justify-start text-left bg-cover bg-center">
+            <div style="background-image:url(./assets/images/work/four.jpg" class=" hover:shadow-[10px_20px_40px_0px_rgba(46,204,113,0.1)] scale-100 hover:scale-105 duration-300 relative h-64 lg:h-80 xl:h-80 w-full flex items-end justify-start text-left bg-cover bg-center">
         <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900"></div>
             
         <div class="absolute flex flex-col justify-end inset-0 p-4 sm:p-6">
@@ -280,7 +257,7 @@
     <!-- Secound Section End Here -->
 
     <!-- Third [Custmore Review] Section Start Here-->
-    <div class="container-fluid px-6 md:px-16 lg:px-28 bg-[#1A1A1A] text-white">
+    <div class="container-fluid px-6 md:px-16 lg:px-28  text-white  bg-zinc-900">
       <div class="container mx-auto py-36 md:py-40 lg:py-40 2xl:py-[11.80rem] ">
         <h3 class="font-[signifier] font-[100] italic text-[2.25rem] leading-[2.813rem] lg:text-6xl lg:leading-[4.688rem] md:text-[3.75rem] md:leading-[4.688rem]">
         
@@ -317,13 +294,7 @@
     <!-- forth container start here -->
     <div class="container-fluid bg-[#ffe7c7]">
       <div class="flex flex-col sm:flex-row">
-        <div
-          class="lg:w-6/12 md:w-6/12 sm:w-3/5 w-full 2xl:py-72 xl:py-[12.25rem] lg:py-[9.5rem] py-[5.9rem] h-auto relative"
-          style="
-            background-image: url('./assets/images/lets-tallk/footer.jpg');
-            background-size: cover;
-          "
-        >
+        <div class="lg:w-6/12 md:w-6/12 sm:w-3/5 w-full 2xl:py-72 xl:py-[12.25rem] lg:py-[9.5rem] py-[5.9rem] h-auto relative" style=" background-image: url('./assets/images/lets-tallk/footer.jpg'); background-size: cover; ">
           <div class="absolute top-0 right-0 w-full h-full flex justify-end">
             <div class="w-16 h-full bg-[#fbe6cb] opacity-10 z-10"></div>
             <div class="w-16 h-full bg-[#fce6ca] opacity-30 z-10"></div>
@@ -332,267 +303,153 @@
             <div class="w-16 h-full bg-[#ffe7c7] opacity-90 z-10"></div>
           </div>
         </div>
-        <div
-          class="flex flex-col justify-center items-start 2xl:pl-[6.5rem] xl:pl-[6rem] lg:pl-20 md:py-[2.1rem] md:pl-14 sm:py-[2rem] sm:pl-10 pl-7 py-20 sm:w-2/5 w-full mx-auto"
-        >
-          <h4
-            class="font-[signifier] font-[280] xl:text-[6rem] xl:leading-[6rem] lg:text-[4.5rem] lg:leading-[4.5rem] md:text-[3rem] sm:text-5xl text-[4.5rem] leading-[4.5rem] sm:mt-0 -mt-7"
-          >
-          Let's speak, <br /> shall we?
+        <div class="flex flex-col justify-center items-start 2xl:pl-[6.5rem] xl:pl-[6rem] lg:pl-20 md:py-[2.1rem] md:pl-14 sm:py-[2rem] sm:pl-10 pl-7 py-20 sm:w-2/5 w-full mx-auto">
+          <h4 class="font-[signifier] font-[280] xl:text-[6rem] xl:leading-[6rem] lg:text-[4.5rem] lg:leading-[4.5rem] md:text-[3rem] sm:text-5xl text-[4.5rem] leading-[4.5rem] sm:mt-0 -mt-7">
+          Let's speak, <br> shall we?
           </h4>
-          <a
-            href="#"
-            class="bg-[#65b722] md:text-[1rem] sm:text-[14px] text-[0.875rem] 2xl:px-9 2xl:py-3 xl:px-8 lg:px-9 lg:py-3 md:px-10 sm:px-7 px-7 py-2 mt-4 sm:py-2 md:px-7 md:py-3 font-[600] rounded-full tracking-widest sm:mt-5 mt-7 text-white"
-            >Drop us a line </a
-          >
+          <a href="#" class="bg-[#65b722] md:text-[1rem] sm:text-[14px] text-[0.875rem] 2xl:px-9 2xl:py-3 xl:px-8 lg:px-9 lg:py-3 md:px-10 sm:px-7 px-7 py-2 mt-4 sm:py-2 md:px-7 md:py-3 font-[600] rounded-full tracking-widest sm:mt-5 mt-7 text-white hover:text-black hover:bg-white">Drop us a line </a>
         </div>
       </div>
     </div>
     <!-- forth container start here -->
 
     <!-- footer start here -->
-    <div
-      class="px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-[96px] p-6 sm:p-12 md:p-0 bg-black text-white"
-    >
+    <div class="px-6 md:px-16 lg:px-28 py-10 md:py-16 lg:py-[96px] p-6 sm:p-12 md:p-0 bg-black text-white">
       <div class="container mx-auto">
         <div class="w-full lg:flex md:flex sm:block">
           <div class="lg:w-3/5 md:w-2/5">
-            <div
-              class="mx-auto flex flex-wrap justify-between md:space-y-0 w-full"
-            >
+            <div class="mx-auto flex flex-wrap justify-between md:space-y-0 w-full">
               <div>
                 <img src="assets/images/header-img/favicon.png" alt="Tighten Logo" class=" lg:w-[80px] md:w-[70px] w-[60px]">
               </div>
               <div class="flex space-x-4 sm:flex md:hidden lg:hidden">
                 <div>
-                  <a
-                    href="https://twitter.com/"
-                    class="text-[22px] text-[#9b9b97] hover:text-white"
-                  >
-                    <i class="fab fa-twitter"></i>
+                  <a href="https://twitter.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
+                    <svg class="svg-inline--fa fa-twitter" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg><!-- <i class="fab fa-twitter"></i> Font Awesome fontawesome.com -->
                   </a>
                 </div>
                 <div>
-                  <a
-                    href="https://github.com/"
-                    class="text-[22px] text-[#9b9b97] hover:text-white"
-                  >
-                    <i class="fab fa-github"></i>
+                  <a href="https://github.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
+                    <svg class="svg-inline--fa fa-github" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
                   </a>
                 </div>
                 <div>
-                  <a
-                    href="https://www.linkedin.com/"
-                    class="text-[22px] text-[#9b9b97] hover:text-white"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
+                  <a href="https://www.linkedin.com/" class="text-[22px] text-[#9b9b97] hover:text-white">
+                    <svg class="svg-inline--fa fa-linkedin-in" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg><!-- <i class="fab fa-linkedin-in"></i> Font Awesome fontawesome.com -->
                   </a>
                 </div>
               </div>
             </div>
             <div class="pt-[30px] md:pt-[50px] mb-[10px]">
-              <p
-                class="text-[14px] leading-6 text-[#9b9b97] font-mono font-bold tracking-widest word-spacing-tight"
-              >
+              <p class="text-[14px] leading-6 text-[#9b9b97] font-mono font-bold tracking-widest word-spacing-tight">
                 Swar Vishwa, Ekdant Dutta Mandir Rd, Wireless Colony, Next to
                 Siddhart Residency, Aundh Pune 411007
               </p>
             </div>
 
             <div class="mb-[10px]">
-              <a
-                href="tel:+91 20 46 7506 40"
-                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
-              >
-                IND: +91 20 46 7506 40 /</a
-              >
-              <a
-                href="tel:+91 20 46 7506 40"
-                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
-              >
-                +91 9130 036 036</a
-              >
+              <a href="tel:+91 20 46 7506 40" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold">
+                IND: +91 20 46 7506 40 /</a>
+              <a href="tel:+91 20 46 7506 40" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold">
+                +91 9130 036 036</a>
             </div>
             <div class="mb-[10px]">
-              <a
-                href="tel:1 860 967 0120"
-                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold"
-              >
+              <a href="tel:1 860 967 0120" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest word-spacing-tight font-bold">
                 USA: 1 860 967 0120
               </a>
             </div>
             <div class="mb-[20px]">
-              <a
-                href="mailto:hello@geexu.in"
-                class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest font-bold"
-              >
-                hello@geexu.in</a
-              >
+              <a href="mailto:hello@geexu.in" class="border-b-transparent hover:border-b hover:border-yellow-600 text-[#9b9b97] text-[14px] font-mono tracking-widest font-bold">
+                hello@geexu.in</a>
             </div>
             <div class="flex space-x-6 hidden sm:hidden md:flex lg:flex">
               <div>
-                <a
-                  href="https://www.linkedin.com/company/geexu/"
-                  class="text-[22px] text-[#9b9b97] hover:text-white"
-                >
-                  <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/company/geexu/" class="text-[22px] text-[#9b9b97] hover:text-white">
+                  <svg class="svg-inline--fa fa-linkedin-in" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg><!-- <i class="fab fa-linkedin-in"></i> Font Awesome fontawesome.com -->
                 </a>
               </div>
               <div>
-                <a
-                  href="https://www.facebook.com/geexu.org/"
-                  class="text-[22px] text-[#9b9b97] hover:text-white"
-                >
-                  <i class="fa-brands fa-facebook-f"></i>
+                <a href="https://www.facebook.com/geexu.org/" class="text-[22px] text-[#9b9b97] hover:text-white">
+                  <svg class="svg-inline--fa fa-facebook-f" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg><!-- <i class="fa-brands fa-facebook-f"></i> Font Awesome fontawesome.com -->
                 </a>
               </div>
               <div>
-                <a
-                  href="https://www.instagram.com/geexu.co.in/"
-                  class="text-[22px] text-[#9b9b97] hover:text-white"
-                >
-                  <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/geexu.co.in/" class="text-[22px] text-[#9b9b97] hover:text-white">
+                  <svg class="svg-inline--fa fa-instagram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fa-brands fa-instagram"></i> Font Awesome fontawesome.com -->
                 </a>
               </div>
             </div>
           </div>
 
-          <div
-            class="w-full xl:flex lg:flex md:flex md:flex-row sm:flex-col justify-between"
-          >
-            <div
-              class="space-y-2 px-0 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-9 xl:pl-7"
-            >
-              <h4
-                class="font-serif mb-4 sm:mb-6 text-2xl md:text-[1.875rem] lg:text-3xl font-extralight"
-              >
+          <div class="w-full xl:flex lg:flex md:flex md:flex-row sm:flex-col justify-between">
+            <div class="space-y-2 px-0 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-9 xl:pl-7">
+              <h4 class="font-serif mb-4 sm:mb-6 text-2xl md:text-[1.875rem] lg:text-3xl font-extralight">
                 Work
               </h4>
               <div>
-                <a
-                  href="./method.html"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono word-spacing-tight"
-                  >METHOD</a
-                >
+                <a href="./method.html" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono word-spacing-tight">METHOD</a>
               </div>
               <div>
-                <a
-                  href="https://tighten.com/manifesto/"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono word-spacing-tight"
-                  >MANIFESTO</a
-                >
+                <a href="https://tighten.com/manifesto/" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono word-spacing-tight">MANIFESTO</a>
               </div>
               <div>
-                <a
-                  href="#"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono word-spacing-tight"
-                  >CASE STUDIES</a
-                >
+                <a href="#" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono word-spacing-tight">CASE STUDIES</a>
               </div>
             </div>
             <div class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-6 pl-0">
-              <h4
-                class="font-serif mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight"
-              >
+              <h4 class="font-serif mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight">
                 Company
               </h4>
               <div>
-                <a
-                  href="./about.html"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[16px] tracking-widest"
-                  >ABOUT
+                <a href="./about.html" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[16px] tracking-widest">ABOUT
                 </a>
               </div>
               <div>
-                <a
-                  href="./team.html"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[16px] tracking-widest"
-                  >TEAM</a
-                >
+                <a href="./team.html" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[16px] tracking-widest">TEAM</a>
               </div>
               <div>
-                <a
-                  href="./blog.html"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[14px] tracking-widest"
-                  >BLOG</a
-                >
+                <a href="./blog.html" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[14px] tracking-widest">BLOG</a>
               </div>
               <div>
-                <a
-                  href="./work-with-us.html"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[14px] tracking-widest"
-                  >WORK WITH US</a
-                >
+                <a href="./work-with-us.html" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[14px] tracking-widest">WORK WITH US</a>
               </div>
               <div>
-                <a
-                  href="./contact.html"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[14px] tracking-widest"
-                  >CONTACT</a
-                >
+                <a href="./contact.html" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[14px] tracking-widest">CONTACT</a>
               </div>
               <div>
-              <a href = 'https://app.pyjamahr.com/careers?company=geexu&company_uuid=E908CB82CF' class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[14px] tracking-widest">CAREER</a>
+              <a href="https://app.pyjamahr.com/careers?company=geexu&amp;company_uuid=E908CB82CF" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono text-[14px] tracking-widest">CAREER</a>
               </div>
 
             </div>
-            <div
-              class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-2 xl:pl-0"
-            >
-              <h4
-                class="font-[serif] mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight"
-              >
+            <div class="space-y-2 mt-10 sm:mt-0 sm:w-2/5 w-full 2xl:pl-2 xl:pl-0">
+              <h4 class="font-[serif] mb-4 sm:mb-6 text-2xl md:text-2xl lg:text-3xl font-extralight">
                 Community
               </h4>
               <div>
-                <a
-                  href="#"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest"
-                  >THE LARAVEL PODCAST</a
-                >
+                <a href="#" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest">THE LARAVEL PODCAST</a>
               </div>
               <div>
-                <a
-                  href="https://twentypercent.fm/"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest"
-                  >TWENTY PERCENT TIME PODECAST</a
-                >
+                <a href="https://twentypercent.fm/" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest">TWENTY PERCENT TIME PODECAST</a>
               </div>
               <div>
-                <a
-                  href="https://onramp.dev/en"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest"
-                  >LARAVEL ONRAMP</a
-                >
+                <a href="https://onramp.dev/en" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest">LARAVEL ONRAMP</a>
               </div>
               <div>
-                <a
-                  href="https://novapackages.com/"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest"
-                  >NOVA PACKAGES</a
-                >
+                <a href="https://novapackages.com/" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest">NOVA PACKAGES</a>
               </div>
               <div>
-                <a
-                  href="https://laravel-tricks.com/tricks"
-                  class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest"
-                  >LARAVEL TRICKS</a
-                >
+                <a href="https://laravel-tricks.com/tricks" class="border-b-transparent hover:border-b hover:border-[#65b722] text-[#9b9b97] font-mono tracking-widest">LARAVEL TRICKS</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="bg-[#1A1A1A] xl:py-8 lg:px-28 lg:py-6 md:px-16 px-4 py-10 -mt-1"
-    >
+    <div class="bg-[#1A1A1A] xl:py-8 lg:px-28 lg:py-6 md:px-16 px-4 py-10 -mt-1">
       <div class="container mx-auto">
-        <div
-          class="flex md:flex-row flex-col-reverse lg:justify-between lg:items-center md:justify-between items-center text-xs sm:text-sm"
-        >
+        <div class="flex md:flex-row flex-col-reverse lg:justify-between lg:items-center md:justify-between items-center text-xs sm:text-sm">
           <div class="text-[#9b9b97] mt-0">
-            <span class="">&copy;2022 All rights reserved.</span>
+            <span class="">©2022 All rights reserved.</span>
           </div>
         </div>
       </div>
@@ -619,5 +476,7 @@
     <script src="js/custom.js"></script>
     <!-- Toggle js Script End Here -->
     <!-- All Script Tag End Here -->
-  </body>
+  
+
+</body>
 </html>

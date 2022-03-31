@@ -139,12 +139,6 @@ header.careers-company-header {
   border-bottom: 5px solid #65b722 !important;
   color: #65b722;
 }
-input::placeholder {
-  color:#808080 !important;
-}
-textarea#message:focus {
-  border: 1px solid #64b622;
-}
 input#name:focus {
   border-bottom: 1px solid #64b622;
 }
@@ -164,4 +158,16 @@ input::placeholder{
       letter-spacing: .15em;
   text-transform: uppercase;
       font-weight: 400;
+}
+textarea#message:focus-visible {
+  outline: 1px solid #65b622 !important;
+  }
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #272727 inset !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: #b6c0b6 !important;
 }

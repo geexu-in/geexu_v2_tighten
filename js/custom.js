@@ -16,6 +16,7 @@ $(window).scroll(function () {
               .querySelector("#partnerPlayerAB")
               .addEventListener("load", (e) => {
                 partnerPlayers["AB"] = e.target;
+                
               });
 
             document
@@ -40,11 +41,13 @@ $(window).scroll(function () {
                   return this.playerId === player;
                 },
                 isActive({ id }) {
+                  
                   return this.active === id;
                 },
                 clickRow({ id }) {
                   if (this.active === id) {
                     // Clicked on the active row
+                    
                     return;
                   }
 
@@ -97,3 +100,36 @@ $(window).scroll(function () {
                 },
               };
             }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            

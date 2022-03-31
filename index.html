@@ -73,7 +73,7 @@
   <body>
     <!-- hero section start here -->
     <header
-      class="sticky header top-0 z-50 bg-[#1A1A1A] md:flex justify-between items-center w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] h-[80px] md:h-[90px] lg:h-[90px] md:mx-auto md:top-6 lg:pl-10 lg:pr-12 md:pl-4 md:pr-4 sm:pl-2 sm:pr-0 sm:pt-0 pl-2 pt-[0.125rem]"
+      class="md:sticky header top-0 z-50 bg-[#1A1A1A] md:flex justify-between items-center w-full 2xl:w-[97.5%] xl:w-[96.5%] lg:w-[95.3%] md:w-[94%] h-[80px] md:h-[90px] lg:h-[90px] md:mx-auto md:top-6 lg:pl-10 lg:pr-12 md:pl-4 md:pr-4 sm:pl-2 sm:pr-0 sm:pt-0 pl-2 pt-[0.125rem]"
     >
       <!-- Tablate and Dektopview Logo Start Here -->
       <div
@@ -94,7 +94,7 @@
           </a>
         </div>
         <div>
-          <ion-icon name="menu-outline" class="text-3xl cursor-pointer md:hidden block text-gray-400 mr-2 md hydrated" onclick="Menu(this)" role="img" aria-label="menu outline">
+          <ion-icon name="menu-outline" class="text-3xl cursor-pointer md:hidden block text-[#e2e2e2] mr-2 md hydrated" onclick="Menu(this)" role="img" aria-label="menu outline">
           </ion-icon>
         </div>
       </div>
@@ -566,7 +566,7 @@
             evolve your business with confidence.
           </h2>
         </div>
-        <div class="mt-20 mb-8 center slick-slider">
+        <div class="ml-[-21px] md:ml-0 mt-20 mb-8 center slick-slider">
           <div class="cursor-pointer group">
             <div
               class="relative group-hover:shadow-[10px_20px_40px_0px_rgba(46,204,113,0.1)] scale-100 group-hover:scale-105 duration-300"
@@ -575,7 +575,7 @@
                 src="./assets/images/slider-img/first.jpg"
                 class="w-full object-cover h-64"
               />
-              <div class="absolute bottom-4 lg:left-3 lg-2 flex sm:hidden md:hidden lg:flex hidden">
+              <div class="absolute bottom-4 left-4 flex flex-wrap sm:hidden md:hidden lg:flex lg:flex-wrap lg:gap-1 hidden">
                 <a
                   href="#"
                   class="bg-[#61af21] text-[12px] text-white uppercase px-4"
@@ -619,7 +619,7 @@
                 class="w-full object-cover h-64"
               />
               <div
-                class="absolute bottom-4 left-4 flex flex-wrap sm:hidden md:hidden lg:flex hidden"
+                class="absolute bottom-4 left-4 flex flex-wrap sm:hidden md:hidden lg:flex lg:flex-wrap lg:gap-1 hidden"
               >
                 <a
                   href="#"
@@ -633,7 +633,7 @@
                 >
                 <a
                   href="#"
-                  class="bg-[#65b722] text-[12px] text-white uppercase px-4 xl:mt-0 lg:mt-2 mt-2"
+                  class="bg-[#65b722] text-[12px] text-white uppercase px-4 xl:mt-0"
                   >Technical leadership</a
                 >
               </div>
@@ -714,7 +714,7 @@
                 src="./assets/images/slider-img/first.jpg"
                 class="w-full object-cover h-64"
               />
-              <div class="absolute bottom-4 lg:left-3 lg-2 flex sm:hidden md:hidden lg:flex hidden">
+              <div class="absolute bottom-4 left-4 flex flex-wrap sm:hidden md:hidden lg:flex  lg:flex-wrap lg:gap-1 hidden">
                 <a
                   href="#"
                   class="bg-[#65b722] text-[12px] text-white uppercase px-4"
@@ -772,14 +772,14 @@
                         <div class="space-x-3 sm:space-x-5">
    <button class="bg-black  text-charcoal-20 border-charcoal-20
                hover:bg-[#65b722] hover:text-white border hover:border-[#65b722] transition-colors rounded-full p-2 lg:p-3.5" @click="swiper.slidePrev()" aria-label="Previous">
-       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 lg:h-6 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
  <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
 </svg>
    </button>
 
    <button class="bg-black  text-charcoal-20 border-charcoal-20
                hover:bg-[#65b722] hover:text-white border hover:border-[#65b722] transition-colors rounded-full p-2 lg:p-3.5" @click="swiper.slideNext()" aria-label="Next">
-       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 lg:h-6 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
 </svg>
    </button>
@@ -921,22 +921,67 @@
                       <div class="w-3 flex-none transition-opacity duration-200 bg-gradient-to-b from-yellow to-gray opacity-0" :class="isActive($data) ? 'opacity-100' : 'opacity-0'"></div>
                     </div>
                   </button>
+
                 </div>
               </div>
             </div>
-    
+<!--     
             <div class="flex justify-center w-full md:w-1/2">
               <div class="relative w-full h-full max-w-xl pr-8 xl:max-w-2xl sm:pr-10 md:pl-6 md:pr-0 xl:pl-4 2xl:px-12">
-                <lottie-player :class="{ 'hidden': !showPlayer('BC') }" id="partnerPlayerBC" mode="normal" src="https://tighten.com/assets/images/partnership-animation-b-c.json" background="transparent" class="">
-                </lottie-player>
+             
+                  <div x-data="{ id: 'E' }" data-aos="fade-left" class="aos-init aos-animate">
+                    <div class="2xl:w-[400px] 2xl:h-[370px] xl:w-[250px] xl:h-[250px] lg:w-[12.625rem] lg:h-[12.563rem] md:w-[10rem] md:h-[10rem] sm:w-[10rem] sm:h-[10rem] w-[5rem] h-[5rem] bg-[#333333] aspect-auto border border-[#9B9B97] sm:border-2 border-1">
+                      <div class="2xl:w-[100%] w-full h-full flex justify-center items-center">
+                        <div class="w-4/5 h-4/5 flex justify-center">
+                          <div class="w-10 h-full bg-[#74cae8]"></div>
+                          <div class="w-10 h-full bg-[#88c8c7]"></div>
+                          <div class="w-10 h-full bg-[#9cc6a6]"></div>
+                          <div class="w-10 h-full bg-[#b0c485]"></div>
+                          <div class="w-10 h-full bg-[#94cb70]"></div>
+                          <div class="w-10 h-full bg-[#88d76f]"></div>
+                          <div class="w-10 h-full bg-[#73d260]"></div>
+                          <div class="w-10 h-full bg-[#27cd99]"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
     
-                <lottie-player class="hidden" :class="{ 'hidden': !showPlayer('AC') }" id="partnerPlayerAC" mode="normal" src="https://tighten.com/assets/images/partnership-animation-a-c.json" background="transparent">
-                </lottie-player>
+                <div x-data="{ id: 'F' }" data-aos="fade-left" class="aos-init aos-animate">
+                  <div class="2xl:w-[400px] 2xl:h-[370px] xl:w-[250px] xl:h-[250px] lg:w-[12.625rem] lg:h-[12.563rem] md:w-[10rem] md:h-[10rem] sm:w-[10rem] sm:h-[10rem] w-[5rem] h-[5rem] bg-[#333333] aspect-auto border border-[#9B9B97] sm:border-2 border-1">
+                    <div class="2xl:w-[100%] w-full h-full flex justify-center items-center">
+                      <div class="w-4/5 h-4/5 flex justify-center">
+                        <div class="w-10 h-full bg-[#74cae8]"></div>
+                        <div class="w-10 h-full bg-[#88c8c7]"></div>
+                        <div class="w-10 h-full bg-[#9cc6a6]"></div>
+                        <div class="w-10 h-full bg-[#b0c485]"></div>
+                        <div class="w-10 h-full bg-[#94cb70]"></div>
+                        <div class="w-10 h-full bg-[#88d76f]"></div>
+                        <div class="w-10 h-full bg-[#73d260]"></div>
+                        <div class="w-10 h-full bg-[#27cd99]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
     
-                <lottie-player class="hidden" :class="{ 'hidden': !showPlayer('AB') }" id="partnerPlayerAB" mode="normal" src="https://tighten.com/assets/images/partnership-animation-a-b.json" background="transparent">
-                </lottie-player>
+                <div x-data="{ id: 'G' }" data-aos="fade-left" class="aos-init aos-animate">
+                  <div class="2xl:w-[400px] 2xl:h-[370px] xl:w-[250px] xl:h-[250px] lg:w-[12.625rem] lg:h-[12.563rem] md:w-[10rem] md:h-[10rem] sm:w-[10rem] sm:h-[10rem] w-[5rem] h-[5rem] bg-[#333333] aspect-auto border border-[#9B9B97] sm:border-2 border-1">
+                    <div class="2xl:w-[100%] w-full h-full flex justify-center items-center">
+                      <div class="w-4/5 h-4/5 flex justify-center">
+                        <div class="w-10 h-full bg-[#74cae8]"></div>
+                        <div class="w-10 h-full bg-[#88c8c7]"></div>
+                        <div class="w-10 h-full bg-[#9cc6a6]"></div>
+                        <div class="w-10 h-full bg-[#b0c485]"></div>
+                        <div class="w-10 h-full bg-[#94cb70]"></div>
+                        <div class="w-10 h-full bg-[#88d76f]"></div>
+                        <div class="w-10 h-full bg-[#73d260]"></div>
+                        <div class="w-10 h-full bg-[#27cd99]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -949,198 +994,14 @@
           </p>
           <a
             href="#"
-            class="bg-[#65b722] text-white rounded-full 2xl:px-8 2xl:py-3 py-2 px-9 px-4 2xl:mt-0 2xl:mr-72 md:mr-0 md:mt-8 sm:mr-80 sm:ml-0 ml-4 hover:bg-white hover:text-black"
+            class="bg-[#65b722] text-white rounded-full 2xl:px-8 2xl:py-3 py-2 px-9 px-4 2xl:mt-0 2xl:mr-72 md:mr-0 md:mt-8 sm:mr-80 sm:ml-0 hover:bg-white hover:text-black"
             >OUR UNIQUE APPROACH
           </a
           >
         </div>
       </div>
     </div>
-    <!-- fourth container start here -->
-
-    <!-- fifth (slider section) container start here -->
-    <!-- <div class="container-fluid bg-[#9B9B97] px-6 md:px-16 lg:px-28">
-      <div class="container mx-auto z-0 relative">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 900 50"
-            class="greyscale 2xl:ml-72 xl:ml-40 lg:ml-80 ml-40 pt-20 xl:top-0 xl:left-52 absolute top-0 left-10"
-          >
-            <path
-              d="M24,40.9v2.8l-1,1H20.2V46H23l1,1v2.9h1.3V47l1-1h2.8V44.7H26.3l-1-1V40.9Zm20.2,0v2.8l-1,.9H40.4v1.5h2.8l1,.9v2.9h1.4V47l.9-.9h2.8V44.6H46.5l-.9-.9V40.9Zm20.1,0v2.8l-.9.9H60.7v1.5h2.7l.9.9v2.9h1.6V47l.9-.9h2.8V44.6H66.8l-.9-.9V40.9Zm20.2,0v2.8l-.9.8H80.9v1.7h2.7l.9.8v2.9h1.6V47l.9-.8h2.8V44.5H87l-.9-.8V40.9Zm20.2,0v2.8l-.8.8h-2.8v1.8h2.8l.8.7v2.9h1.7V47l.8-.7H110V44.5h-2.8l-.8-.8V40.9Zm20.2,0v2.8l-.8.8h-2.8v1.8h2.8l.8.7v2.9h1.7V47l.8-.7h2.8V44.5h-2.8l-.8-.8V40.9Zm20.2,0v2.8l-.8.8h-2.8v1.8h2.8l.8.7v2.9h1.7V47l.8-.7h2.8V44.5h-2.8l-.8-.8V40.9Zm20.2,0v2.8l-.8.8h-2.8v1.8h2.8l.8.7v2.9h1.8V47l.7-.7h2.8V44.5h-2.8l-.7-.8V40.9Zm20.2,0v2.8l-.8.8H182v1.8h2.7l.8.7v2.9h1.8V47l.8-.7h2.7V44.5h-2.7l-.8-.8V40.9Zm20.2,0v2.8l-.8.8h-2.7v1.8h2.7l.8.7v2.9h1.8V47l.8-.7H211V44.5h-2.7l-.8-.8V40.9Zm20.2,0v2.8l-.8.8h-2.7v1.8h2.7l.8.7v2.9h1.8V47l.8-.7h2.8V44.5h-2.8l-.8-.8V40.9Zm20.2,0v2.8l-.7.8h-2.8v1.8h2.8l.7.7v2.9h1.8V47l.8-.7h2.8V44.5h-2.8l-.8-.8V40.9Zm20.3,0v2.8l-.8.8h-2.8v1.8h2.8l.8.7v2.9h1.7V47l.8-.7h2.8V44.5h-2.8l-.8-.8V40.9Zm20.2,0v2.8l-.8.8H283v1.8h2.8l.8.7v2.9h1.7V47l.8-.7h2.8V44.5h-2.8l-.8-.8V40.9ZM3.8,40.8v2.9l-1,1H0V46H2.8l1,1v2.9H5.1V47l1-1H8.9V44.7H6.1l-1-1V40.8ZM24.1,20.5v2.8L23,24.4H20.2v1.1H23l1.1,1.1v2.9h1.1V26.6l1.1-1.1h2.8V24.4H26.3l-1.1-1.1V20.5Zm40.4,0v2.8l-1,1H60.7v1.3h2.8l1,1v2.9h1.3V26.6l1-1h2.8V24.3H66.8l-1-1V20.5Zm20.1,0v2.8l-.9.9H80.9v1.5h2.8l.9.9v2.9h1.5V26.6l.9-.9h2.8V24.2H87l-.9-.9V20.5Zm20.2,0v2.8l-.9.9h-2.8v1.5h2.8l.9.9v2.9h1.5V26.6l.9-.9H110V24.2h-2.8l-.9-.9V20.5Zm20.2,0v2.8l-.9.8h-2.7v1.7h2.7l.9.8v2.9h1.6V26.6l.8-.8h2.8V24.1h-2.8l-.8-.8V20.5Zm20.1,0v2.8l-.8.8h-2.7v1.8h2.7l.8.7v2.9h1.8V26.6l.8-.7h2.7V24.1h-2.7l-.8-.8V20.5Zm20.2,0v2.8l-.8.8h-2.7v1.8h2.7l.8.7v2.9h1.8V26.6l.8-.7h2.8V24.1h-2.8l-.8-.8V20.5Zm20.2,0v2.8l-.7.8H182v1.8h2.8l.7.7v2.9h1.8V26.6l.8-.7h2.8V24.1h-2.8l-.8-.8V20.5Zm20.3,0v2.8l-.8.8h-2.8v1.8H205l.8.7v2.9h1.7V26.6l.8-.7h2.8V24.1h-2.8l-.8-.8V20.5Zm20.2,0v2.8l-.8.8h-2.8v1.8h2.8l.8.7v2.9h1.7V26.6l.8-.7h2.8V24.1h-2.8l-.8-.8V20.5Zm20.2,0v2.8l-.8.8h-2.8v1.8h2.8l.8.7v2.9h1.7V26.6l.8-.7h2.8V24.1h-2.8l-.8-.8V20.5Zm20.2,0v2.8l-.8.8h-2.7v1.8h2.7l.8.7v2.9h1.8V26.6l.8-.7h2.7V24.1H269l-.8-.8V20.5Zm20.2,0v2.8l-.8.8h-2.7v1.8h2.7l.8.7v2.9h1.8V26.6l.8-.7h2.7V24.1h-2.7l-.8-.8V20.5ZM44.3,20.4v2.9l-1.1,1H40.5v1.3h2.7l1.1,1v2.9h1.2V26.6l1.1-1h2.8V24.3H46.6l-1.1-1V20.4Zm-40.4,0v2.9L2.8,24.4H0v1.1H2.8l1.1,1.1v2.9h1V26.6l1.2-1.1H8.9V24.4H6.1L4.9,23.3V20.4ZM24.2.1V2.9L23,4.1H20.2V5H23l1.2,1.2V9.1h.9V6.2L26.3,5h2.8V4.1H26.3L25.1,2.9V.1ZM64.6.1V2.9L63.5,4H60.7V5.1h2.8l1.1,1.1V9.1h1.1V6.2l1.1-1.1h2.8V4H66.8L65.7,2.9V.1Zm40.3,0V2.9l-1,1h-2.7V5.2h2.7l1,1V9.1h1.4V6.2l1-1H110V3.9h-2.7l-1-1V.1Zm20.2,0V2.9l-1,.9h-2.7V5.3h2.7l1,.9V9.1h1.4V6.2l1-.9h2.8V3.8h-2.8l-1-.9V.1Zm20.1,0V2.9l-.8.9h-2.8V5.3h2.8l.8.9V9.1h1.6V6.2l.9-.9h2.8V3.8h-2.8l-.9-.9V.1Zm20.2,0V2.9l-.8.8h-2.8V5.4h2.8l.8.8V9.1h1.7V6.2l.8-.8h2.8V3.7h-2.8l-.8-.8V.1Zm20.2,0V2.9l-.8.8H182V5.5h2.8l.8.7V9.1h1.7V6.2l.8-.7h2.8V3.7h-2.8l-.8-.8V.1Zm20.2,0V2.9l-.8.8h-2.8V5.5H205l.8.7V9.1h1.8V6.2l.7-.7h2.8V3.7h-2.8l-.7-.8V.1ZM226,.1V2.9l-.8.8h-2.7V5.5h2.7l.8.7V9.1h1.8V6.2l.8-.7h2.7V3.7h-2.7l-.8-.8V.1Zm20.2,0V2.9l-.8.8h-2.7V5.5h2.7l.8.7V9.1H248V6.2l.8-.7h2.7V3.7h-2.7l-.8-.8V.1Zm20.2,0V2.9l-.8.8h-2.7V5.5h2.7l.8.7V9.1h1.8V6.2l.8-.7h2.8V3.7H269l-.8-.8V.1Zm20.2,0V2.9l-.7.8h-2.8V5.5h2.8l.7.7V9.1h1.8V6.2l.8-.7H292V3.7h-2.8l-.8-.8V.1ZM84.8,0V2.9l-1.1,1H80.9V5.2h2.8l1.1,1V9.1H86V6.2l1-1h2.8V3.9H87l-1-1V0ZM44.4,0V2.9L43.2,4H40.5V5.1h2.8l1.1,1.1V9.1h1V6.2l1.2-1.1h2.8V4H46.6L45.4,2.9V0ZM4.1,0V2.9L2.8,4.2H0v.7H2.8L4.1,6.2V9.1h.7V6.2L6.1,4.9H8.9V4.2H6.1L4.8,2.9V0Z"
-              fill="currentColor"
-            ></path>
-          </svg>
-        </div>
-
-        <div class="grid grid-cols-12 pb-20 2xl:pb-0 xl:pb-0 md:pb-0 sm:pb-18">
-          <div
-            class="lg:order-1 md:order-2 sm:order-2 order-2 2xl:col-span-5 xl:col-span-5 lg:col-span-7 md:col-span-12 sm:col-span-12 col-span-12 2xl:mt-48 xl:pt-20 lg:pt-60 pt-[10.688rem] pb-0 lg:pr-6 md:pb-2"
-          >
-            <p
-              class="font-semibold font-mono 2xl:text-[1rem] 2xl:leading-[1.25rem] xl:text-[1rem] sm:mb-5 mb-4 tracking-widest"
-            >
-            ARE YOU LOOKING FOR THE BEST WORK?
-            </p>
-
-            <h3
-              class="font-[signifier] 2xl:text-[4.5rem] 2xl:leading-[4.5rem] lg:text-7xl md:text-[3.75rem] md:leading-[3.875rem] sm:text-[3.75rem] sm:leading-[3.875rem] text-[3.4rem] font-[200] leading-[3.875rem] font-[100]"
-            >
-
-            Create the<br class="lg:block md:hidden sm:hidden block" /> #best-team 
-            possible.
-           </h3>
-
-            <p
-              class="2xl:mt-8 lg:mt-10 md:mt-6 2xl:pr-10 sm:mt-10 mt-8 2xl:text-[1.125rem] 2xl:leading-[2.125rem] xl:text-[1.125rem] xl:leading-[2.125rem] text-[1rem] leading-[1.875rem] md:leading-loose md:text-lg mb-10 2xl:w-[36rem]"
-            >
-            We've spent almost a decade assembling,
-            nurturing, and investing in the industry's most brilliant developers, 
-            a group dedicated to producing meaningful work while also looking out for one another.
-
-            </p>
-            <div
-              class="flex 2xl:items-center xl:justify-start 2xl:space-x-4 pb-10"
-            >
-              <div class="2xl:mt-6 sm:mt-6 mt-5">
-                <a
-                  href="#"
-                  class="text-white font-mono font-semibold tracking-[3px] bg-[#65b722] hover:bg-white rounded-full 2xl:px-7 2xl:py-3.5 md:px-7 md:py-4 sm:px-8 sm:py-2.5 px-6 py-2.5 2xl:text-[1rem] leading-[1.5rem]"
-                >
-                MEET OUR TEAM
-                </a>
-              </div>
-
-              <div
-                class="2xl:mt-8 2xl:mt-8 mt-14 md:ml-1 sm:ml-60 md:mt-12 hidden"
-              >
-                <a
-                  href="#"
-                  class="border border-black md:py-3 sm:px-8 sm:py-2.5 px-7 py-2.5 rounded-full hover:bg-white hover:border-none font-mono font-bold"
-                  >WE' RE HIRING !</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="lg:order-1 md:order-1 sm:oreder-1 order-1 2xl:col-span-7 xl:col-span-7 lg:col-span-5 md:col-span-12 sm:col-span-12 col-span-12 2xl:pl-44"
-          >
-            <div class="lg:flex md:flex inline-block">
-              <div
-                class="-mt-10 cursor-pointer xl:pr-10 lg:pr-0 sm:pr-12 pr-0 relative"
-              >
-                <!-- JACK bg -->
-                <!-- <img
-                  src="./assets/images/home-team/jake.jpg"
-                  class="grayscale hover:grayscale-0 bg-blend-overlay 2xl:w-[380px] 2xl:h-[400px] xl:w-[400px] lg:w-[330px] lg:h-[360px] md:w-[370px] md:h-[300px] sm:w-[330px] sm:h-[360px] w-[300px] h-[300px] 2xl:ml-0 xl:ml-0 lg:ml-0 md:ml-4"
-                  title="Jack Bathman | Programer"
-                /> -->
-
-                <!-- JACK logo img -->
-                <!-- <img
-                  src="./assets/images/header-img/favicon.png"
-                  class="w-10 absolute lg:top-4 lg:right-14 sm:top-4 sm:right-12 top-4 right-4"
-                /> -->
-
-                <!-- JACK info -->
-                <!-- <div
-                  class="absolute xl:bottom-24 sm:bottom-4 lg:bottom-10 sm:left-4 md:bottom-24 md:left-10 bottom-4 left-4"
-                >
-                  <h4
-                    class="font-serif font-extralight text-shadow text-3xl leading-tight-2 2xl:text-4xl 2xl:leading-tight-2 text-white pb-2"
-                  >
-                    Jack <br />
-                    Bathman
-                  </h4>
-                  <p class="text-[#65b722]">PROGRAMMER</p>
-                </div>
-              </div>
-              <div
-                class="cursor-pointer group relative hidden 2xl:block xl:block lg:hidden md:block sm:hidden 2xl:mt-10 mt-10 xl:mt-10 md:-mt-9"
-              > -->
-                <!-- Anna Shevlin bg  -->
-                <!-- <img
-                  src="./assets/images/home-team/anna.jpg"
-                  class="2xl:h-96 h-80 lg:w-[400px] lg:h-[360px] md:w-[470px] md:h-[370px] grayscale hover:grayscale-0"
-                  title="Anna Shevlin | Operation Coordinatior"
-                /> -->
-                <!-- Anna Shevlin logo  -->
-                <!-- <img
-                  src="./assets/images/header-img/favicon.png"
-                  class="w-10 absolute top-4 right-4"
-                /> -->
-                <!-- Anna Shevlin info -->
-                <!-- <div class="absolute bottom-4 left-4">
-                  <h4
-                    class="text-white font-serif font-extralight text-shadow text-3xl leading-tight-2 2xl:text-4xl 2xl:leading-tight-2 text-white pb-2"
-                  >
-                    Anna <br />
-                    Shevlin
-                  </h4>
-                  <p class="text-[#65b722]">Operation Coordinatior</p>
-                </div>
-              </div>
-            </div> -->
-<!-- 
-            <div class="lg:flex md:flex block 2xl:pb-10">
-              <div
-                class="-mt-8 cursor-pointer sm:pr-0 relative hidden 2xl:-mt-8 xl:-mt-8 lg:block md:hidden lg:mt-10"
-              >
-                <img
-                  src="./assets/images/home-team/chris.jpg"
-                  class="2xl:h-96 xl:w-[330px] xl:h-[330px] lg:w-[330px] lg:h-[400px] grayscale hover:grayscale-0"
-                  title="Chirs Trombley | programmer"
-                />
-                <img
-                  src="./assets/images/header-img/favicon.png"
-                  class="w-10 absolute top-6 right-12"
-                />
-                <div
-                  class="absolute xl:bottom-10 lg:bottom-8 2xl:bottom-14 left-4"
-                >
-                  <h4
-                    class="text-white font-serif font-extralight text-shadow text-3xl leading-tight-2 2xl:text-4xl 2xl:leading-tight-2 text-white pb-2"
-                  >
-                    Chirs <br />
-                    Trombley
-                  </h4>
-                  <p class="text-[#65b722] font-semibold">PROGRAMMER</p>
-                </div>
-              </div>
-              <div
-                class="cursor-pointer group pt-8 mt-2 2xl:-mb-28 xl:-mb-20 relative 2xl:block xl:block lg:hidden hidden pl-14 2xl:pl-12 xl:pl-10"
-              >
-                <img
-                  src="./assets/images/home-team/cenitoria.jpg"
-                  class="2xl:h-96 xl:w-[330px] xl:h-[330px] h-80 grayscale hover:grayscale-0"
-                  title="Cenitoria Melton | Programmer"
-                />
-                <img
-                  src="./assets/images/header-img/favicon.png"
-                  class="w-10 absolute top-10 right-4"
-                />
-                <div
-                  class="absolute 2xl:bottom-14 xl:bottom-8 xl:left-20 2xl:left-20 left-4"
-                >
-                  <h4
-                    class="text-white font-serif font-extralight text-shadow text-3xl leading-tight-2 2xl:text-4xl 2xl:leading-tight-2 text-white pb-2 text-shadow"
-                  >
-                    Cenitoria <br />
-                    Melton
-                  </h4>
-                  <p class="text-[#65b722]">PROGRAMMER</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> --> 
-    <!-- fifth container end here -->
-
-    <!-- sixth (review section) container start here -->
+   
     <div class="container-fluid px-6 md:px-16 lg:px-28 bg-[#1A1A1A] text-white">
       <div
         class="container mx-auto py-36 md:py-40 lg:py-40 2xl:py-[11.80rem]"
@@ -1166,7 +1027,7 @@
           <br
             class="2xl:hidden xl:hidden lg:hidden md:hidden sm:block hidden"
           />
-          disaster."" <br class="lg:hidden md:block block" />
+          disaster." <br class="lg:hidden md:block block" />
           
         </h3>
         <div class="flex flex-col justify-start items-end">
@@ -1214,7 +1075,7 @@
           Let's speak, <br />shall we?
           </h4>
           <a
-            href="#"
+            href="./contact.html"
             class="uppercase text-white bg-[#65b722] md:text-[1rem] sm:text-[14px] text-[0.875rem] 2xl:px-9 2xl:py-3 xl:px-8 lg:px-9 lg:py-3 md:px-10 sm:px-7 px-7 py-2 mt-4 sm:py-2 md:px-7 md:py-3 font-[600] rounded-full tracking-widest sm:mt-5 mt-7 hover:text-black hover:bg-white"
             >Drop us a line</a
           >
@@ -1503,6 +1364,12 @@
         slidesToShow: 3,
         centerMode: true,
         responsive: [
+        {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
           {
             breakpoint: 768,
             settings: {
@@ -1514,11 +1381,13 @@
             settings: {
               slidesToShow: 1.9,
             },
+            
           },
         ],
       });
     </script>
     <script src="js/custom.js"></script>
+    
     <!-- Slick Slider Script Tag End Here -->
 
     <!-- All Script Tag and Link End Here -->

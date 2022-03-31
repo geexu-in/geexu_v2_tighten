@@ -63,7 +63,7 @@
           <img
             src="./assets/images/header-img/logo.png"
             alt="Tighten Logo"
-            class="sticky-logo 2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem]  ml-2"
+            class="sticky-logo 2xl:w-[11.325rem] xl:w-44 lg:w-[11.5rem] md:w-[10rem] sm:w-[9.2rem] w-[9.2rem] "
           />
         </a>
       </div>
@@ -153,17 +153,19 @@
           <div class="flex-col space-y-10 py-8 px-6 sm:py-8 sm:px-12 lg:py-12 lg:px-16">
             <div class="max-w-5xl mx-auto">
             <div class="mb-20 grid grid-cols-2 gap-y-10 sm:gap-y-6 gap-x-10 sm:mb-12">
-              <div class="basis-[50%] focus-within:text-[#65b722]">
+              <div class="relative col-span-2 lg:col-span-1  basis-[50%] focus-within:text-[#65b722]" style="
+">
                 <input class="signup-input bg-transparent border-b border-b-[#666666] pb-2 placeholder:text-white w-full outline-0 text-white" type="text" maxlength="30" id="name" name="name" placeholder="FIRST NAME" title="Please enter a valid Name." required="" style="
 ">
               </div>
-              <div class="basis-[50%] focus-within:text-[#65b722]">
-                <input class="signup-input bg-transparent border-b border-b-[#666666] w-[100%] pb-2 font-[signifier] placeholder:tracking-widest placeholder:text-white outline-0 ml-3 text-white" type="text" maxlength="10" pattern="[789][0-9]{9}" id="mobile" name="mobile" placeholder="MOBILE NUMBER" title="Please enter a valid Number." required="">
+              <div class="relative col-span-2 lg:col-span-1 basis-[50%] focus-within:text-[#65b722]">
+                <input class="signup-input bg-transparent border-b border-b-[#666666] pb-2 placeholder:text-white w-full outline-0 text-white" type="text" maxlength="10" pattern="[789][0-9]{9}" id="mobile" name="mobile" placeholder="MOBILE NUMBER" title="Please enter a valid Number." required="">
               </div>
+              <div class="relative col-span-2 ">
+              <input class="block w-full pl-0 pr-0  font-mono text-lg tracking-tight text-white bg-transparent border-t-0 rounded-none word-spacing-tighter border-x-0 e md:text-2xl signup-input bg-transparent border-b border-b-[#666666] pb-2  w-full outline-0 " type="email" id="email" pattern="[^ @]*@[^ @]*" name="email" placeholder="EMAIL" title="Please enter a valid email address." required="">
             </div>
-            <div class="mb-20 grid grid-cols-2 gap-y-10 sm:gap-y-6 gap-x-10 sm:mb-12">
-              <input class="signup-input bg-transparent border-b border-b-[#666666] pb-2 placeholder:text-white w-full outline-0 text-white" type="email" id="email" pattern="[^ @]*@[^ @]*" name="email" placeholder="EMAIL" title="Please enter a valid email address." required="">
             </div>
+            
             <div class="flex flex-col">
               <span class="text-[#c0c0c0] pb-2 tracking-widest font-mono text-[15px]">TELL US ABOUT YOUR IDEA</span>
               <textarea class="signup-input bg-transparent border border-1 border-[#666666] mt-2 text-white pl-3" id="message" name="message" title="Please enter a where you based." required="" cols="30" rows="10"></textarea>

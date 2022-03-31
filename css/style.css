@@ -126,9 +126,12 @@ header.careers-company-header {
 
   }
   @media (max-width: 320px){
-  .slick-list.draggable {
+    .slick-list.draggable {
       padding: 0px 0px !important;
-      width: 483px;
+      width: 501px;
+  }
+  .slick-slide {
+    margin: 0 32px 0 0;
   }
 }
   img.w-full.object-cover {

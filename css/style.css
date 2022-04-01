@@ -174,3 +174,12 @@ input:-webkit-autofill:active{
 input:-webkit-autofill{
     -webkit-text-fill-color: #b6c0b6 !important;
 }
+.bg-gradient-to-b {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(97,179,47,1) 100%);
+}
+
+.bg-charcoal, .bg-charcoal-90 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 26);
+}

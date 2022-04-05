@@ -161,8 +161,6 @@ input:-webkit-autofill{
 }
 
 
-
-
 @media (min-width: 768px) {
   .slick-list.draggable {
     padding: 0px 0px !important;
@@ -177,10 +175,36 @@ input:-webkit-autofill{
 
   }
 }
-  @media (max-width: 320px){
+@media (max-width: 320px){
     .slick-list.draggable {
       padding: 0px 0px !important;
       width: 501px;
+  }
+.slick-slide {
+    margin: 0 32px 0 0;
+  }
+  img.w-full.object-cover {
+  height:9rem;
+  }
+}
+@media (max-width: 320px){
+  .services {
+    width:4rem !important;
+    height:4rem !important;
+  }
+  .services-main{
+    width:6rem !important;
+    height:6rem !important;
+  }
+}
+@media (max-width: 212px){
+  .services {
+    width:3rem !important;
+    height:3rem !important;
+  }
+  .services-main{
+    width:4rem !important;
+    height:4rem !important;
   }
     .slick-slide {
       margin: 0 32px 0 0;
